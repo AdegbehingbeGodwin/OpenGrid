@@ -102,14 +102,14 @@
     // Inject custom CSS styles for the sidebar filter dots
     let dynamicCSS = '';
     for (const [key, color] of Object.entries(typeColors)) {
-      dynamicCSS += \`.type-\${key} { background-color: \${color}; box-shadow: 0 0 8px \${color}40; }\n\`;
+      dynamicCSS += `.type-${key} { background-color: ${color}; box-shadow: 0 0 8px ${color}40; }\n`;
     }
     const styleEl = document.createElement('style');
     styleEl.textContent = dynamicCSS;
     document.head.appendChild(styleEl);
 
-    // Fetch the mega-payload
-    fetch('/api/map-data')
+    // Fetch the mega-payload statically
+    fetch('/static/map-data.json')
       .then(r => r.json())
       .then(data => {
         state.features = data.features;
@@ -259,13 +259,13 @@
             coords[0] += e.lngLat.lng > coords[0] ? 360 : -360;
           }
 
-          const html = \`<div class="map-popup">
-            <span class="popup-kicker">\${props.t.replace(/_/g, ' ')}</span>
-            <h3>\${props.n}</h3>
+          const html = `<div class="map-popup">
+            <span class="popup-kicker">${props.t.replace(/_/g, ' ')}</span>
+            <h3>${props.n}</h3>
             <div class="popup-meta">
-              <span class="meta-tag">\${props.s === 'grid3' ? 'Verified (Grid3)' : 'Community'}</span>
+              <span class="meta-tag">${props.s === 'grid3' ? 'Verified (Grid3)' : 'Community'}</span>
             </div>
-          </div>\`;
+          </div>`;
 
           new maplibregl.Popup({ closeButton: false, className: 'glass-popup' })
             .setLngLat(coords)
