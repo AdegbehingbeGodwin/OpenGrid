@@ -1,0 +1,46 @@
+name: Add a Market
+description: Submit a new market to be added to the directory
+title: "[Market Submission] "
+labels: ["market-submission"]
+body:
+  - type: input
+    id: market_name
+    attributes:
+      label: Market Name
+      placeholder: e.g. Balogun Market
+    validations:
+      required: true
+  - type: input
+    id: state
+    attributes:
+      label: State
+      placeholder: e.g. Lagos
+    validations:
+      required: true
+  - type: input
+    id: lga
+    attributes:
+      label: Local Government Area (LGA)
+      placeholder: e.g. Lagos Island
+    validations:
+      required: true
+  - type: input
+    id: latitude
+    attributes:
+      label: Latitude
+      placeholder: e.g. 6.4541
+  - type: input
+    id: longitude
+    attributes:
+      label: Longitude
+      placeholder: e.g. 3.3947
+  - type: textarea
+    id: description
+    attributes:
+      label: Description
+      placeholder: What is this market known for? What can you buy there?
+  - type: input
+    id: contributor
+    attributes:
+      label: Your GitHub Username
+      placeholder: e.g. ifihan

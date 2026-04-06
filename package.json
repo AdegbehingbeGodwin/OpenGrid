@@ -1,0 +1,27 @@
+{
+  "name": "opengrid",
+  "description": "OpenGrid Nigeria — an open directory and API for all public facilities across Nigeria",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "wrangler pages dev dist",
+    "deploy": "$npm_execpath run build && wrangler pages deploy dist --project-name opengrid --branch main",
+    "ingest": "npx tsx scripts/ingest-grid3.ts",
+    "seed": "npx tsx scripts/seed-states.ts",
+    "validate": "npx tsx scripts/validate-data.ts",
+    "sync": "npx tsx --env-file=.env scripts/sync-to-d1.ts",
+    "db:migrate": "wrangler d1 execute opengrid --local --file=migrations/0001_create_tables.sql && wrangler d1 execute opengrid --local --file=migrations/0002_add_facilities.sql"
+  },
+  "dependencies": {
+    "hono": "^4.1.7"
+  },
+  "devDependencies": {
+    "@cloudflare/workers-types": "^4.20240208.0",
+    "@hono/vite-cloudflare-pages": "^0.2.4",
+    "@hono/vite-dev-server": "^0.10.0",
+    "tsx": "^4.7.0",
+    "vite": "^5.0.12",
+    "wrangler": "^3.32.0"
+  }
+}

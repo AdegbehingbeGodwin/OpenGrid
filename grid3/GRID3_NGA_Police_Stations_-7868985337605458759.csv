@@ -1,0 +1,803 @@
+﻿FID,globalid,uniq_id,timestamp,editor,scdy_edtor,wardname,wardcode,lganame,lgacode,statename,statecode,source,plc_st_nam,x,y
+1,902814d3-54c4-4106-8158-f52fe093d7a5,3317,2/2/2018 12:00:00 AM,najib.adam, ,Odelemo,OGSSAU11,Shagamu,28020,Ogun,OG,GRID,Lafarge Police Station,3.62000148717891,6.8192670800118
+2,1cfcfeed-bb07-4e70-bde0-555111b90ef1,3318,2/2/2018 12:00:00 AM,najib.adam, ,Ajara,OGSSAU03,Shagamu,28020,Ogun,OG,GRID,The Nigeria Police Divisional Headquarters Shagamu,3.63325505068008,6.85250390133405
+3,3c752c66-72ed-47a3-8cce-043cde54d164,3319,2/2/2018 12:00:00 AM,racheal.olarewaju, ,Umuarukwu / Ward Six,ABSGWB13,Ugwunagbo,1012,Abia,AB,GRID,Amaufuru Police Station,7.31674000025083,5.01959333336566
+4,b210fdc2-2997-44e8-b7b3-86b9e4ba4905,3320,2/2/2018 12:00:00 AM,najib.adam, ,Iperu 1,OGSIKE05,Ikenne,28012,Ogun,OG,GRID,Police Training School,3.66851532232431,6.90337776077507
+5,b8bda6e6-a437-4544-b629-cf2a8e82d42d,3321,2/2/2018 12:00:00 AM,najib.adam, ,Iperu 1,OGSIKE05,Ikenne,28012,Ogun,OG,GRID,The Nigeria Police Force Divisional Headquarters Iperu Remo,3.66632906143707,6.90347754235472
+6,bd0d4a33-9d2e-4fb2-8167-f1ac338696a8,3322,2/2/2018 12:00:00 AM,najib.adam, ,Irolu,OGSIKE08,Ikenne,28012,Ogun,OG,GRID,Trailer Park Police Station,3.64607166687398,6.94399833265697
+7,b17f2d54-3f94-430e-9e98-9e91422fdb4f,3323,2/2/2018 12:00:00 AM,racheal.olarewaju, ,Ward 2,CRSANA02,Calabar South,9009,Cross River,CR,GRID,The Nigeria Police Divisional Headquarters A Division Calabar,8.34993390032929,4.96538740030832
+8,5737ed61-2ce2-4fc9-a5c6-fa41625e1575,3324,2/2/2018 12:00:00 AM,racheal.olarewaju, ,Ward 2,CRSANA02,Calabar South,9009,Cross River,CR,GRID,The Nigeria Police Divisional Headquarters A,8.34993390032929,4.96538740030832
+9,39096064-ced0-4f7a-8287-1d4706f45f7c,3325,2/2/2018 12:00:00 AM,racheal.olarewaju, ,Isedo 2,OSSILA06,Ila,30017,Osun,OS,GRID,Federal Road Safety Corpsila Oragun,4.92196833337192,8.02256500037453
+10,0b8ffb4b-07fe-4586-8367-17fb4a69d691,3326,2/2/2018 12:00:00 AM,racheal.olarewaju, ,Oke-Aree,OSSBOE08,Boripe,30006,Osun,OS,GRID,The Nigeria Police Force A,4.7421016668585,7.94079999972024
+11,e3e28d7e-32e5-4178-a4ce-b8953c97fa36,3327,2/2/2018 12:00:00 AM,racheal.olarewaju, ,Oke Ogi / Ada 2,OSSBOE07,Boripe,30006,Osun,OS,GRID,Police Post Ada,4.71216833330197,7.89236166715727
+12,a41b6d0a-12e5-493a-99b2-862581406693,3328,2/2/2018 12:00:00 AM,racheal.olarewaju, ,Olukotun Inisha,OSSODN13,Odo Otin,30025,Osun,OS,GRID,Oke Aanu Police Station,4.67140500034054,8.01134666741484
+13,d0f631b7-2b3e-45fb-878a-2e3154f647e7,3329,2/2/2018 12:00:00 AM,racheal.olarewaju, ,Ward 7,CRSANA07,Calabar South,9009,Cross River,CR,GRID,Uwanse Police Station,8.33683000020437,4.94181000013145
+14,bc7b412f-eda5-4e82-a55d-4930cf04afd3,3330,2/2/2018 12:00:00 AM,racheal.olarewaju, ,Ikang Central,CRSKTA06,Akpabuyo,9003,Cross River,CR,GRID,Ikot Nakanda Police Station,8.48812829988117,4.87917329970804
+15,3065b2b2-0aca-454b-b0a3-39be44338644,3331,2/2/2018 12:00:00 AM,racheal.olarewaju, ,Ward 11,CRSANA11,Calabar South,9009,Cross River,CR,GRID,Anantigha Police Station,8.32681830022443,4.91880169993857
+16,d3561b70-d997-4b4f-a9c8-4ff51a25cf6b,3332,2/2/2018 12:00:00 AM,racheal.olarewaju, ,Idundu-Anyaganse,CRSKTA10,Akpabuyo,9003,Cross River,CR,GRID,Nigeria Police Post Akwa Ikot Effanga,8.49377659991023,4.97368880019803
+17,ca0524c8-e7dd-430f-b389-569c84320603,3333,2/2/2018 12:00:00 AM,racheal.olarewaju, ,Ward 7,CRSANA07,Calabar South,9009,Cross River,CR,GRID,Edem Edet Police Station,8.33660170010842,4.93474170026929
+18,bc5163b0-ac17-4fba-9dbc-181a128f0a75,3334,2/2/2018 12:00:00 AM,racheal.olarewaju, ,Araromi / Owu,OSSADE01,Ayedade,30001,Osun,OS,GRID,Owu Community Police Station,4.33120499971102,7.24256833266247
+19,80875e55-a799-44c1-a56e-3e0514192381,3335,2/2/2018 12:00:00 AM,racheal.olarewaju, ,Ikang South,CRSKTA03,Akpabuyo,9003,Cross River,CR,GRID,The Nigeria Police Post Ikot Iwang Bakassi Lga,8.52925169980614,4.85160830018293
+20,c0276153-48ca-49cc-8252-6a7c9f074e2e,3336,2/2/2018 12:00:00 AM,racheal.olarewaju, ,Gongong,TRSYRR02,Yorro,35015,Taraba,TA,GRID,Bashing Police Station,11.4162776730762,8.90863561614083
+21,d1f51302-5a49-43f0-84e1-351e8a336f6d,2956,2/2/2018 12:00:00 AM,racheal.olarewaju, ,Suntai,TRSBAL10,Bali,35002,Taraba,TA,GRID,Nyaja Police Out Porce,10.5849894414096,7.8121565720682
+22,bd10ed96-1f5f-4b9b-b6a6-d6a739097dc6,2455,2/2/2018 12:00:00 AM,najib.adam, ,Ijoko,OGSADO09,Ado Odo/Ota,28003,Ogun,OG,GRID,Ijoko Road,3.25747745172305,6.74538666686124
+23,bae31f16-6f79-47b4-a48c-592cffb02b47,3263,2/2/2018 12:00:00 AM,racheal.olarewaju, ,Wara / Osin / Egbejila,KWSLRN12,Ilorin West,24008,Kwara,KW,GRID,Budo nuhu police station,4.49368700035484,8.43084879973236
+24,69943261-fedb-40bc-91f8-6b5461bcff6a,3262,2/2/2018 12:00:00 AM,racheal.olarewaju, ,Beere / Mapo,OYSISE03,Ibadan South East,31009,Oyo,OY,GRID,Mapo Police Station,3.89769002787256,7.37618448062932
+25,4d11de25-25e5-4449-b27f-2ab29229dd69,3261,2/2/2018 12:00:00 AM,racheal.olarewaju, ,Igangan 1,OYSIBAN03,Ibarapa North,31013,Oyo,OY,GRID,Nigeria Police Post Igangan,3.1849183333145,7.67237166661914
+26,6aac68c3-70b5-469b-9dcc-95fbf463df20,3260,2/2/2018 12:00:00 AM,racheal.olarewaju, ,Saja / Isale Ora,OYSOGN10,Ogbomosho North,31021,Oyo,OY,GRID,Ogbegun Favour Police Outpost,4.28011450078361,8.12514622441876
+27,eeb532c0-7b66-41c5-aaba-7d9d9fd612c1,3259,2/2/2018 12:00:00 AM,racheal.olarewaju, ,Old Bodija,OYSIBN08,Ibadan North,31006,Oyo,OY,GRID,Secretariat Police Station,3.90966833292725,7.40856333343112
+28,8060fb78-f86b-4add-85de-645e1958a4aa,3258,2/2/2018 12:00:00 AM,racheal.olarewaju, ,Oke Aafin,OYSOLE09,Orelope,31027,Oyo,OY,GRID,The Nigeria Police Divisional Headquarters Igboho,3.76078450879811,8.83784673493892
+29,410977c7-8024-4708-92af-fdfbbaed08d2,3257,2/2/2018 12:00:00 AM,racheal.olarewaju, ,Komu,OYSIWU04,Itesiwaju,31017,Oyo,OY,GRID,Komu Police Station,3.20708074018404,8.22858201664678
+30,cec0a614-cebb-4e76-9a4e-52467a299b40,3289,5/13/2020 12:00:00 AM,tosin.williams, ,Okebalogun / Elejigbo 'D' / Ejemu,OSSEGO08,Ejigbo,30010,Osun,OS,GRID,Police Station Ika,4.32954999983269,7.8994466674298
+31,1cbfe87c-fb9b-4345-b43c-f791c5bfc12c,3256,2/2/2018 12:00:00 AM,racheal.olarewaju, ,Ayete 1,OYSIBAN01,Ibarapa North,31013,Oyo,OY,GRID,Ayete Ibarapa North Police Head Quarter,3.22028093611635,7.53506002000398
+32,3ad71bf4-cebc-45d0-bdf0-87558ac5c96c,3255,2/2/2018 12:00:00 AM,racheal.olarewaju, ,Afonta,OYSINW02,Ibadan North West,31008,Oyo,OY,GRID,Idishin Police Station,3.85438558762479,7.40179058766552
+33,8fd812c9-f5bc-451a-8c04-28b1cce4125d,3254,2/2/2018 12:00:00 AM,racheal.olarewaju, ,Bashorun,OYSIBN04,Ibadan North,31006,Oyo,OY,GRID,Ashi Police Station,3.92566771909003,7.42411717206988
+34,b5a9e27c-8aad-4410-9bda-e36dfdaa635f,3253,2/2/2018 12:00:00 AM,racheal.olarewaju, ,Ijio / Ayegun,OYSIJA05,Iwajowa,31018,Oyo,OY,GRID,Ijio Police Station,2.98158611980364,7.93531338790257
+35,f81262de-c87a-4171-b64e-8572fae18cfb,3252,2/2/2018 12:00:00 AM,racheal.olarewaju, ,Ibafo,OGSOBE14,Obafemi Owode,28015,Ogun,OG,GRID,Police Station Akoka,3.42070406134343,6.73914943319983
+36,69fc0a91-0aeb-4423-a9f8-c6280ce5d466,3251,2/2/2018 12:00:00 AM,racheal.olarewaju, ,Ibafo,OGSOBE14,Obafemi Owode,28015,Ogun,OG,GRID,Police Station Akoka Street Ebute Road Ibafo,3.42071166690994,6.73911166706984
+37,513a4f0d-c3c2-4c67-bdda-bc1cd3f44504,3250,2/2/2018 12:00:00 AM,najib.adam, ,Mowe,OGSOBE13,Obafemi Owode,28015,Ogun,OG,GRID,Redemption Camp Police Station,3.45414038017447,6.8185311620835
+38,f1676239-cc1f-43fd-8880-dc0e3b16bb60,3249,2/2/2018 12:00:00 AM,najib.adam, ,Joga / Iboro,OGSYEN09,Yewa North,28004,Ogun,OG,GRID,Nigeria Police,3.0927266666024,7.09286000018892
+39,c4ec67e2-decf-43e9-92f4-e16625f74ff0,3248,2/2/2018 12:00:00 AM,najib.adam, ,Papa,OGSEWO09,Ewekoro,28006,Ogun,OG,GRID,Ewekoro Police Post Beside First Bank Plc,3.20604477514632,6.90383890614066
+40,9e7885b8-75ad-4c97-a888-8ac22613c61c,3232,2/2/2018 12:00:00 AM,adanna.alex, ,Amakohia / Akwakuma,IMSRRT02,Owerri North,17025,Imo,IM,GRID,Police Force Education Unit,7.0214366670686,5.51042333307043
+41,64fabf9b-2c5f-419c-b9c7-c6a265d72145,3231,2/2/2018 12:00:00 AM,adanna.alex, ,Oguta B,IMSGUA10,Oguta,17017,Imo,IM,GRID,Osse Motor Police Station,6.79441781812784,5.72343333278212
+42,c855f65a-1a50-4dec-a659-c713eb80ae45,3230,2/2/2018 12:00:00 AM,adanna.alex, ,Egbema C,IMSEBM05,Ohaji/Egbema,17018,Imo,IM,GRID,Ohaji Egbema Area Comand,6.79440833297821,5.48146166662269
+43,cc2bacbd-646d-4086-a81c-393864745f0b,2771,2/2/2018 12:00:00 AM,racheal.olarewaju, ,Ilare 3,OSSICL04,Ife Central,30011,Osun,OS,GRID,Osun State Police Command,4.56084333275368,7.4804916673566
+44,7f581a3f-19aa-4d1c-bf47-4a490ea098d7,2770,2/2/2018 12:00:00 AM,racheal.olarewaju, ,Igbajo 3,OSSBOLUW04,Boluwaduro,30005,Osun,OS,GRID,Igbajo Police Station,4.82297666693967,7.89796666662841
+45,2a4ca337-82e1-4610-bdc3-c97b06f00781,3218,2/2/2018 12:00:00 AM,adanna.alex, ,Abajah 1,IMSAMG01,Nwangele,17015,Imo,IM,GRID,Amaraku Police Station,7.14892563590939,5.65614738289543
+46,94fd3dac-e3ac-4cae-a1b3-8d6a256df806,3217,2/2/2018 12:00:00 AM,adanna.alex, ,Dim Na Nume,IMSAMG13,Nwangele,17015,Imo,IM,GRID,The Nigerian Police Force Divisional Headquarters,7.1675770310552,5.70721488885607
+47,33dd4c54-f328-41d2-96a8-beba6838e869,3216,2/2/2018 12:00:00 AM,adanna.alex, ,Osu-Achara,IMSUML10,Isiala Mbano,17009,Imo,IM,GRID,Police Divisional Headquarters Isiebu,7.21413933286397,5.70661391510015
+48,3342c17a-0b8e-450f-95eb-e6f5a8643655,3215,2/2/2018 12:00:00 AM,racheal.olarewaju, ,Ndoni Cn,RVSRGM09,Ogba/Egbema/Ndoni,33016,Rivers,RI,GRID,Ndoni Police Station,6.59415572460705,5.54583309182379
+49,3dc6314c-a84e-4775-b944-e1e25bf330ae,3213,2/2/2018 12:00:00 AM,racheal.olarewaju, ,Achara 1,ENSUWN04,Enugu South,14005,Enugu,EN,GRID,Police Squadron 1,7.49288999987363,6.41389333301095
+50,8204b7f8-9ddb-4c18-8044-16bd453a1d8f,3211,2/2/2018 12:00:00 AM,racheal.olarewaju, ,Achara 1,ENSUWN04,Enugu South,14005,Enugu,EN,GRID,Ikirike Police Station,7.48653199895261,6.4138006623707
+51,fc486755-ddd5-4abb-8083-cbf41f5f4b4e,3210,2/2/2018 12:00:00 AM,racheal.olarewaju, ,Ikolo / Ohebedum,ENSGBO03,Igbo-Etiti,14007,Enugu,EN,GRID,The Nigeria Police Igbo Etiti Division Ogbede,7.37264123360609,6.67755931161298
+52,02950543-66c6-429c-8551-9e0cf3885ad5,3209,2/2/2018 12:00:00 AM,racheal.olarewaju, ,Aku 5,ENSGBO14,Igbo-Etiti,14007,Enugu,EN,GRID,Ogboeze Police Station,7.34285145792848,6.70766752913323
+53,46675b77-893d-40a4-ab5d-26a0c2b66c5d,3208,2/2/2018 12:00:00 AM,racheal.olarewaju, ,Akwuke Central,ENSUWN10,Enugu South,14005,Enugu,EN,GRID,Awkunanaw Police Station,7.49334166728414,6.38224166661968
+54,09f39054-bfe4-4cfa-8100-aed0b08ac5e8,3207,2/2/2018 12:00:00 AM,racheal.olarewaju, ,Ogui Township,ENSENU05,Enugu North,14004,Enugu,EN,GRID,Ogui Road Police Station,7.49521500007222,6.44119166736164
+55,37217fe9-7e06-4139-a1ed-6ae1e1a77a32,3206,2/2/2018 12:00:00 AM,racheal.olarewaju, ,Asata,ENSENU08,Enugu North,14004,Enugu,EN,GRID,Railway Police Station,7.49413155532704,6.44478905177334
+56,0f3fe78b-a1d8-428d-b2c1-5350512912ab,3205,2/2/2018 12:00:00 AM,racheal.olarewaju, ,Umulokpa,ENSUMU12,Uzo-Uwani,14017,Enugu,EN,GRID,Umulokpa Police Divisional Headquarters,7.10810530931263,6.52263898340243
+57,a92867a5-bf8a-4fac-8c43-ba74c9d7eb26,3204,2/2/2018 12:00:00 AM,racheal.olarewaju, ,Ukehe 2,ENSGBO09,Igbo-Etiti,14007,Enugu,EN,GRID,Nigeria Police Post Ogbodo Ukehe,7.41413402376622,6.66030320382987
+58,5093da41-d55a-420c-8e20-7d5330da4de0,3203,2/2/2018 12:00:00 AM,racheal.olarewaju, ,Unadu,ENSBBG09,Igbo-Eze-South,14009,Enugu,EN,GRID,Unadu Police Post,7.36549300110119,7.00322727162131
+59,423a8974-4127-4b3e-9ca3-a76953c23637,3202,2/2/2018 12:00:00 AM,racheal.olarewaju, ,Echara,ENSBBG14,Igbo-Eze-South,14009,Enugu,EN,GRID,Ibagwa Aka Police Station,7.39059459296612,6.93157658898843
+60,ad678667-278b-4269-b35c-94e64b02070d,3201,2/2/2018 12:00:00 AM,racheal.olarewaju, ,Ogui Township,ENSENU05,Enugu North,14004,Enugu,EN,GRID,The Nigerian Police State Headquarters,7.48743324464857,6.44330977492621
+61,2e908240-ba34-4e8f-9621-ae157292b37d,3200,2/2/2018 12:00:00 AM,racheal.olarewaju, ,Nara 1,ENSMGL05,Nkanu East,14011,Enugu,EN,GRID,Aziaba Police Station,7.61984516622147,6.23790713320767
+62,a1747f52-3cd9-4bb9-b603-a54aea61f89f,3199,2/2/2018 12:00:00 AM,racheal.olarewaju, ,Agbamere / Umuabor,ENSNSK07,Nsukka,14013,Enugu,EN,GRID,Police Divisional Headquarters Umabor,7.45678000019689,6.81316666740781
+63,00070942-ff2b-474b-809e-8bbe1acc197a,3198,2/2/2018 12:00:00 AM,racheal.olarewaju, ,Inyi 2,ENSJRV17,Oji-River,14014,Enugu,EN,GRID,Inyi Police Station,7.28290638342293,6.11715331127635
+64,a4b9f5a8-66e0-4ddd-9a1c-68fb40ed8bd5,3197,2/2/2018 12:00:00 AM,racheal.olarewaju, ,Ozalla,ENSAGN06,Nkanu West,14012,Enugu,EN,GRID,University Of Nigeria Teaching Hospital Police Post,7.46717320967593,6.29467008525626
+65,c0270155-3b81-4b74-8b73-2e24d3e87d2c,3196,2/2/2018 12:00:00 AM,racheal.olarewaju, ,Iwollo,ENSAGW14,Ezeagu,14006,Enugu,EN,GRID,Iwollo Police Post,7.27015218557494,6.43151893894793
+66,9143a01b-40ec-468e-a69c-81a3d11cd4e9,3195,2/2/2018 12:00:00 AM,racheal.olarewaju, ,Imezi Owa 1 / Ozom 2,ENSAGW13,Ezeagu,14006,Enugu,EN,GRID,Imezi Owa Police Station,7.36569000029334,6.36918333334421
+67,2a4b54d3-da69-4c4c-a3ba-c4ea2c80a070,3194,2/2/2018 12:00:00 AM,racheal.olarewaju, ,Okpuje / Okutu / Anuka,ENSNSK06,Nsukka,14013,Enugu,EN,GRID,Okpuje Police Station,7.28730280468073,6.90837620170038
+68,9f497bab-d2cd-49a7-bcef-75be25868a48,3193,2/2/2018 12:00:00 AM,racheal.olarewaju, ,Trans Ekulu,ENSNKW12,Enugu East,14003,Enugu,EN,GRID,Phase 6 Police Station Trans Ekulu,7.48434622190069,6.47809140039789
+69,7b2a4cab-5ccc-4975-b790-22f564ebc6e1,3192,2/2/2018 12:00:00 AM,racheal.olarewaju, ,Mbuluiyiukwu 1,ENSNKW07,Enugu East,14003,Enugu,EN,GRID,Divisional Police Station Ugwogo,7.56489929706498,6.62432597556335
+70,c30c55a8-b445-48c4-9f15-4f78fede6b8d,3190,2/2/2018 12:00:00 AM,racheal.olarewaju, ,Mbulujodo 2 (West) / Emene,ENSNKW05,Enugu East,14003,Enugu,EN,GRID,The Nigerian Police Divisional Headquarters Airport Emene,7.56481112123629,6.4704712378574
+71,5171e7b1-3c1f-429d-9726-1b4505f7fc44,3189,2/2/2018 12:00:00 AM,racheal.olarewaju, ,Independence Layout,ENSENU13,Enugu North,14004,Enugu,EN,GRID,Vosan Drive Police Station,7.53744101289249,6.44009612583557
+72,b5c892be-3f2e-454c-8707-bafc4d9c8c00,3188,2/2/2018 12:00:00 AM,racheal.olarewaju, ,Mbulujodo 2 (West) / Emene,ENSNKW05,Enugu East,14003,Enugu,EN,GRID,The Nigerian Police Divisional Headquarters Emene,7.58032576472232,6.45469552208073
+73,a56dd264-b960-4a02-8d93-4d57b70e7e75,3187,2/2/2018 12:00:00 AM,racheal.olarewaju, ,Ibeku,ENSNSK03,Nsukka,14013,Enugu,EN,GRID,Opi Uno Police Post,7.46221480207151,6.76385853034697
+74,675fbb96-b762-415b-8c29-7354daefdc66,3186,2/2/2018 12:00:00 AM,racheal.olarewaju, ,Kateregi,NISKHA09,Katcha,27010,Niger,NI,GRID,Kataeregi Police Station,6.2897703961869,9.36420822113257
+75,8cd5a1a7-03a6-4059-8e59-aea43f612fcc,3184,2/2/2018 12:00:00 AM,racheal.olarewaju, ,Kawo,NISNAS04,Magama,27014,Niger,NI,GRID,Kawo Out Station,4.83269333263127,10.2179716672587
+76,6d59ef3b-1425-4848-90c2-ec19946d7e51,3183,2/2/2018 12:00:00 AM,racheal.olarewaju, ,Umuchukwu,ANSUMZ14,Orumba South,4020,Anambra,AN,GRID,Police Station Ajali,7.21020364778019,6.04623515163098
+77,54bb2f35-ca3e-4ec1-bf76-5c8524fee897,3182,2/2/2018 12:00:00 AM,racheal.olarewaju, ,Nanka 1,ANSAJL07,Orumba North,4019,Anambra,AN,GRID,The Nigerian Police Station Ekwusigo Park Isuofia,7.06673050930561,6.02689922581868
+78,d1e28ee6-82ab-4882-a7bd-04ada4b4fb97,3181,2/2/2018 12:00:00 AM,racheal.olarewaju, ,Amichi 3,ANSUKP04,Nnewi South,4015,Anambra,AN,GRID,Isoke Ndida Police Post Obenasa Amichi,6.97279621367437,5.96075092641416
+79,26a956b9-0962-47d0-8f2e-3ba84e691c14,3180,2/2/2018 12:00:00 AM,racheal.olarewaju, ,Afaraukwu,ABSUMA01,Umuahia North,1016,Abia,AB,GRID,The Nigerian Police Officers Mess,7.49088500004279,5.5224033333472
+80,855df2ca-9802-44c4-89ef-0cc588027891,3179,2/2/2018 12:00:00 AM,racheal.olarewaju, ,Ihie Obeaku 9,ABSGWB05,Ugwunagbo,1012,Abia,AB,GRID,Ugwunagbo Police Station,7.35432833338592,5.02173499957064
+81,4d7e8192-0aa0-4503-9fdc-69ab86d7b293,3178,2/2/2018 12:00:00 AM,racheal.olarewaju, ,Ameke 1,ABSHAF03,Ohafia,1010,Abia,AB,GRID,Abiriba Divisional Police Headquarters,7.73755166687596,5.70613666737336
+82,1871a496-e824-47fb-9e63-0bf9c7d5a1c9,3177,2/2/2018 12:00:00 AM,racheal.olarewaju, ,Ode-Okwu,ABSSSM12,Osisioma Ngwa,1011,Abia,AB,GRID,The Nigerian Police Divisional Headquarters Abayi Aba,7.33497000006548,5.13920333276764
+83,050438ee-c80b-4053-8883-beb8bc23b844,3174,2/2/2018 12:00:00 AM,racheal.olarewaju, ,Muslim,OYSOYE07,Oluyole,31025,Oyo,OY,GRID,Nigeria Security And Civil Defence Corps,3.95736833288231,7.33628833333995
+84,e1c95fe8-6041-44a0-b317-c7f759ebe65a,3172,2/2/2018 12:00:00 AM,racheal.olarewaju, ,Amorie,ABSUNC02,Umu-Nneochi,1015,Abia,AB,GRID,Divisional Headquaters Isuochi,7.40287666742432,5.98187666677478
+85,f5f321e7-1f95-496a-8991-81e5c8313e99,3171,2/2/2018 12:00:00 AM,racheal.olarewaju, ,Ibere 1,ABSKWU07,Ikwuano,1005,Abia,AB,GRID,The Nigeria Police Ibere Ikwuano,7.60556166673757,5.43790333337216
+86,84bf2b1c-8398-4409-9a05-9bb887074f38,3170,2/2/2018 12:00:00 AM,racheal.olarewaju, ,Amorie,ABSUNC02,Umu-Nneochi,1015,Abia,AB,GRID,Isuochi Divisional Police Headquarters,7.40301500024214,5.981331666823
+87,66f423cf-1398-47b1-b1c6-ff4477ae09ba,3169,2/2/2018 12:00:00 AM,racheal.olarewaju, ,Lalupon 3,OYSLAU04,Lagelu,31020,Oyo,OY,GRID,Lalupon Police Station,4.06531443921006,7.46336215983587
+88,8af637e0-5142-4e3e-86a0-53f5eed9f74f,3167,2/2/2018 12:00:00 AM,racheal.olarewaju, ,Egbeda,OYSEGA04,Egbeda,31005,Oyo,OY,GRID,Ogungbade Police Division Ibadan,4.00682841489947,7.38557278675478
+89,6fec8c53-39ea-4e8c-ac9f-7723990e8a46,3166,2/2/2018 12:00:00 AM,racheal.olarewaju, ,Iboko,EBSBKL06,Izzi,11010,Ebonyi,EB,GRID,Iboko Police Station,8.23611333336368,6.41623000011447
+90,cf16386e-a625-43e1-a982-0b67b0667250,3165,2/2/2018 12:00:00 AM,racheal.olarewaju, ,Onuenyim,EBSUGB19,Ebonyi,11004,Ebonyi,EB,GRID,Ebonyi State Police Head Quarter,8.10626333298649,6.32769333288104
+91,f4a8a591-e6ab-4613-81ce-8c29392089e4,3164,2/2/2018 12:00:00 AM,racheal.olarewaju, ,Timber Shade,EBSAKL20,Abakaliki,11001,Ebonyi,EB,GRID,SSS Ochudo,8.11088833313011,6.29904166723918
+92,7a2ada2f-4d00-4c12-b549-b9481725cc13,3163,2/2/2018 12:00:00 AM,adanna.alex, ,Erena,NISKUT05,Shiroro,27022,Niger,NI,GRID,Erena Divisional Police Station,6.73852166684151,10.0820300001844
+93,c627a70d-b7fb-4348-8218-6e6688595766,3162,2/2/2018 12:00:00 AM,adanna.alex, ,Ikenegbu 1,IMSWER10,Owerri Municipal,17024,Imo,IM,GRID,The Nigeria Police Shell Camp Divisional Headquarters,7.03056499987491,5.49690500016567
+94,43965dd5-0f1e-4736-8c02-02036e710871,3161,2/2/2018 12:00:00 AM,adanna.alex, ,Oguta B,IMSGUA10,Oguta,17017,Imo,IM,GRID,Police Station,6.80115833309065,5.71021333287905
+95,b23522df-7b67-4c04-addd-63919abec2a3,3160,2/2/2018 12:00:00 AM,adanna.alex, ,Ihube 1 and 2,IMSKGE07,Okigwe,17019,Imo,IM,GRID,34 Arty Bde Fob Okigwe,7.33175136423409,5.83522465239582
+96,61a0f446-a1df-4416-af5e-e4bed4fecca1,3159,2/2/2018 12:00:00 AM,adanna.alex, ,Umucheke 1 and 2,IMSKWE13,Onuimo,17027,Imo,IM,GRID,The Nigeria Police Station Umuna,7.27032624216241,5.78381498497362
+97,6ae06367-48f5-4440-9ca0-8fb61a80a745,3158,2/2/2018 12:00:00 AM,adanna.alex, ,Umuma / Isiaku / Umulewe,IMSDFB15,Ideato South,17006,Imo,IM,GRID,Okwelle Police Divisoon Head Quarter,7.18266575831814,5.74566097557363
+98,3d0caef3-11b1-45e7-b261-8a344e263738,3157,2/2/2018 12:00:00 AM,adanna.alex, ,Azuzi 1,IMSWER03,Owerri Municipal,17024,Imo,IM,GRID,The Nigeria Police Divisional Headquaters,7.01308696908842,5.47624347905338
+99,0f8db6d8-e83d-49ac-a9c0-d95e006952ae,3156,2/2/2018 12:00:00 AM,adanna.alex, ,Iheme 2,IMSURU04,Ideato North,17005,Imo,IM,GRID,The Nigeria Police Ndiejezie Police Post,7.21552718193396,5.87443199094366
+100,d63a1ba9-3540-42a5-a8db-ee930d145caa,3155,2/2/2018 12:00:00 AM,adanna.alex, ,Awo 2,IMSMGD08,Oru East,17022,Imo,IM,GRID,Njeaba Police Station,6.95040860667189,5.64214839832999
+101,ed24a4c1-fd40-4155-afc2-3c7069fa76e9,3154,2/2/2018 12:00:00 AM,adanna.alex, ,Awara / Ikwerede,IMSEBM02,Ohaji/Egbema,17018,Imo,IM,GRID,Awara Police Station,6.77020500016067,5.36301000031131
+102,a2f04a13-08a2-4c5a-a1a0-064ea395cd8f,3153,2/2/2018 12:00:00 AM,racheal.olarewaju, ,Eji Central,RVSRGM14,Ogba/Egbema/Ndoni,33016,Rivers,RI,GRID,Obite Police Station,6.65559697871765,5.24344569276457
+103,f9274406-82ec-4714-9d67-56914d9ab347,3152,2/2/2018 12:00:00 AM,racheal.olarewaju, ,Gassol,TRSGAS01,Gassol,35005,Taraba,TA,GRID,Gassol Police Station,10.4495753751035,8.53926648805805
+104,dea63ffc-6137-4d82-939f-99efb727fcdf,3150,2/2/2018 12:00:00 AM,racheal.olarewaju, ,Uruagu 2,ANSNNE09,Nnewi North,4014,Anambra,AN,GRID,Police Head Quarters Ichi,6.87402053202197,6.04603770457646
+105,90b118af-a5d8-492f-9724-9d9a8933c6ae,3149,2/2/2018 12:00:00 AM,racheal.olarewaju, ,Amawbia 2,ANSAWK02,Awka South,4006,Anambra,AN,GRID,Base 15 Special Protection Unit Ukpo,7.04753683825453,6.19667956391078
+106,16268312-ea33-4b67-b8d1-ef975c9c844d,3148,2/2/2018 12:00:00 AM,racheal.olarewaju, ,Owelle-Ezukala 1,ANSUMZ12,Orumba South,4020,Anambra,AN,GRID,The Nigeria Police Divisional Headquarters Umuchukwu,7.31006669702049,6.01097126201415
+107,a2bdd768-a41a-4bdb-a7ca-841d16ed2a41,3147,2/2/2018 12:00:00 AM,racheal.olarewaju, ,Adazi Nnukwu 2,ANSNEN02,Anaocha,4004,Anambra,AN,GRID,Neni Police Station,7.00100147114102,6.08767536832363
+108,d5027e6d-1b5c-40a1-9e2d-2c3a59ddd066,3146,2/2/2018 12:00:00 AM,racheal.olarewaju, ,Olukotun Inisha,OSSODN13,Odo Otin,30025,Osun,OS,GRID,Police Station Inisa,4.64509999956539,7.98118499958809
+109,d2487f8a-7de8-4c93-9b5b-775ca3cdfe17,3144,2/2/2018 12:00:00 AM,racheal.olarewaju, ,Industrial,ABSEZA05,Aba North,1001,Abia,AB,GRID,Eziama Police Station,7.3764849998829,5.11640499999078
+110,ccf88c6a-3021-4ea3-93ff-89f0db6e32e7,3143,2/2/2018 12:00:00 AM,racheal.olarewaju, ,Osolo / Oparimo,OSSODN15,Odo Otin,30025,Osun,OS,GRID,The Nigeria Police Station Oyan,4.76618333309438,8.04871333295398
+111,189252cf-940f-4dc4-a4dc-900b6ffdda64,2504,2/2/2018 12:00:00 AM,racheal.olarewaju, ,Otuilesan,OYSIWU09,Itesiwaju,31017,Oyo,OY,GRID,Police Divisional Headquarters Otu,3.41682333293051,8.20583941215921
+112,51caf5dc-faa7-49e8-a929-f1c3bd6b3459,2503,2/2/2018 12:00:00 AM,racheal.olarewaju, ,Challenge,OYSISE04,Ibadan South East,31009,Oyo,OY,GRID,Felele Divisional Headquarters,3.88662499964408,7.33743166663817
+113,f529ec27-e832-4f91-a4d7-04c05445ce29,2502,2/2/2018 12:00:00 AM,racheal.olarewaju, ,Ijinike Amin,EBSHKW11,Ohaukwu,11012,Ebonyi,EB,GRID,Nigerian Police Ngbo West Police Station Ijinike,7.94604999990764,6.47971999977824
+114,d78caf49-d7a5-47c8-b117-e9be0c1ecc3d,3142,2/2/2018 12:00:00 AM,racheal.olarewaju, ,Araromi Omuo,EKSEKE01,Ekiti East,13003,Ekiti,EK,GRID,Omuo Ekiti Divisional Police Station,5.71723865773794,7.74636995301097
+115,5817c238-76bb-458d-b8c3-a415f888fcb1,3141,2/2/2018 12:00:00 AM,racheal.olarewaju, ,Ogbojano,EKSIKR08,Ikere,13010,Ekiti,EK,GRID,Afao Police Station,5.22928785824809,7.50562562402337
+116,dd8f754b-b77f-4ef5-89d0-4786fc8acd20,3140,2/2/2018 12:00:00 AM,racheal.olarewaju, ,Odo Ado,EKSADO08,Ado-Ekiti,13001,Ekiti,EK,GRID,Odo Ado Divisional Police Head Quarter,5.25066447168808,7.61011599725549
+117,5af3ad8c-84c6-4c96-9209-8a2eadacb588,3139,2/2/2018 12:00:00 AM,racheal.olarewaju, ,Ode 3,EKSGBN10,Gbonyin,13007,Ekiti,EK,GRID,Ode Divisional Headquarter,5.54691329361367,7.6383327588498
+118,3d0298bd-a34c-4bdd-b003-b7a8ae1bf47e,2501,2/2/2018 12:00:00 AM,racheal.olarewaju, ,Amogu Akpoha / Ibii,EBSAFK25,Afikpo North,11002,Ebonyi,EB,GRID,Ogwu Eze Police Station,7.96648499978295,5.96319666689271
+119,98da2911-9e61-4265-94f1-60b6b75f5425,3138,2/2/2018 12:00:00 AM,racheal.olarewaju, ,Ugele,EKSIKR11,Ikere,13010,Ekiti,EK,GRID,Ikere Divisional Head Quarter Police Station,5.22152666042706,7.48943110566103
+120,24cdd25e-98fd-40d6-9044-da72dd2bba93,3137,2/2/2018 12:00:00 AM,racheal.olarewaju, ,Ugele,EKSIKR11,Ikere,13010,Ekiti,EK,GRID,Ikere Area Command Headquarters Police Station,5.20723333315186,7.4948316667481
+121,756b485b-9c47-4c77-834a-afbbd50bc9eb,3136,2/2/2018 12:00:00 AM,racheal.olarewaju, ,Ire 2,EKSOYE06,Oye,13016,Ekiti,EK,GRID,Ire Police Station,5.39259884226283,7.74256609504931
+122,447ed798-86cc-4f93-854f-e81c414ffd31,3135,2/2/2018 12:00:00 AM,racheal.olarewaju, ,Ilupeju 1,EKSOYE03,Oye,13016,Ekiti,EK,GRID,Ayegbaju Eliti Police Station,5.29563947638076,7.79276769777107
+123,bc821cbd-f438-4ef3-840c-a2fc66e03127,3134,2/2/2018 12:00:00 AM,racheal.olarewaju, ,Ayegbaju,EKSOYE02,Oye,13016,Ekiti,EK,GRID,Ayede Town Police Station,5.333895000354,7.89249999997509
+124,f3aa6556-c112-4888-8931-7cf09f06f0aa,3133,2/2/2018 12:00:00 AM,racheal.olarewaju, ,Ayegbaju,EKSOYE02,Oye,13016,Ekiti,EK,GRID,Ayede Police Station,5.32822718413729,7.90492058891408
+125,7662d740-f6c1-43e6-9dd1-eda0767f75b7,3131,2/2/2018 12:00:00 AM,racheal.olarewaju, ,Onimankiong,CRSDUK11,Odukpani,9015,Cross River,CR,GRID,Okoyong Police Post,8.2783183002494,5.19564500021664
+126,bd63a066-ddae-4b83-9dca-a9f7f1525bd9,3127,2/2/2018 12:00:00 AM,racheal.olarewaju, ,Ifelodun,OSSAMW02,Atakunmosa West,30004,Osun,OS,GRID,Odogbo Ijesha Police Station,4.76278166724018,7.52079666713252
+127,77538951-a60c-4464-9df8-2c3204841b68,3126,2/2/2018 12:00:00 AM,racheal.olarewaju, ,Oke Omi,OSSBOLUW08,Boluwaduro,30005,Osun,OS,GRID,The Nigeria Police Force B,4.77995999985416,7.94544166699939
+128,aa76c341-2146-406b-a668-7fb76e03d09d,2500,2/2/2018 12:00:00 AM,racheal.olarewaju, ,Kpiri-Kpiri,EBSUGB10,Ebonyi,11004,Ebonyi,EB,GRID,Area Command Headquaters Abakaliki,8.09679833267694,6.32543500032506
+129,a2df1b30-ae77-4238-b378-115b1a77a5d5,2499,2/2/2018 12:00:00 AM,racheal.olarewaju, ,Ogwor,EBSSKA15,Ivo,11009,Ebonyi,EB,GRID,Ivo Divisional Police Headquarters Akanu,7.55777833290381,5.92779333289604
+130,bd4a6877-76e7-404f-811e-2318e2ae5202,2498,2/2/2018 12:00:00 AM,racheal.olarewaju, ,Igweledoha,EBSBKL08,Izzi,11010,Ebonyi,EB,GRID,Iziogo Police Station,8.20440499979094,6.6435516669759
+131,cff74614-d297-4afd-a552-29ad2d315b2a,3125,2/2/2018 12:00:00 AM,racheal.olarewaju, ,Kuyanbana,PLSWAS11,Wase,32017,Plateau,PL,GRID,Police Divisional Head Quarters,9.9564499997677,9.08937333271319
+132,f86c6a83-b41b-4db4-b99a-634f7433f98d,3123,2/2/2018 12:00:00 AM,racheal.olarewaju, ,Otun 1,EKSMBA09,Moba,13015,Ekiti,EK,GRID,The Nigeria Police Divisional Headquarters,5.1343418316103,7.97750341884773
+133,ed5b3b41-783d-4335-9ea0-9f9b1abca1af,3122,2/2/2018 12:00:00 AM,racheal.olarewaju, ,Ureje,EKSADO13,Ado-Ekiti,13001,Ekiti,EK,GRID,Fagbohun Police Station,5.21754188495009,7.54789513165503
+134,a8f7847a-492f-4723-af10-a940aa594400,3121,2/2/2018 12:00:00 AM,racheal.olarewaju, ,Ode 3,EKSGBN10,Gbonyin,13007,Ekiti,EK,GRID,Agbado Police Station,5.52444727741994,7.5782622091337
+135,9a7fc768-9e9e-40c3-9e32-e16143cf6eaa,3120,2/2/2018 12:00:00 AM,racheal.olarewaju, ,Iyin B,EKSIPN11,Irepodun/Ifelodun,13013,Ekiti,EK,GRID,The Nigeria Police State Headquarters Ado Ekiti,5.20588714427635,7.66177279387938
+136,97157224-0c4d-40e7-8c63-45331011a903,3119,2/2/2018 12:00:00 AM,racheal.olarewaju, ,Opopogboro,EKSADO12,Ado-Ekiti,13001,Ekiti,EK,GRID,Nigerian Police Force,5.23814828661421,7.64488108329539
+137,3d93fc33-f0d8-424e-bb2e-a33305adedd3,3118,2/2/2018 12:00:00 AM,racheal.olarewaju, ,Oraye 1,EKSIEN06,Ise/Orun,13014,Ekiti,EK,GRID,Olele PolicePost,5.40546315939736,7.46447722384488
+138,47d4294e-5905-47d8-9533-727690d806e1,3117,2/2/2018 12:00:00 AM,racheal.olarewaju, ,Ilogbo,EKSIDO01,Ido-Osi,13008,Ekiti,EK,GRID,Ayegunle Police Station,5.10723295833441,7.84467885684381
+139,3136ba59-3c6f-448f-b0da-14edfea3effe,3116,2/2/2018 12:00:00 AM,racheal.olarewaju, ,Isiala Nsulu / Isiala Amapu,ABSKPU13,Isiala-Ngwa North,1006,Abia,AB,GRID,Nigeria Police Divisional Headquarters Okpuala Ngwa,7.3794116672147,5.34628499975298
+140,fbb89846-2283-4f64-9203-4d8842d63d5a,3115,2/2/2018 12:00:00 AM,racheal.olarewaju, ,Ohaeke,ABSACH14,Arochukwu,1003,Abia,AB,GRID,Bends Divisional Police Headquarters,7.63655166682599,5.55873999995106
+141,f9e10fcc-7e2a-4a36-b6a8-40e62fd1e09a,3114,2/2/2018 12:00:00 AM,racheal.olarewaju, ,Ipu East,ABSKKE18,Ukwa West,1014,Abia,AB,GRID,Imo River Police Post,7.16777666705957,4.88752666692221
+142,f68973a2-fead-4b08-8563-31fe388c66dc,3113,2/2/2018 12:00:00 AM,racheal.olarewaju, ,Edunabon 2,OSSINH03,Ife North,30013,Osun,OS,GRID,Ipetumodu Police Station,4.43736500029456,7.51538999964879
+143,603e38df-6e81-4caa-918c-14ccd597e488,3112,2/2/2018 12:00:00 AM,racheal.olarewaju, ,Egbe-Idi,OSSIEW03,Ilesha West,30019,Osun,OS,GRID,Police Division HQ Ijamo Ilesha,4.74639333328577,7.62755500016317
+144,2e491e77-5121-4383-bba9-1d08dde88b82,3111,2/2/2018 12:00:00 AM,racheal.olarewaju, ,Ifelodun,OSSAMW02,Atakunmosa West,30004,Osun,OS,GRID,Epe Police Post,4.69431333279414,7.54201666723543
+145,0caa5e57-de1d-4d55-899a-68765ce91cb8,3110,2/2/2018 12:00:00 AM,racheal.olarewaju, ,Ifelodun,OSSAMW02,Atakunmosa West,30004,Osun,OS,GRID,Police Station,4.7232733327981,7.53314666738481
+146,2951bca9-2775-4319-82d1-928ce7bbd2a0,3107,2/2/2018 12:00:00 AM,racheal.olarewaju, ,Fiditi 1,OYSAFO04,Afijio,31001,Oyo,OY,GRID,Fiditi Police Station,3.92216338842968,7.70801226785193
+147,7cd58676-ae41-4a24-aeec-333ca74499a6,3106,2/2/2018 12:00:00 AM,racheal.olarewaju, ,Amaezu / Amaelu,EBSZLL03,Ishielu,11008,Ebonyi,EB,GRID,Niger Cem Police Station,7.78304166743902,6.55065333278515
+148,cd9869d5-27fd-4fe8-8e27-1cfbb7718c58,3103,2/2/2018 12:00:00 AM,racheal.olarewaju, ,Mgbom Okposi / Obioha,EBSBZR08,Ohaozara,11011,Ebonyi,EB,GRID,Court Area Station,7.8205683331621,6.034253332925
+149,6dc64405-6154-49ae-83bf-8a02456e8eda,3102,2/2/2018 12:00:00 AM,racheal.olarewaju, ,Oso,EBSEDA11,Afikpo South,11003,Ebonyi,EB,GRID,Oso Police Station,7.80810166655874,5.86726999971074
+150,c0fc6be0-10d7-4d82-b22f-e19e462dde3c,3100,2/2/2018 12:00:00 AM,najib.adam, ,Ilisan 2,OGSIKE04,Ikenne,28012,Ogun,OG,GRID,Ikenne Police Station,3.71444575866485,6.86653934711325
+151,9082caec-b04a-49d0-a2f2-d3bfe0c6f611,3099,2/2/2018 12:00:00 AM,najib.adam, ,Ogere 1,OGSIKE09,Ikenne,28012,Ogun,OG,GRID,The Nigeria Police Ode Remo Ogun State,3.67337333321279,6.96337000022538
+152,4976cad9-33c9-433f-b614-5cdf86782213,3098,2/2/2018 12:00:00 AM,najib.adam, ,Iperu 2,OGSIKE06,Ikenne,28012,Ogun,OG,GRID,The Nigeria Police Divisional Headquarters Ogere Remo,3.63536499959508,6.93456166728714
+153,b9ab100c-2258-4872-9520-c9b85c75e795,3094,2/2/2018 12:00:00 AM,najib.adam, ,Odogbolu 1,OGSOGU11,Odogbolu,28017,Ogun,OG,GRID,Ayepe Police Station,3.73299564283468,6.8078342047848
+154,5336114c-1b00-4812-a21a-eaafe160edd4,3093,2/2/2018 12:00:00 AM,najib.adam, ,Ilisan 2,OGSIKE04,Ikenne,28012,Ogun,OG,GRID,The Nigeria Police Station Ilishan Remo,3.71502833319107,6.89579666658295
+155,83e5324d-5143-483a-9d85-20debcc6183b,3092,2/2/2018 12:00:00 AM,najib.adam, ,Ilado,OGSOGU06,Odogbolu,28017,Ogun,OG,GRID,Police Station Ibefun,3.81091999965832,6.72711499965754
+156,fd009c9b-16f7-4fe9-94de-1f9f88f7aa40,3091,2/2/2018 12:00:00 AM,najib.adam, ,Okun Owa,OGSOGU14,Odogbolu,28017,Ogun,OG,GRID,Odogbolu Police Station Traffic Department,3.7690183327299,6.84717166713875
+157,6ab50415-22b2-4f29-978c-42785f068538,3090,2/2/2018 12:00:00 AM,najib.adam, ,Ijagba,OGSSAU07,Shagamu,28020,Ogun,OG,GRID,Ogijo Police Station,3.51084999972772,6.70351500041699
+158,ea3824f1-72f9-4a12-b26f-a24e7dac1daa,3089,2/2/2018 12:00:00 AM,najib.adam, ,Odosenbora,OGSINE08,Ijebu North East,28010,Ogun,OG,GRID,Atan Police Station,4.00613499983041,6.89283166744752
+159,b987e278-1e4b-4b7f-9ea0-5a4be9f55291,2497,2/2/2018 12:00:00 AM,racheal.olarewaju, ,Ndiagu,EBSUGB13,Ebonyi,11004,Ebonyi,EB,GRID,Mbeke Police Station,8.10200666727394,6.64305666663194
+160,dfe4f4b7-66aa-44ef-bb47-0d6a327a846d,2496,2/2/2018 12:00:00 AM,racheal.olarewaju, ,Edda Ndiebor,EBSAKL11,Abakaliki,11001,Ebonyi,EB,GRID,Nigeria Police Force Nkwagu,8.10766166725222,6.24854166676454
+161,c0a73fcd-2741-432e-a54f-3f8a98f348b5,2495,2/2/2018 12:00:00 AM,racheal.olarewaju, ,Enyibichiri 1 / Ukpachacha / Oguzoronweya,EBSUGB09,Ebonyi,11004,Ebonyi,EB,GRID,Okpoduma Police Station,8.16157999981721,6.51280999958186
+162,89806fc9-b5b5-4ac2-bc12-5afa72f26ecd,3088,2/2/2018 12:00:00 AM,najib.adam, ,Ijada / Imepe 2,OGSIUE01,Ijebu Ode,28011,Ogun,OG,GRID,Nigeria Police Post Ososa,3.85457628706604,6.80084379070843
+163,45728105-610f-48f4-9a99-d28061870ffa,3086,2/2/2018 12:00:00 AM,najib.adam, ,Ijada / Imepe 2,OGSIUE01,Ijebu Ode,28011,Ogun,OG,GRID,Police Post Ososa,3.85454148690013,6.80097529137663
+164,b2e4cead-ccfc-4e1a-af83-141e9e86ac82,3085,2/2/2018 12:00:00 AM,najib.adam, ,Ogere 1,OGSIKE09,Ikenne,28012,Ogun,OG,GRID,Ode Remo Police Station,3.67339833256705,6.9632833325598
+165,43aec62d-852b-46ef-9b9c-a6c7d03c0561,3084,2/2/2018 12:00:00 AM,adanna.alex, ,Affa / Oghu,ENSUDD03,Udi,14016,Enugu,EN,GRID,Affa Police Station,7.32310063078955,6.60150742602696
+166,de6202f9-d736-4d55-8d8b-9ff0b911f195,3083,2/2/2018 12:00:00 AM,adanna.alex, ,Nnenwe 3 / Emudo / Uhueze,ENSDBR11,Aninri,14001,Enugu,EN,GRID,Nenwe Police Post,7.52664018209879,6.1325777320767
+167,68f1a893-aa14-4206-80ca-c3b65c6aa309,3082,2/2/2018 12:00:00 AM,adanna.alex, ,Kassa,TRSYRR04,Yorro,35015,Taraba,TA,GRID,Kungana Police Station,11.5777482358924,8.892595629185
+168,0df42847-bcf5-4504-a351-c23e59cd59f6,3081,2/2/2018 12:00:00 AM,adanna.alex, ,Pupule,TRSYRR10,Yorro,35015,Taraba,TA,GRID,Manang Lakware Police Station,11.6759027755926,9.07082992186344
+169,cedaa070-42f6-4a83-bcb5-8a6cf19020d6,2938,2/2/2018 12:00:00 AM,racheal.olarewaju, ,Abong,TRSKRM01,Kurmi,35009,Taraba,TA,GRID,Road Abpng,10.7424378529246,6.98774561616727
+170,09853c00-d320-4e15-8def-5d0766c0dc7e,3080,2/2/2018 12:00:00 AM,adanna.alex, ,Pantisawa,TRSYRR09,Yorro,35015,Taraba,TA,GRID,Divisional Police Pantisawa Yorro LGA,11.521004181298,8.94226637289484
+171,1df67e61-5c34-4796-ae08-b253d9ac9a7f,3079,2/2/2018 12:00:00 AM,adanna.alex, ,Mannang,TRSYRR06,Yorro,35015,Taraba,TA,GRID,Ankuwa Kashi Police Station,11.6047299998896,9.03211666725042
+172,6bbdf618-a322-43b7-8eec-5e16f1872b6a,3078,2/2/2018 12:00:00 AM,adanna.alex, ,Lankaviri,TRSYRR05,Yorro,35015,Taraba,TA,GRID,Police Station 19,11.4218621320318,9.00831492489391
+173,33f3848f-c324-471b-89ba-29ab6f0ca832,3077,2/2/2018 12:00:00 AM,adanna.alex, ,Lau,TRSLAU08,Lau,35010,Taraba,TA,GRID,Divisional Headquarters,11.2889735589826,9.20453672688848
+174,9432cb18-5768-408b-957e-2ce1cb15c4e9,3076,2/2/2018 12:00:00 AM,adanna.alex, ,Ubandoma,NISKUT15,Shiroro,27022,Niger,NI,GRID,Kuta Division Police Station Kobwa,6.71180703926348,9.85383712858066
+175,3ee048de-1e5a-4dd0-ba6b-ab1772e467a4,3075,2/2/2018 12:00:00 AM,adanna.alex, ,Nassarawa,NISNAS08,Magama,27014,Niger,NI,GRID,Out Post Police Station Nassarawa,4.62833681469232,9.85677761039847
+176,18d1d453-7384-4014-abd8-3c44f83ae528,3074,2/2/2018 12:00:00 AM,adanna.alex, ,Lefu,NISGWU09,Gurara,27009,Niger,NI,GRID,Police Out Post Lefu,6.7803846332443,9.29544776979878
+177,4a05a802-74a5-46d6-adad-c7ab4504c40c,3073,2/2/2018 12:00:00 AM,adanna.alex, ,Kabo,NISGWU06,Gurara,27009,Niger,NI,GRID,Kabo Police Station,7.1804043941475,9.40917689729605
+178,58cce4a1-34b0-41fd-8650-235fbc003b49,3072,2/2/2018 12:00:00 AM,adanna.alex, ,Mashegu,NISMSG08,Mashegu,27016,Niger,NI,GRID,Mashegu Police Division,5.64276169999249,9.92705920112127
+179,5d12a388-a406-4d00-9c95-99c941fb904b,3071,2/2/2018 12:00:00 AM,adanna.alex, ,Jaagi,NISMKW03,Mokwa,27017,Niger,NI,GRID,Police Out Post Jaagi,5.22579602906353,9.14886115501832
+180,086e8002-c61f-49d7-a0b0-bbf58400d4d1,3070,2/2/2018 12:00:00 AM,adanna.alex, ,Kutigi,NISKUG10,Lavun,27013,Niger,NI,GRID,Lagun Police Station,5.59066499998983,9.20305166740059
+181,26206ac0-a33f-4697-8299-8f26983a9f0a,3069,2/2/2018 12:00:00 AM,adanna.alex, ,Tagagi,NISAGA11,Agaie,27001,Niger,NI,GRID,Fogbe Police Out Post,6.51219499999928,8.71884500009674
+182,0e069df7-afd2-4e1f-94ca-7c04b30b0b68,3068,2/2/2018 12:00:00 AM,adanna.alex, ,Nasko,NISNAS07,Magama,27014,Niger,NI,GRID,Nasko Police Station,4.90215833264097,10.4943183331246
+183,ca6c2415-a331-4dc6-a81e-24612623b6c1,3067,2/2/2018 12:00:00 AM,adanna.alex, ,Amaifeke Ofeahia,IMSRLU02,Orlu,17020,Imo,IM,GRID,Nigeria Police Station Area Command Divisional Headquarters,7.03520333336718,5.7985633332313
+184,a5e846c0-e4c2-4fd0-9a07-f7b65fd1c558,2494,2/2/2018 12:00:00 AM,racheal.olarewaju, ,Ohaisu A,EBSAFK32,Afikpo North,11002,Ebonyi,EB,GRID,Divisional Head Quaters Police Station,7.93592666708207,5.8978233330804
+185,c52c0354-3726-4cb8-9579-27cbc0f2a237,3066,2/2/2018 12:00:00 AM,adanna.alex, ,Okwufuruaku,IMSAWD11,Orsu,17021,Imo,IM,GRID,Divisional Headquarters Awo Idemili,6.95331920042082,5.83194600030771
+186,da02ae0d-d24e-47bc-a777-7fd4c094bb3f,3065,2/2/2018 12:00:00 AM,adanna.alex, ,Amaigbo 5,IMSAMG10,Nwangele,17015,Imo,IM,GRID,Divisional Police Headquarters Amaigbo,7.105510182449,5.71663874338333
+187,334d05f0-4b27-4793-802c-143f5b3c8da3,3064,2/2/2018 12:00:00 AM,adanna.alex, ,Abajah 1,IMSAMG01,Nwangele,17015,Imo,IM,GRID,Abajah Police Station,7.13815884895178,5.69004394866937
+188,cc2996bc-73dd-448b-aaec-574d03436bc6,3063,2/2/2018 12:00:00 AM,adanna.alex, ,Umungwa,IMSTTK12,Obowo,17016,Imo,IM,GRID,Umuoke Police Post,7.37950999998657,5.5703264281222
+189,3ac05bc1-e21c-4e4c-b1eb-7a3e7937d22b,3062,2/2/2018 12:00:00 AM,adanna.alex, ,Obodo-Ahiara / Ihennworie,IMSAFR06,Ahiazu-Mbaise,17002,Imo,IM,GRID,Amuzi Police Station Ahiazu Mbaise,7.21497627163768,5.51563691341289
+190,0e615405-25b1-4f2f-8ae6-be658f7ccea7,3061,2/2/2018 12:00:00 AM,adanna.alex, ,Ihiagwa,IMSUMG05,Owerri West,17026,Imo,IM,GRID,Divisional Police Head Quaters,7.01186666731292,5.41789166686698
+191,eb54fa53-8af4-40c6-bdc5-3835e3585659,3060,2/2/2018 12:00:00 AM,adanna.alex, ,Gra,IMSWER09,Owerri Municipal,17024,Imo,IM,GRID,Federal Housing Police Post,7.01191666692068,5.51244500003679
+192,054c909a-d13c-4800-8161-56b6a864afeb,3059,2/2/2018 12:00:00 AM,adanna.alex, ,Oforola,IMSUMG10,Owerri West,17026,Imo,IM,GRID,Ofolora Police Station,6.92804281812158,5.42230635875148
+193,829addb7-90ce-4b5f-acab-b7deace3e001,3058,2/2/2018 12:00:00 AM,adanna.alex, ,Ohoba / Umunwaku,IMSEBM12,Ohaji/Egbema,17018,Imo,IM,GRID,Police Post,6.88689166691694,5.42816166742705
+194,538e808d-2024-413d-a563-d8d4f3f62647,3057,2/2/2018 12:00:00 AM,adanna.alex, ,Ekwuato,IMSEBM09,Ohaji/Egbema,17018,Imo,IM,GRID,Umuokanne Police Station,6.90330999955688,5.35157829959888
+195,5217dd30-df4b-46d2-bb60-07b466f5e5bb,3056,2/2/2018 12:00:00 AM,adanna.alex, ,Osu-Owerre 2,IMSUML13,Isiala Mbano,17009,Imo,IM,GRID,Divisional Police Headquarters Isiebu,7.21897224187552,5.70732297837282
+196,60de0190-61d8-4dc8-9fdc-048f0fbf8554,3055,2/2/2018 12:00:00 AM,racheal.olarewaju, ,Alin Gora,TRSARD01,Ardo-Kola,35001,Taraba,TA,GRID,Serti Police Station,11.1916219456963,8.93333862307907
+197,b9df2c69-c6b1-4a51-9c49-c773d1a91ce7,3054,2/2/2018 12:00:00 AM,racheal.olarewaju, ,Kente,TRSWKR07,Wukari,35014,Taraba,TA,GRID,Gbeji Divisional Headquarters,9.46160970182632,7.88583660637431
+198,cc528332-343a-4ef7-870c-7c946b64351a,3053,2/2/2018 12:00:00 AM,racheal.olarewaju, ,Chonku,TRSWKR04,Wukari,35014,Taraba,TA,GRID,Nigeria Police Gindin Waya Out Station,9.78771111797374,8.07806737990569
+199,14d5f597-79c2-4241-8ff1-c467647f5916,3052,2/2/2018 12:00:00 AM,racheal.olarewaju, ,Jibu,TRSWKR06,Wukari,35014,Taraba,TA,GRID,Low Enforcement,9.87056594676108,7.93017075057975
+200,6832f0f2-64af-434b-afe4-6f264a83f96b,3051,2/2/2018 12:00:00 AM,racheal.olarewaju, ,Rafin Kada,TRSWKR09,Wukari,35014,Taraba,TA,GRID,Dajo Police Station,9.79375192531114,7.6657656911338
+201,641a185f-f11d-4627-bf4c-5c4d25c3cbe5,3050,2/2/2018 12:00:00 AM,racheal.olarewaju, ,Karim A,TRSKLD06,Karim Lamido,35008,Taraba,TA,GRID,Karim Lamido Police Station,11.1919618615507,9.31487163581738
+202,9ef5ca30-a131-42eb-a4f3-b5346985bb5a,3048,2/2/2018 12:00:00 AM,racheal.olarewaju, ,Muri B,TRSKLD10,Karim Lamido,35008,Taraba,TA,GRID,Jab Jab Police Station,10.6903808067289,9.24659320940913
+203,56976d80-a567-4738-a5b9-bb12800d5220,3047,2/2/2018 12:00:00 AM,racheal.olarewaju, ,Asibiti,TRSDGA02,Donga,35003,Taraba,TA,GRID,Nigeria Police Divisional HQ Donga,10.0507001346036,7.72214061629643
+204,14bde3d5-2bf7-48a2-951d-ed4921fa7222,3046,2/2/2018 12:00:00 AM,racheal.olarewaju, ,Fuka,NISSRP05,Munya,27018,Niger,NI,GRID,Fuka Police,6.93746942907092,9.64795192773931
+205,c359f9b5-13f7-4544-b064-f6c207c893d0,3045,2/2/2018 12:00:00 AM,racheal.olarewaju, ,Uffa-Akuku,EDSGAR01,Akoko-Edo,12001,Edo,ED,GRID,The Nigeria Police Divisional Headquarters Igarra,6.10715921642475,7.28159537692517
+206,e893b737-7ed1-43f0-b878-d24986d547f4,3044,2/2/2018 12:00:00 AM,racheal.olarewaju, ,Ikekato,EDSRRU10,Esan Central,12004,Edo,ED,GRID,Agua Police Station,6.23265822030066,6.75956455985659
+207,072c5ea2-49a3-4e40-b66f-d9f91a91708f,3041,2/2/2018 12:00:00 AM,racheal.olarewaju, ,Iresaadu,OYSSUR06,Surulere,31033,Oyo,OY,GRID,Iresaadu Police,4.39820709028504,8.08358662632179
+208,725f198f-24b7-4399-a43a-cde1ee9b0339,3040,2/2/2018 12:00:00 AM,racheal.olarewaju, ,Iresaadu,OYSSUR06,Surulere,31033,Oyo,OY,GRID,Civil Defence,4.3982783876375,8.08276904365647
+209,0703534c-da99-4dca-a017-8121e7409de9,3039,2/2/2018 12:00:00 AM,racheal.olarewaju, ,Ajara Vetho,LASBDY03,Badagry,25006,Lagos,LA,GRID,Ajara Police Post,2.89085615179005,6.43410372630598
+210,3d5e6f4d-985e-4feb-a9f9-a28da7c0ffd3,3038,2/2/2018 12:00:00 AM,racheal.olarewaju, ,Owode  / Orile Bariga,LASSMU14,Shomolu,25017,Lagos,LA,GRID,Baroda Divisional Police Statoin,3.39060354381854,6.53404603909348
+211,26ec3b0d-32b3-44fc-879d-6c1c9ee52cec,3037,2/2/2018 12:00:00 AM,racheal.olarewaju, ,Okepopo East,LASLID16,Lagos Island,25020,Lagos,LA,GRID,Central Police Station Adeniji Adele,3.3975858199297,6.45621010541208
+212,b548d3c6-1473-464f-a32c-959570e4db64,3036,2/2/2018 12:00:00 AM,racheal.olarewaju, ,Agura / Gberigbe,LASIKU04,Ikorodu,25012,Lagos,LA,GRID,Ladegboye Police Post,3.56451719481277,6.62407483628471
+213,f58b4d2a-9fb5-4b22-b7de-8a036b2bcdef,3035,2/2/2018 12:00:00 AM,racheal.olarewaju, ,Igbo-Elerin,LASOJO05,Ojo,25015,Lagos,LA,GRID,NPF Divisional HQ Isasi Town,3.17038411903189,6.50080928432106
+214,edb1e0a9-7c6a-4a1c-9bb5-2041a14c9261,3034,2/2/2018 12:00:00 AM,racheal.olarewaju, ,Airways,LASSUE03,Surulere,25018,Lagos,LA,GRID,Erekusu Police Post Salami Street,3.32556882184372,6.48820530473108
+215,c8304b99-0984-4a7e-b840-e02185d77ed7,3033,2/2/2018 12:00:00 AM,racheal.olarewaju, ,Odo-Olowu,LASSUE17,Surulere,25018,Lagos,LA,GRID,Ijeshatado Police Station,3.32579335917626,6.49606089899135
+216,5da40101-abe1-42e5-835f-b8bc2cd48fb4,3032,2/2/2018 12:00:00 AM,racheal.olarewaju, ,Agura / Gberigbe,LASIKU04,Ikorodu,25012,Lagos,LA,GRID,Imowo Nla Police Station,3.60427321963346,6.61644780112516
+217,b9d29579-adfa-42f3-a4ac-e76de24fcca0,3031,2/2/2018 12:00:00 AM,racheal.olarewaju, ,Kemberi,LASOJO10,Ojo,25015,Lagos,LA,GRID,Okokomaiko,3.18705800212513,6.47202321140213
+218,c0b8a094-5717-4c94-83ad-fe8850ef30f9,3030,2/2/2018 12:00:00 AM,racheal.olarewaju, ,Ibeju 2,LASIUI02,Ibeju Lekki,25009,Lagos,LA,GRID,Pan Atlantic Police Post,3.85724478062218,6.48365795025427
+219,8b3428cc-792e-40d5-b8d3-851a016f03e7,3029,2/2/2018 12:00:00 AM,racheal.olarewaju, ,Airways,LASSUE03,Surulere,25018,Lagos,LA,GRID,Sanya Police Station 98,3.32950571561634,6.48506088994816
+220,6c3e8d6c-f396-4cf9-9678-a0797255164a,3028,2/2/2018 12:00:00 AM,racheal.olarewaju, ,Coker,LASSUE09,Surulere,25018,Lagos,LA,GRID,Amuwo Odofin Police Station,3.32315191992524,6.46935954630607
+221,12f85d11-ca15-45bf-bb29-45541d78cbe5,3027,2/2/2018 12:00:00 AM,racheal.olarewaju, ,Jinadu Aiyetoro,LASSUE13,Surulere,25018,Lagos,LA,GRID,F SARS Annex Bode Thomas,3.34861267043846,6.49267746059638
+222,21811f2c-8fff-4093-8e2b-4f69cf51b282,3026,2/2/2018 12:00:00 AM,racheal.olarewaju, ,Iwerekun 2,LASIUI05,Ibeju Lekki,25009,Lagos,LA,GRID,Elemoro Police Station,3.75514334309088,6.47527720228112
+223,848f0864-14b2-4b38-9cd5-9c7282c8d707,3025,2/2/2018 12:00:00 AM,racheal.olarewaju, ,Ira,LASOJO08,Ojo,25015,Lagos,LA,GRID,Onireke Police Station,3.22943320258031,6.4595194585562
+224,4879ed01-299e-4c15-b677-13b194ab1071,2493,2/2/2018 12:00:00 AM,racheal.olarewaju, ,Umuoghara 2,EBSEBJ15,Ezza North,11005,Ebonyi,EB,GRID,Ezza North Council Police Post Ebiaji,7.99618333329425,6.22457166664913
+225,6a029383-e6da-4b23-88a0-b9eb0e0776e6,2492,2/2/2018 12:00:00 AM,racheal.olarewaju, ,Onueke,EBSNKE18,Ezza South,11006,Ebonyi,EB,GRID,Anticrim Patrol Base Onunworie Onueke,8.02843166658818,6.1712283327214
+226,823e51b1-b5bc-4658-ac37-319057ac6290,3024,2/2/2018 12:00:00 AM,racheal.olarewaju, ,Jinadu Aiyetoro,LASSUE13,Surulere,25018,Lagos,LA,GRID,Aguda Police Station,3.34094543558342,6.49338351563676
+227,44cc989a-83bf-4fe2-b80b-2507550d4c44,3023,2/2/2018 12:00:00 AM,racheal.olarewaju, ,Ifelodun,LASAON07,Amuwo Odofin,25004,Lagos,LA,GRID,Area E Command Headquarters Festac Town,3.29458527888755,6.46202968582139
+228,a05c6ec9-d3c6-4f7b-ab04-4d7f2bc43920,3022,2/2/2018 12:00:00 AM,racheal.olarewaju, ,Oke-Odo,LASAMO31,Alimosho,25003,Lagos,LA,GRID,Aboru Police Station,3.28012167667407,6.63183133514804
+229,f5102d60-efc0-42fd-9578-3988b812e9c8,3021,2/2/2018 12:00:00 AM,racheal.olarewaju, ,Ilasan / Orile,LASEOA13,Eti Osa,25008,Lagos,LA,GRID,Ilasan Police Station,3.50311130923956,6.43348540192983
+230,11c7fa58-a920-495c-82cd-1397d1fa9ac4,3020,2/2/2018 12:00:00 AM,racheal.olarewaju, ,Idi-Araba,LASMUN05,Mushin,25014,Lagos,LA,GRID,Alakara Police Station,3.36369436320433,6.52173500826405
+231,31ca308b-b620-418b-a8e4-80a780f8e7a5,3019,2/2/2018 12:00:00 AM,racheal.olarewaju, ,Iponri / Olaleye,LASLMD11,Lagos Mainland,25019,Lagos,LA,GRID,Nigerian Railway Hospital Police Station,3.37601499969253,6.49779999987015
+232,41644232-ecae-49b9-a204-600f27c107e9,3018,2/2/2018 12:00:00 AM,racheal.olarewaju, ,Abosan,LASIKU01,Ikorodu,25012,Lagos,LA,GRID,Nichemtex Police Station,3.48245600334195,6.57014421358463
+233,db2ad0a2-71d2-45cb-bbc5-2e809b4b3fa6,3017,2/2/2018 12:00:00 AM,racheal.olarewaju, ,Ilogbo- Elegba,LASOJO07,Ojo,25015,Lagos,LA,GRID,Shibiri Ekunpa Police Station,3.13729712925914,6.45986067213238
+234,3285feea-7fc6-4857-aeba-a254a0bed30b,2983,2/2/2018 12:00:00 AM,racheal.olarewaju, ,Onilekere,LASIKA13,Ikeja,25011,Lagos,LA,GRID,Onipetesi Police Post,3.32382895294387,6.60538856003404
+235,906cce39-d6a6-4ca4-9412-5872965d35eb,2982,2/2/2018 12:00:00 AM,racheal.olarewaju, ,Shogunle,LASOIO20,Oshodi/Isolo,25016,Lagos,LA,GRID,Shogunle Police Station,3.34023753873146,6.57642973814194
+236,6d43c2f8-0e8e-4fa8-b837-52496ae8e81c,2981,2/2/2018 12:00:00 AM,racheal.olarewaju, ,Ira,LASOJO08,Ojo,25015,Lagos,LA,GRID,Tedi Town Plover Station,3.2265556885942,6.44527397881114
+237,be72e8ba-e972-4d29-8070-5ed7b1c695fe,2980,2/2/2018 12:00:00 AM,racheal.olarewaju, ,Agbala /  Lasunwon,LASIKU03,Ikorodu,25012,Lagos,LA,GRID,Industrial Police Post,3.53533843921764,6.67916760520086
+238,66228a0f-bf67-4c22-a89c-2131b3263bd0,2979,2/2/2018 12:00:00 AM,racheal.olarewaju, ,Gbethrome,LASBDY10,Badagry,25006,Lagos,LA,GRID,Seme Police Station,2.72884845988858,6.38418885713008
+239,9c44fd72-b0c8-41aa-a5b9-1aa10fa02354,2977,2/2/2018 12:00:00 AM,racheal.olarewaju, ,Olugbokere / Abomiti,LASEPE16,Epe,25007,Lagos,LA,GRID,Police Station 9,4.2119474608067,6.41714752174079
+240,174cdab0-438c-4041-8e47-8a04eb122e53,2976,2/2/2018 12:00:00 AM,racheal.olarewaju, ,Ilamoshe,LASOIO12,Oshodi/Isolo,25016,Lagos,LA,GRID,Airport Police Command,3.32023000011446,6.56512666656243
+241,b03decba-dde3-40ff-9c0e-1796413fa654,2975,2/2/2018 12:00:00 AM,racheal.olarewaju, ,Iwerekun 1,LASIUI04,Ibeju Lekki,25009,Lagos,LA,GRID,Abijo Police Station,3.66614728596852,6.45294594320075
+242,77c671a9-9dfc-4d49-ab02-154deb3156ac,2974,2/2/2018 12:00:00 AM,racheal.olarewaju, ,Omoku 2,RVSRGM11,Ogba/Egbema/Ndoni,33016,Rivers,RI,GRID,Obie Police Station Obie Community,6.67568933689341,5.39114853887401
+243,7a6d7646-2b1c-4213-82cc-f243be345066,2973,2/2/2018 12:00:00 AM,racheal.olarewaju, ,Ndeaboh,ENSDBR08,Aninri,14001,Enugu,EN,GRID,Nigeria Police Ndeaboh Aninri LGA,7.5786380124344,6.03436702341946
+244,279b3388-96f1-4a20-bf56-4c2ca0df963a,2971,2/2/2018 12:00:00 AM,racheal.olarewaju, ,Eha Amufu 3,ENSKEM03,Isi-Uzo,14010,Enugu,EN,GRID,Ihe Enyi Old Police Post,7.75866109803133,6.67359468005048
+245,e58bca41-8dbb-47c5-80c3-417bf3c04078,2970,2/2/2018 12:00:00 AM,racheal.olarewaju, ,Mpu,ENSDBR07,Aninri,14001,Enugu,EN,GRID,Police Quarter Mpu,7.64824182819785,5.98660833280837
+246,d33607e8-c558-4e9c-b829-48af1b63b4a9,2969,2/2/2018 12:00:00 AM,racheal.olarewaju, ,Mpu,ENSDBR07,Aninri,14001,Enugu,EN,GRID,The Nigeria Police Post Mpu,7.64862371900949,5.98618249662496
+247,d6d8b3aa-b16a-43f2-b1e3-2ec58f46af16,2965,2/2/2018 12:00:00 AM,racheal.olarewaju, ,Ngwo Uno,ENSUDD11,Udi,14016,Enugu,EN,GRID,9th Mile Police Station,7.40712784007781,6.42493310288046
+248,257d7587-4b82-4a9d-ad65-6e2b4f794f33,2964,2/2/2018 12:00:00 AM,racheal.olarewaju, ,Egede / Umoka,ENSUDD07,Udi,14016,Enugu,EN,GRID,Umuoka Police Station,7.38485666740132,6.62513833316757
+249,de3717c2-5bf4-4d0e-b0b1-d6925e32a09c,2963,2/2/2018 12:00:00 AM,racheal.olarewaju, ,Sintali A,TRSJAL06,Jalingo,35007,Taraba,TA,GRID,The Nigeria Police Force Jalingo,11.364525742569,8.89433964665744
+250,32eb126a-fd52-44ed-924e-e7403dd36d60,2962,2/2/2018 12:00:00 AM,racheal.olarewaju, ,Odo Esa,OGSIUE08,Ijebu Ode,28011,Ogun,OG,GRID,Police Station,3.94361166704482,6.79070500033555
+251,4c392825-08ac-4d06-9c45-3ae054016ea9,2961,2/2/2018 12:00:00 AM,racheal.olarewaju, ,Bolari West,GMSGME04,Gombe,16006,Gombe,GO,GRID,Divisional Police Station Pantami,11.1694866695742,10.2748699996508
+252,688bed74-5453-4613-a544-f846605248a6,2960,2/2/2018 12:00:00 AM,racheal.olarewaju, ,Jekadafari,GMSGME07,Gombe,16006,Gombe,GO,GRID,Gombe Divisional Police Station,11.1671450004415,10.2903549996835
+253,0cd4017b-a09b-4e73-ab76-b117d949a9e5,2958,2/2/2018 12:00:00 AM,racheal.olarewaju, ,Didan,TRSKRM08,Kurmi,35009,Taraba,TA,GRID,Kashimbila Police Station,10.5449002447505,7.32866981206223
+254,3ca3c675-6d15-4d48-83ea-d60febaa2070,2957,2/2/2018 12:00:00 AM,racheal.olarewaju, ,Serti A,TRSGKA09,Gashaka,35004,Taraba,TA,GRID,Police Station Alingora Ward,11.3517803589764,7.49737497917198
+255,1c12d792-f8b8-4b66-8b3a-0c35c06348f9,2955,2/2/2018 12:00:00 AM,racheal.olarewaju, ,Kashimbila,TRSTTM06,Takum,35012,Taraba,TA,GRID,Police Station Didan,9.67239369241503,6.87234497723898
+256,294eed0d-a02d-4870-8cf6-6fe124d1e4d3,2954,2/2/2018 12:00:00 AM,racheal.olarewaju, ,Kabri,TRSSDA03,Sardauna,35011,Taraba,TA,GRID,Police Station 38,11.4221509511056,6.57826616005531
+257,f9b2ec8d-bde4-49e1-8c11-fded291b08f4,2953,2/2/2018 12:00:00 AM,racheal.olarewaju, ,Mutum Biyu B,TRSGAS04,Gassol,35005,Taraba,TA,GRID,Juro Mamu,10.7820516670508,8.64122166704635
+258,55c9d23a-97c9-46d2-8520-0e1e7db85b7c,2952,2/2/2018 12:00:00 AM,racheal.olarewaju, ,Wuro Jam,TRSGAS10,Gassol,35005,Taraba,TA,GRID,Sansani Police Station,10.19251166678,8.43098000002703
+259,e9759f50-3068-4258-b29b-db088af8bf88,2951,2/2/2018 12:00:00 AM,racheal.olarewaju, ,Chanchangi,TRSTTM02,Takum,35012,Taraba,TA,GRID,Nigerian Police Station Kuffai Ahmadu,9.94331699038685,7.39534388930912
+260,cc3e39d6-2c59-4212-8d0a-5d41eea72f66,2950,2/2/2018 12:00:00 AM,racheal.olarewaju, ,Didan,TRSKRM08,Kurmi,35009,Taraba,TA,GRID,Nigeria Police Force Out Post Danbeki,10.5725164984377,7.31761626278035
+261,8790eab6-a4b6-4783-ac32-18053641ce43,2949,2/2/2018 12:00:00 AM,racheal.olarewaju, ,Takalafiya,TRSBAL11,Bali,35002,Taraba,TA,GRID,Wurbo Police Station,10.8251082784244,8.01026175497606
+262,b1406d8b-2d3f-4486-911c-ceacb56eb0ae,2948,2/2/2018 12:00:00 AM,racheal.olarewaju, ,Kona,TRSJAL03,Jalingo,35007,Taraba,TA,GRID,Kona Police Station,11.3294754374415,8.97863213616421
+263,1e01211b-dc50-4697-8d02-febad0c46240,2462,2/2/2018 12:00:00 AM,najib.adam, ,Ibogun,OGSIFO04,Ifo,28007,Ogun,OG,GRID,The Nigeria Police Divisional Headquarters Ibogun Olagun,3.12320149275473,6.83453904324227
+264,1ac92a60-c1a5-441b-aa97-25befea0d9ef,2461,2/2/2018 12:00:00 AM,najib.adam, ,Ibara 1,OGSABS05,Abeokuta South,28002,Ogun,OG,GRID,Ibara Gra Police Post Ibara Housing,3.34091666717052,7.12285666670186
+265,41b76b82-7295-42d4-81f2-7feb9f3ba453,2460,2/2/2018 12:00:00 AM,najib.adam, ,Itori,OGSEWO05,Ewekoro,28006,Ogun,OG,GRID,Proposed Police Post,3.24334247077843,6.93231910434326
+266,ff3b0bbb-64a5-4cca-9868-5ba7d9852fc1,2947,2/2/2018 12:00:00 AM,racheal.olarewaju, ,Wuryo,TRSGAS11,Gassol,35005,Taraba,TA,GRID,Garwa Police Post,10.6281950002991,8.27872833264649
+267,37082623-442b-4417-a8a9-26d4f9ba5c10,2946,2/2/2018 12:00:00 AM,racheal.olarewaju, ,Kabri,TRSSDA03,Sardauna,35011,Taraba,TA,GRID,The Nigeria Police Force Kara Out Station,11.3642133333787,6.7289400001809
+268,310d61e5-6e9f-461b-817b-2115f94387ac,2945,2/2/2018 12:00:00 AM,racheal.olarewaju, ,Wuro Jam,TRSGAS10,Gassol,35005,Taraba,TA,GRID,Gwiwan Kogi Police Station,10.0688964673981,8.25522197171665
+269,1b61cf0f-4b7f-446c-ab16-8a21b50785d8,2944,2/2/2018 12:00:00 AM,racheal.olarewaju, ,Shibong,TRSTTM09,Takum,35012,Taraba,TA,GRID,Police Post Shibong,9.85211425866618,6.86424273941094
+270,c336ec99-066e-4df9-bbc2-af2f393143a9,2943,2/2/2018 12:00:00 AM,racheal.olarewaju, ,Nyido-Tosso,TRSKRM10,Kurmi,35009,Taraba,TA,GRID,Nyido Police Station,10.285412056821,7.17822920391467
+271,4079f7e2-0a6d-4a8c-832f-4a4da9a5da6a,2942,2/2/2018 12:00:00 AM,racheal.olarewaju, ,Kabri,TRSSDA03,Sardauna,35011,Taraba,TA,GRID,Mayo Dulle Police Station,11.4630062577327,6.64631271785771
+272,0943f3b5-79f7-4047-b8e4-a2cec03f2391,2941,2/2/2018 12:00:00 AM,racheal.olarewaju, ,Yerima,TRSGAS12,Gassol,35005,Taraba,TA,GRID,Yerima Police Station,10.5788974032926,8.44841364927055
+273,5cb87061-dc14-4e5a-9ad3-a3a98dd01706,2940,2/2/2018 12:00:00 AM,racheal.olarewaju, ,Mayo-Ndaga,TRSSDA06,Sardauna,35011,Taraba,TA,GRID,Mayo Ndaga Police Station,11.4334199401782,6.91568145583454
+274,4c952741-f629-4ce2-87a2-37508f9dc2f6,2939,2/2/2018 12:00:00 AM,racheal.olarewaju, ,Takalafiya,TRSBAL11,Bali,35002,Taraba,TA,GRID,Jatau Police Station,10.6535118017283,7.90469602370257
+275,7f0bc6b2-fa14-4bbd-bd31-a371211d1b54,2937,2/2/2018 12:00:00 AM,racheal.olarewaju, ,Kabri,TRSSDA03,Sardauna,35011,Taraba,TA,GRID,Nigeria Police Kabri Song Barki,11.4238951349525,6.69531366269541
+276,02b948c2-91d2-442c-a5f7-f88b1a777931,2936,2/2/2018 12:00:00 AM,racheal.olarewaju, ,Tutare,TRSGAS09,Gassol,35005,Taraba,TA,GRID,Chindo Bako Adamu,10.7192869517315,8.57538909892781
+277,6e8cdd2f-4819-4965-a66b-7e6d0caf7202,2935,2/2/2018 12:00:00 AM,racheal.olarewaju, ,Ashuku,TRSKRM04,Kurmi,35009,Taraba,TA,GRID,Eneme Police Out Post,10.6507656912837,7.1008706006977
+278,41a6cded-a584-4f6a-b7a2-ce7ba6d96e08,2933,2/2/2018 12:00:00 AM,racheal.olarewaju, ,Mbamnga,TRSSDA07,Sardauna,35011,Taraba,TA,GRID,Lip Police Post,11.1503977182801,6.5110044603876
+279,469b765a-8637-45b4-b528-c0bf3a168503,2932,2/2/2018 12:00:00 AM,racheal.olarewaju, ,Ashuku,TRSKRM04,Kurmi,35009,Taraba,TA,GRID,Police Out Post Ashuku,10.6778683331571,7.14280166736313
+280,c64780dd-5c53-4b23-9dbb-aed2a34c8602,2931,2/2/2018 12:00:00 AM,racheal.olarewaju, ,Malale,NISNBS05,Borgu,27004,Niger,NI,GRID,Malale Police Out Post,4.4936098430199,10.0701324992155
+281,5d51db25-d4f3-4dbe-82cb-d53005baeba9,2930,2/2/2018 12:00:00 AM,racheal.olarewaju, ,Paiko,NISPAK09,Paikoro,27019,Niger,NI,GRID,Paiko Police Station,6.64216333317131,9.43081833319957
+282,d7eb166e-d845-4200-bb4a-9f27425414bf,2929,2/2/2018 12:00:00 AM,racheal.olarewaju, ,Bangi,NISBMG01,Mariga,27015,Niger,NI,GRID,Bangi Police Station,5.81763050024745,10.8245531997704
+283,254a95b1-5e45-4320-9507-3a75607c851d,2928,2/2/2018 12:00:00 AM,racheal.olarewaju, ,Adono,NISPAK01,Paikoro,27019,Niger,NI,GRID,Beni Police Station,7.19073167342805,9.64953052391462
+284,b0d1546e-e830-46d9-bab2-26fc184154f7,2927,2/2/2018 12:00:00 AM,racheal.olarewaju, ,Rokota,NISENG09,Edati,27007,Niger,NI,GRID,Kpanbo Police Out Post,5.42471190043392,9.06272389968825
+285,77b47252-7834-4447-973c-e57c872f1c0b,2926,2/2/2018 12:00:00 AM,racheal.olarewaju, ,Kwakuti,NISPAK08,Paikoro,27019,Niger,NI,GRID,Far Doki Police Station,6.83822330036509,9.39594999959286
+286,54c42a25-e5e7-4aac-a9a4-4f752206e235,2925,2/2/2018 12:00:00 AM,racheal.olarewaju, ,Dukku,NISRJA03,Rijau,27021,Niger,NI,GRID,Dukku Central Police Station,4.90563390028433,11.2350887999082
+287,c8d5a8b3-06d8-4946-8e98-95ea35e6ac47,2924,2/2/2018 12:00:00 AM,racheal.olarewaju, ,Sari,LASAPA12,Apapa,25005,Lagos,LA,GRID,Orile Police Stationsari Iganmu,3.34586832536297,6.47817897008343
+288,2f5ab920-3916-46be-8a44-e24260f08d8f,2923,2/2/2018 12:00:00 AM,racheal.olarewaju, ,Oguntade / Bameke,LASAMO30,Alimosho,25003,Lagos,LA,GRID,Shasha,3.30208732986642,6.58951623009
+289,2a13a13e-ea6c-48d4-9528-a9968eda47f9,2922,2/2/2018 12:00:00 AM,racheal.olarewaju, ,Victoria Island,LASEOA20,Eti Osa,25008,Lagos,LA,GRID,NPF Divisional HQ Victoria Island,3.41167802821849,6.42290379617333
+290,7e6c9a10-1611-4406-8733-4f769084cb5d,2921,2/2/2018 12:00:00 AM,racheal.olarewaju, ,Ikate / Lekki,LASEOA10,Eti Osa,25008,Lagos,LA,GRID,Maruwa Police Station,3.4689930722725,6.4332273819382
+291,be72bb7d-ffb5-4fa5-aa9c-6f5fec5b58cf,2920,2/2/2018 12:00:00 AM,racheal.olarewaju, ,Araromi-Ale,LASBDY08,Badagry,25006,Lagos,LA,GRID,Morogbo Police Station,3.08367629962157,6.4948718063888
+292,6f6bd55b-48f2-49a2-83d9-7afbbd42b237,2919,2/2/2018 12:00:00 AM,racheal.olarewaju, ,Okokomaiko,LASOJO12,Ojo,25015,Lagos,LA,GRID,New Layout Police Station,3.19480115235137,6.47008810598135
+293,2cd956f0-9bcf-4f5f-ab77-3b33ad24fc4e,2918,2/2/2018 12:00:00 AM,racheal.olarewaju, ,Oke-Olowogbowo,LASLID15,Lagos Island,25020,Lagos,LA,GRID,Marina Leventis Police Station,3.38048015703367,6.45547462365499
+294,971cacf7-3fa5-4f88-8816-3b59c6c5c1cb,2917,2/2/2018 12:00:00 AM,racheal.olarewaju, ,Odo Eran / Ogunlana,LASMUN13,Mushin,25014,Lagos,LA,GRID,Cele Police Post Itire,3.32438568095444,6.50602446725543
+295,5bc02d36-e90c-4609-b603-9595e3085282,2916,2/2/2018 12:00:00 AM,racheal.olarewaju, ,Owutu,LASIKU28,Ikorodu,25012,Lagos,LA,GRID,Owutu Police Station,3.48057646613108,6.64062664090682
+296,1ab483b5-13d3-47ad-90a2-88b454d3721d,2915,2/2/2018 12:00:00 AM,racheal.olarewaju, ,Ojodu,LASIKA08,Ikeja,25011,Lagos,LA,GRID,Ojodu Police Station,3.35829253767054,6.64015900693266
+297,70853bdf-0b9e-4dde-b425-0ea79a427910,2914,2/2/2018 12:00:00 AM,racheal.olarewaju, ,Ojo Town,LASOJO11,Ojo,25015,Lagos,LA,GRID,NPF Divisional HQ Ojo,3.20576043559566,6.45659698116577
+298,bd8148ee-d000-4cf2-8ad2-fcfd2a51208d,2913,2/2/2018 12:00:00 AM,racheal.olarewaju, ,Apa,LASBDY06,Badagry,25006,Lagos,LA,GRID,Apa Police Station,2.81485269559545,6.42973763468416
+299,5bd4e708-0413-4afd-8a27-b8e5ce3ca692,2912,2/2/2018 12:00:00 AM,racheal.olarewaju, ,Ijegun,LASAON08,Amuwo Odofin,25004,Lagos,LA,GRID,Area L Police Command Headquarters,3.27290664072893,6.45400015728148
+300,f348393d-4e17-4c6a-9377-25f5a6e37d48,2911,2/2/2018 12:00:00 AM,racheal.olarewaju, ,Kuje,LASAON12,Amuwo Odofin,25004,Lagos,LA,GRID,Police Station 78,3.29316557762934,6.45864138569146
+301,fbdf2d0b-1c9f-408d-93f0-f1b6eb9a2343,2910,2/2/2018 12:00:00 AM,racheal.olarewaju, ,Oke-Oyinbo /  Aiyetoro,LASIKU25,Ikorodu,25012,Lagos,LA,GRID,Area N Command Ijede Police Station,3.58901636141599,6.56621792281891
+302,51a1460d-8870-4588-9084-f68476154213,2909,2/2/2018 12:00:00 AM,racheal.olarewaju, ,Ijegun,LASAON08,Amuwo Odofin,25004,Lagos,LA,GRID,Satellite Police Post,3.27066989460002,6.44906346380787
+303,9a7a55fc-b5ef-4cd4-bfa7-78e4888336c1,2458,2/2/2018 12:00:00 AM,najib.adam, ,Imodi,OGSOGU07,Odogbolu,28017,Ogun,OG,GRID,Imodi Imosan Police Post,3.88595833311064,6.86580999963184
+304,f38f6281-7537-4b26-8bcc-36329d955c36,2457,2/2/2018 12:00:00 AM,najib.adam, ,Odo-Egbo / Oliworo,OGSIUE09,Ijebu Ode,28011,Ogun,OG,GRID,The Nigerian Police Station Etitale,3.92043868209953,6.81920894243876
+305,3350a3f6-0254-4c7a-9333-04039a14f26a,2456,2/2/2018 12:00:00 AM,najib.adam, ,Molokiki,OGSOBE07,Obafemi Owode,28015,Ogun,OG,GRID,Iro Police Station,3.3658430045511,6.88007101426592
+306,641501ea-ad09-4fb0-b1de-cdf3288f354e,2908,2/2/2018 12:00:00 AM,racheal.olarewaju, ,Seriki-Aro,LASIKA17,Ikeja,25011,Lagos,LA,GRID,Eleruwa Police Stationwemabod Estate,3.34014166740405,6.60479999962035
+307,9e97f76c-f024-4847-b5c9-1d3cffed79b2,2907,2/2/2018 12:00:00 AM,racheal.olarewaju, ,Ejirin / Ketu,LASEPE07,Epe,25007,Lagos,LA,GRID,Ketu Ereyun Police Post,3.87585290039107,6.63739309971186
+308,855af846-d458-4abe-a4cb-88eb80446fa6,2906,2/2/2018 12:00:00 AM,racheal.olarewaju, ,Odoragunsin,LASEPE15,Epe,25007,Lagos,LA,GRID,Eredo Police Station,3.98916826600271,6.64821562575059
+309,107c1943-a126-41f7-b262-eb55de06cd75,2905,2/2/2018 12:00:00 AM,racheal.olarewaju, ,Orimedu 1,LASIUI08,Ibeju Lekki,25009,Lagos,LA,GRID,NPF Mopol 49 Akodo Old Secteriat,3.93889576792537,6.43750021925973
+310,3e4af346-eefc-4583-8ae2-3ef01bd0f899,2904,2/2/2018 12:00:00 AM,racheal.olarewaju, ,Okun Ajah / Okunmopo,LASEOA17,Eti Osa,25008,Lagos,LA,GRID,Ogombo Police Station,3.61163604656633,6.44866157027531
+311,c5db8cb8-00f8-42a9-aaaa-85c93c41444c,2903,2/2/2018 12:00:00 AM,racheal.olarewaju, ,Ijanikin,LASOJO06,Ojo,25015,Lagos,LA,GRID,Ijanikin Divisional Police Station,3.12529148391491,6.49611514879513
+312,206057c6-696a-4b88-ad01-c54e2a3df62c,3245,2/2/2018 12:00:00 AM,racheal.olarewaju, ,Agbara,OGSADO03,Ado Odo/Ota,28003,Ogun,OG,GRID,Agbara Police Station,3.09809484669984,6.50110697160949
+313,7265a80f-70fd-46a9-a376-b1a68814ab5f,3244,2/2/2018 12:00:00 AM,racheal.olarewaju, ,Ojodu / Isheri,OGSIFO08,Ifo,28007,Ogun,OG,GRID,Police Station,3.36897166680905,6.65154333315837
+314,dd089ac7-c93a-4587-8ec0-337295d732c3,3243,2/2/2018 12:00:00 AM,najib.adam, ,Agbara,OGSADO03,Ado Odo/Ota,28003,Ogun,OG,GRID,Divisional Police Head Quarters Agbara,3.09811999983816,6.50100500018067
+315,cd725f24-f39a-4178-81a3-62f7a006f381,3242,2/2/2018 12:00:00 AM,najib.adam, ,Ota 2,OGSADO14,Ado Odo/Ota,28003,Ogun,OG,GRID,Obasanjo Farm Police Station,3.20836499994482,6.68235666682676
+316,f3502231-0dab-42e0-bf16-8b88457b8562,3241,2/2/2018 12:00:00 AM,racheal.olarewaju, ,Samonda,OYSIBN10,Ibadan North,31006,Oyo,OY,GRID,Sango Police Station,3.89946062930466,7.42500894790464
+317,47b03f59-36d5-4f53-9c65-3ad09151be87,3240,2/2/2018 12:00:00 AM,racheal.olarewaju, ,Tobalogbo,OYSICL10,Ibarapa Central,31011,Oyo,OY,GRID,Nigeria Police Idere,3.24814782186456,7.49356006134781
+318,443106a6-5d8d-4d28-b05c-3f8c352a9576,3239,2/2/2018 12:00:00 AM,racheal.olarewaju, ,Tarkwa Bay,LASEOA19,Eti Osa,25008,Lagos,LA,GRID,Police Station 44,3.39211685011259,6.40140992193039
+319,56b0127f-e504-4dd4-92c8-9d98bd8da28b,3247,2/2/2018 12:00:00 AM,najib.adam, ,Imeko,OGSION07,Imeko Afon,28013,Ogun,OG,GRID,Police Divisional Headquarters Imeko Afon,2.83954166681451,7.43685666690169
+320,187ab5fb-384a-4ee2-aeba-70848ac653f4,2902,2/2/2018 12:00:00 AM,racheal.olarewaju, ,Makoko,LASLMD12,Lagos Mainland,25019,Lagos,LA,GRID,Makoko Police Post,3.38571489482661,6.49538731217478
+321,990d79bb-2bb5-4838-836e-38c976364f40,2901,2/2/2018 12:00:00 AM,racheal.olarewaju, ,Okobaba,LASLMD14,Lagos Mainland,25019,Lagos,LA,GRID,Okobaba Police Post,3.38913184106167,6.49049353434918
+322,1a9b72c9-ee8a-4f7f-972d-164cce02b53b,2900,2/2/2018 12:00:00 AM,racheal.olarewaju, ,Ojo-Oniyun,LASLMD13,Lagos Mainland,25019,Lagos,LA,GRID,Odaliki Police Station,3.37778839441893,6.48406645740113
+323,b0b264a1-33c6-4b88-a2dc-21cd914944be,2899,2/2/2018 12:00:00 AM,racheal.olarewaju, ,Anifowoshe,LASIKA05,Ikeja,25011,Lagos,LA,GRID,Obafemi Awolowo Road Police Station,3.33693617786236,6.59578349031585
+324,e2105d38-9fbd-4560-a3f8-d029d8c1b1d1,2898,2/2/2018 12:00:00 AM,racheal.olarewaju, ,Ajao Estate,LASOIO04,Oshodi/Isolo,25016,Lagos,LA,GRID,Divisional Headquarters Ajao Estate,3.32285391787406,6.54901502612262
+325,3575d029-3854-4cd0-8164-e22d5901b20c,2897,2/2/2018 12:00:00 AM,racheal.olarewaju, ,Kirikiri and Environ,LASAON11,Amuwo Odofin,25004,Lagos,LA,GRID,NPF Kirikiri Police Post,3.31117849369258,6.44349902286166
+326,b24568ec-e382-461c-8d38-870a9636b644,2896,2/2/2018 12:00:00 AM,racheal.olarewaju, ,Abule Ijesha,LASLMD01,Lagos Mainland,25019,Lagos,LA,GRID,Basua Police Station,3.3763281238439,6.52709948495334
+327,b9977235-5a24-46dc-a97b-7e587e6e75a7,2895,2/2/2018 12:00:00 AM,racheal.olarewaju, ,Isheri-Olofin,LASAMO28,Alimosho,25003,Lagos,LA,GRID,Idimu Police Station,3.28337559290935,6.57895196775917
+328,cc7332f1-5893-4f55-8327-5d1a74da7cdb,2894,2/2/2018 12:00:00 AM,racheal.olarewaju, ,Igando,LASAMO23,Alimosho,25003,Lagos,LA,GRID,Igando Police Station,3.23893419195946,6.55106485985544
+329,608b31eb-f8dd-4e27-af19-766a333d7a72,2893,2/2/2018 12:00:00 AM,racheal.olarewaju, ,Isheri Oshun,LASAMO27,Alimosho,25003,Lagos,LA,GRID,Isheri Oshun Police Station,3.27806430212587,6.51645494823731
+330,ec2a8db0-b0f7-4c1f-a80c-70b209af94a6,2892,2/2/2018 12:00:00 AM,racheal.olarewaju, ,Aga / Ijomu,LASIKU02,Ikorodu,25012,Lagos,LA,GRID,Igbogbo Police Station,3.5134137960099,6.60849280120186
+331,45045bee-c5a6-44d6-96aa-5e5ab137ba6a,2891,2/2/2018 12:00:00 AM,racheal.olarewaju, ,Isale Oja,LASAGG05,Agege,25001,Lagos,LA,GRID,The Nigeria Police Force Dopemu Agege,3.31842037619947,6.61011491736957
+332,297caa2b-72b7-4c59-a070-51a50a14ba6c,2890,2/2/2018 12:00:00 AM,racheal.olarewaju, ,Olusosun,LASIKA11,Ikeja,25011,Lagos,LA,GRID,Nigeria Police Olusosun Post,3.37334087008514,6.58682786061735
+333,05f2588c-33cc-4a80-9742-dd31a47e5178,2889,2/2/2018 12:00:00 AM,racheal.olarewaju, ,Badia,LASAPA06,Apapa,25005,Lagos,LA,GRID,Ijora Badia Police Station Fadaini Street,3.36157187234409,6.46867633494497
+334,da2b3ae3-c2db-497f-aa8d-d08f308653c8,2888,2/2/2018 12:00:00 AM,racheal.olarewaju, ,Oregun,LASIKA15,Ikeja,25011,Lagos,LA,GRID,Oregun Police Post,3.36335266219567,6.60331185006186
+335,2bb9e22d-64c5-4f94-a820-e3a444cb3068,2887,2/2/2018 12:00:00 AM,racheal.olarewaju, ,G R A,LASIKA06,Ikeja,25011,Lagos,LA,GRID,Police Officers Mess,3.35637848987545,6.57797947687141
+336,09e4c5f4-f74f-4c79-8153-0010b7ff53f4,2886,2/2/2018 12:00:00 AM,racheal.olarewaju, ,Alausa,LASIKA04,Ikeja,25011,Lagos,LA,GRID,Lagos State Police Command HQ Rapid Response Squad,3.36197615177804,6.61499225109156
+337,288e4fd4-d30a-460e-a405-93e8ea0bf822,2885,2/2/2018 12:00:00 AM,racheal.olarewaju, ,Alausa,LASIKA04,Ikeja,25011,Lagos,LA,GRID,Alausa Divisional Headquarters,3.36099212888371,6.61823281868971
+338,bd7c8a0e-a685-4a9f-8c11-a8293ffe68f3,2884,2/2/2018 12:00:00 AM,racheal.olarewaju, ,Umagbae South,EDSEHR03,Uhunmwonde,12018,Edo,ED,GRID,Ute Police Station,5.68572731976002,6.43531171276538
+339,7f12de38-a409-4c85-b950-a55f3b025a69,2883,2/2/2018 12:00:00 AM,racheal.olarewaju, ,Ogbia-Ward 1,BYSGBB05,Ogbia,6005,Bayelsa,BY,GRID,Nigeria Police Ogbia Div HQ,6.31556290570359,4.68883344520737
+340,e95fb8ed-3812-48e6-9bf3-c063b1ec8c37,2881,2/2/2018 12:00:00 AM,racheal.olarewaju, ,Nnobi 1,ANSJJT05,Idemili South,4011,Anambra,AN,GRID,Nigerian Police Station Umuagu Nnobi,6.93943571398705,6.0719148888611
+341,d9eb5eff-bcc4-4121-8276-e16e8a3fedd1,2879,2/2/2018 12:00:00 AM,racheal.olarewaju, ,Ukpor 3,ANSUKP15,Nnewi South,4015,Anambra,AN,GRID,Divisional Headquarters Ukpor,6.92243050716223,5.93774656705045
+342,316e4cc1-18a7-4597-9b4d-09b0f2c83ce1,2878,2/2/2018 12:00:00 AM,racheal.olarewaju, ,Ogbuike 2,ANSHTE13,Oyi,4021,Anambra,AN,GRID,Ogbunike Police Station,6.86529041542036,6.1775793171318
+343,c2f3ee2a-a015-4410-9d1c-25789f784da0,2877,2/2/2018 12:00:00 AM,racheal.olarewaju, ,Awka 6,ANSAWK04,Awka South,4006,Anambra,AN,GRID,The Nigeria Police,7.06419644640891,6.21077554395623
+344,6c604001-3f5e-49d8-b8b6-3372dc1c16e3,2876,2/2/2018 12:00:00 AM,racheal.olarewaju, ,Awka 5,ANSAWK10,Awka South,4006,Anambra,AN,GRID,The Nigeria Police B Division Awka,7.08241952234312,6.23594075925865
+345,6cddb141-ecb0-484f-9ff2-76c85d40f7d7,2875,2/2/2018 12:00:00 AM,racheal.olarewaju, ,Iyiowa / Od / Ohi,ANSATN05,Ogbaru,4016,Anambra,AN,GRID,Iyiowa Odekpe Police Station,6.76453364870895,6.10756243735665
+346,189e5bdf-5f79-4c15-854a-f76eea8240b0,2874,2/2/2018 12:00:00 AM,racheal.olarewaju, ,Ojojouno / Obiofia,ANSJJT12,Idemili South,4011,Anambra,AN,GRID,Ojoto Police Station,6.90901296217851,6.09119806314015
+347,09ea9702-5834-425d-86dc-dfdedab6e664,2873,2/2/2018 12:00:00 AM,racheal.olarewaju, ,Uga 2,ANSAGU17,Aguata,4001,Anambra,AN,GRID,Aguata Area Command 2,7.08937930371195,5.94273420082277
+348,ea1fdfec-ce73-4629-93f0-2b58c002ed77,2872,2/2/2018 12:00:00 AM,racheal.olarewaju, ,Uga 2,ANSAGU17,Aguata,4001,Anambra,AN,GRID,Aguata Area Command 1,7.0884141710772,5.94419654793239
+349,51509844-c924-48f2-a025-d4479072efd9,2871,2/2/2018 12:00:00 AM,racheal.olarewaju, ,Obosi 1,ANSGDD08,Idemili North,4010,Anambra,AN,GRID,The Nigerian Police Force Divisional Headquarters Obosi,6.81698582733412,6.09909794721256
+350,dac4c252-37e8-460d-b975-22f9d3539c1c,2870,2/2/2018 12:00:00 AM,racheal.olarewaju, ,Orsumogha,ANSHAL13,Ihiala,4012,Anambra,AN,GRID,Orsumoghu Police Station,6.92702771735532,5.86286023611103
+351,338cd95b-9b3d-4501-9580-9b84ab1d86de,2869,2/2/2018 12:00:00 AM,racheal.olarewaju, ,Ikun 1,EKSMBA05,Moba,13015,Ekiti,EK,GRID,Police Post Ikun Ekiti,5.199897007441,7.99422333284059
+352,8ed23896-dbd9-490e-bd2c-90c1183d229b,2868,2/2/2018 12:00:00 AM,racheal.olarewaju, ,Oboro 4,ABSKWU13,Ikwuano,1005,Abia,AB,GRID,Isiala Oboro Police Station,7.56664166697942,5.40781833274991
+353,fa6ef95e-7858-4d9d-8f55-12a5db8be8e0,2867,2/2/2018 12:00:00 AM,racheal.olarewaju, ,Ahwol,PLSJJN02,Jos North,32005,Plateau,PL,GRID,The Nigeria Police Nepa Out station,8.85124669997526,9.98976330033611
+354,645fcb20-31a5-4f0d-a249-5d9e2285a775,2454,2/2/2018 12:00:00 AM,najib.adam, ,Ajebo,OGSOBE01,Obafemi Owode,28015,Ogun,OG,GRID,Ajebo Police Station,3.70992997398918,7.10583127099642
+355,0e511e3c-a78a-4a32-82e9-53d5853a4d0d,2866,2/2/2018 12:00:00 AM,racheal.olarewaju, ,Ngotlong,PLSSHD11,Shendam,32016,Plateau,PL,GRID,The Nigeria Police Out post Turniang 2,9.38058999992859,8.69022333314035
+356,53971b1c-e722-48fe-b000-35b5839dcd4e,2865,2/2/2018 12:00:00 AM,racheal.olarewaju, ,Ngotlong,PLSSHD11,Shendam,32016,Plateau,PL,GRID,The Nigeria Police Out post Turniang 1,9.38043166708781,8.69023500004528
+357,e6522206-9426-4f91-8efc-86f62b98c043,2864,2/2/2018 12:00:00 AM,racheal.olarewaju, ,Ngotlong,PLSSHD11,Shendam,32016,Plateau,PL,GRID,The Nigeria Police Out post,9.38061166729466,8.68998500020763
+358,70dad1f3-d8f0-4980-9d06-dee659722fd2,2863,2/2/2018 12:00:00 AM,racheal.olarewaju, ,Adiabo Efut,CRSDUK07,Odukpani,9015,Cross River,CR,GRID,Area Command Headquarters Tinapa Calabar,8.31938000038673,5.0599283003508
+359,e9f7e506-4c57-43bc-be4a-606568ef06b9,2862,2/2/2018 12:00:00 AM,racheal.olarewaju, ,Ode Omu Rural,OSSADE06,Ayedade,30001,Osun,OS,GRID,Police Post Ayedaade LGA,4.4184683330472,7.58766333329623
+360,7944df0a-2e8c-444a-b4c0-efe463abbb7c,2861,2/2/2018 12:00:00 AM,racheal.olarewaju, ,Alekuwodo,OSSOSO02,Osogbo,30030,Osun,OS,GRID,Nigeria Police Force IGP X Squad Osun Annex,4.54383666722845,7.78716166677754
+361,5fad63a9-e94a-41c1-83e3-1efaed485523,2860,2/2/2018 12:00:00 AM,racheal.olarewaju, ,Hinna,GMSYDB03,Yamaltu/Deba,16011,Gombe,GO,GRID,Shinga Police Outpost,11.5029232998704,10.2841533000348
+362,4c333faa-733c-48ee-8b52-ed092604694a,2859,2/2/2018 12:00:00 AM,racheal.olarewaju, ,Naraguta B,PLSJJN15,Jos North,32005,Plateau,PL,GRID,Head Quarters Sector 2 Operation Save Heaven Bauchi Road,8.89212670018713,9.95171499994734
+363,4603f5f3-ef13-468f-829e-11b63e62fcef,2858,2/2/2018 12:00:00 AM,racheal.olarewaju, ,Angwan Rogo / Rimi,PLSJJN04,Jos North,32005,Plateau,PL,GRID,The Nigeria Police Post Bauchi Road,8.89211669972593,9.95612500006877
+364,b5ece95b-9297-411a-bf4c-39f6a9da4572,2857,2/2/2018 12:00:00 AM,racheal.olarewaju, ,Akamkpa Urban,CRSKAM05,Akamkpa,9002,Cross River,CR,GRID,The Nigeria Police Akamkpa Area Command Headquarters,8.34980166671357,5.34959333306591
+365,d5cb3acd-5cfc-4fa1-9955-eb56b3a91c3c,2855,2/2/2018 12:00:00 AM,racheal.olarewaju, ,Mbube West2,CRSGGJ01,Ogoja,9016,Cross River,CR,GRID,Odajie Mbube Police Post,8.85820910016986,6.5549221995999
+366,65ff919d-4b52-460e-8952-21fd41a5154a,2854,2/2/2018 12:00:00 AM,racheal.olarewaju, ,Awak,GMSKLT01,Kaltungo,16007,Gombe,GO,GRID,Nil Police Out post,11.4836783296912,9.97590000008501
+367,5f385cf8-a0cc-4c71-9a87-195dd450ac6b,2853,2/2/2018 12:00:00 AM,racheal.olarewaju, ,Tongo,GMSFKY09,Funakaye,16005,Gombe,GO,GRID,Tongo Police Out Post,11.3649199999581,10.7085099997367
+368,c90ebf5b-8790-46e5-a5c6-6da75587e949,2852,2/2/2018 12:00:00 AM,racheal.olarewaju, ,Kulishin,GMSSHM07,Shomgom,16010,Gombe,GO,GRID,Lau Iyaka Police Outpost,11.2451216699292,9.90541666714552
+369,9ed49ae5-eb46-4400-9a56-046a0ca8713b,2851,2/2/2018 12:00:00 AM,racheal.olarewaju, ,Kwa,PLSQAP09,Qua'An Pan,32014,Plateau,PL,GRID,Gwan Police Out post,9.26402999998459,9.01973500007023
+370,35efc7ba-6c44-45de-8d9b-3351a5fb2e95,2850,2/2/2018 12:00:00 AM,racheal.olarewaju, ,Mandar,PLSBKK09,Bokkos,32003,Plateau,PL,GRID,Butura Kampani Out post,8.93462669956256,9.33652169981661
+371,0bb897ef-24f4-4fe7-b008-40b4844c662a,2849,2/2/2018 12:00:00 AM,racheal.olarewaju, ,Tunkus,PLSTNK16,Mikang,32012,Plateau,PL,GRID,Divisional Headquarters Mikang Tunkus,9.60499669963804,9.01524499985692
+372,51f3bcbe-9738-4258-8f1c-f5353cfb1d96,2799,2/2/2018 12:00:00 AM,racheal.olarewaju, ,Jiblik,PLSPKN05,Pankshin,32013,Plateau,PL,GRID,Abwor Dyis Police Station,9.28111330033857,9.25870330021718
+373,356b8a8b-b0fd-42fc-aa34-c3220c7ccd23,2848,2/2/2018 12:00:00 AM,racheal.olarewaju, ,Pankshin,PLSPKN15,Pankshin,32013,Plateau,PL,GRID,The Nigeria Police Plateau Central Area Command Pankshin,9.43439830044127,9.32377170000399
+374,ac36827f-9e68-43a4-8e88-cf7052d30ffe,2847,2/2/2018 12:00:00 AM,racheal.olarewaju, ,Gassa,PLSBLD02,Barkin Ladi,32001,Plateau,PL,GRID,Kassa Out station,8.89803499961556,9.58701499994237
+375,f5774140-b534-4f14-a7b7-8f284619bfee,2846,2/2/2018 12:00:00 AM,racheal.olarewaju, ,Kwogo,PLSRYM08,Riyom,32015,Plateau,PL,GRID,The Nigeria Police Out post Kwogo Hoss,8.72932670016712,9.61444830004905
+376,a6572d71-a478-4083-8752-fd766c154f81,2845,2/2/2018 12:00:00 AM,racheal.olarewaju, ,Kwogo,PLSRYM08,Riyom,32015,Plateau,PL,GRID,Police Outpost Kwogo hoss,8.72925166703084,9.61446999979069
+377,8661cfec-0c14-4d16-abf7-282c92d5e064,2844,2/2/2018 12:00:00 AM,racheal.olarewaju, ,Panyam North,PLSMGU18,Mangu,32011,Plateau,PL,GRID,Panyam Out station,9.21529833285183,9.40872666700216
+378,c8343867-dbdc-4ecc-8dc4-17b072abfafa,2843,2/2/2018 12:00:00 AM,racheal.olarewaju, ,Fier,PLSPKN04,Pankshin,32013,Plateau,PL,GRID,Nigeria Police Out post Takkas,9.36758669976643,9.46175669961207
+379,a5aec77a-4414-4742-9a97-b39f1411e671,2842,2/2/2018 12:00:00 AM,racheal.olarewaju, ,Menkat,PLSSHD09,Shendam,32016,Plateau,PL,GRID,Shimankar Police Station,9.52381500016219,8.62846499966008
+380,fb6422da-445f-465c-b994-1fac42a2efd1,2841,2/2/2018 12:00:00 AM,racheal.olarewaju, ,Pangshom,PLSSHD13,Shendam,32016,Plateau,PL,GRID,Nigeria Police Out post Gidan Adamu 2,9.45721166718477,8.93691166733964
+381,3630e586-48d0-44b2-8b8d-3bb1681c7bfd,2840,2/2/2018 12:00:00 AM,racheal.olarewaju, ,Pangshom,PLSSHD13,Shendam,32016,Plateau,PL,GRID,Nigeria Police Out post Gidan Adamu 1,9.45733833309765,8.93695333293005
+382,2a78c692-c9d7-454a-b993-ee6c372db4a7,2839,2/2/2018 12:00:00 AM,racheal.olarewaju, ,Ngotlong,PLSSHD11,Shendam,32016,Plateau,PL,GRID,Demshin Police Out station 3,9.44532166656171,8.68963666669885
+383,87758be0-ea53-4f50-8412-3a2f1b8170b2,2838,2/2/2018 12:00:00 AM,racheal.olarewaju, ,Ngotlong,PLSSHD11,Shendam,32016,Plateau,PL,GRID,Demshin Police Out station 2,9.44527166695394,8.68987666697467
+384,58100089-cf96-4cc6-9aa9-377cfa3bcc61,2837,2/2/2018 12:00:00 AM,racheal.olarewaju, ,Ngotlong,PLSSHD11,Shendam,32016,Plateau,PL,GRID,Demshin Police Out station 1,9.44548499963309,8.68995000039223
+385,d986b71f-d66a-431a-b920-9e852593a14c,2836,2/2/2018 12:00:00 AM,racheal.olarewaju, ,Ahwol,PLSJJN02,Jos North,32005,Plateau,PL,GRID,Ecwa Staff Police Station,8.85486669963854,9.95382500012369
+386,f5b84fc9-baf3-4df8-a61d-df6a49591dc2,2835,2/2/2018 12:00:00 AM,racheal.olarewaju, ,Gamaki,PLSMBD04,Langtang South,32010,Plateau,PL,GRID,Ndingshan Police Out station,9.86337833294374,8.58153500014021
+387,71242fcd-fd54-49b5-b59e-33b4d832a8be,2833,2/2/2018 12:00:00 AM,racheal.olarewaju, ,Ife 1,OGSIUU02,Ijebu East,28008,Ogun,OG,GRID,Police Quarter,4.03373666741334,6.7829166672704
+388,2fba48c6-722c-41a1-b4f4-4030e442a0d8,2832,2/2/2018 12:00:00 AM,racheal.olarewaju, ,Odo-Egbo / Oliworo,OGSIUE09,Ijebu Ode,28011,Ogun,OG,GRID,Police Station Idomowo,3.91147499987142,6.81784333270372
+389,8ab67d03-5d2a-46d4-ab48-f7e3adf4f45c,2831,2/2/2018 12:00:00 AM,racheal.olarewaju, ,Ikereku 1,OGSABN07,Abeokuta North,28001,Ogun,OG,GRID,Police Post,3.16698166717026,7.10059499985942
+390,a871b00c-fdd7-4d39-9b50-c45c04289e44,2830,2/2/2018 12:00:00 AM,racheal.olarewaju, ,Owu,OGSIUU11,Ijebu East,28008,Ogun,OG,GRID,Police Station,4.06670492958887,6.76315220461061
+391,a306520e-1b81-409b-b3ca-ed4aff2b8b7b,2828,2/2/2018 12:00:00 AM,racheal.olarewaju, ,Ureje,EKSADO13,Ado-Ekiti,13001,Ekiti,EK,GRID,The Nigeria Police Ologede Divisional Police Headquarters Ikere Road,5.21402685505535,7.58049220674997
+392,c39fd5c1-9a74-40aa-8165-a2983da166c7,2827,2/2/2018 12:00:00 AM,racheal.olarewaju, ,Ikole 2,EKSIKE03,Ikole,13011,Ekiti,EK,GRID,The Police Area Command Headquarters Ijesa Isu,5.50918184686481,7.77296142473
+393,ba94baa7-3cea-4d0d-a09b-63f6094520a1,2453,2/2/2018 12:00:00 AM,najib.adam, ,Opeilu / Ibaragun,OGSIFO09,Ifo,28007,Ogun,OG,GRID,Ijoko Lemode Town Ogun State,3.28406633069665,6.73037092317963
+394,35b403a9-a73e-4c40-bc82-3fb2ca2bcc26,2452,2/2/2018 12:00:00 AM,najib.adam, ,Iwoye,OGSION08,Imeko Afon,28013,Ogun,OG,GRID,Post Du Police,2.74217666711957,7.55403166732765
+395,7252294d-92c0-41e0-aafb-e82ae9814fd2,2826,2/2/2018 12:00:00 AM,racheal.olarewaju, ,Ikole 2,EKSIKE03,Ikole,13011,Ekiti,EK,GRID,Nigeria Police Divisional Headquarter Ijesa Isu Road Ikole Ekiti,5.50910012097387,7.76918204361647
+396,c105e67f-156e-473e-801b-5c2b2ea4653f,2825,2/2/2018 12:00:00 AM,racheal.olarewaju, ,Eda Obada,EKSIME01,Ilejemeje,13012,Ekiti,EK,GRID,Divisional Headquarters Iye Ilejemeje,5.23876442743642,7.95037913388995
+397,affaceb7-de37-457c-bb98-7a8b2752674c,2824,2/2/2018 12:00:00 AM,racheal.olarewaju, ,Iloro,EKSIJO08,Ijero,13009,Ekiti,EK,GRID,Oke Owa Police Station,5.10801593598671,7.89857054069796
+398,23098f62-ee0b-46d9-bb7a-ae8440677556,2823,2/2/2018 12:00:00 AM,racheal.olarewaju, ,Igede A,EKSIPN05,Irepodun/Ifelodun,13013,Ekiti,EK,GRID,Igede Police Station,5.12299717268144,7.67808564323792
+399,15580dd4-587f-4951-8801-46078b5b16ed,2822,2/2/2018 12:00:00 AM,racheal.olarewaju, ,Ikole 2,EKSIKE03,Ikole,13011,Ekiti,EK,GRID,Nigeria A Divisions Police Station,5.51260254866872,7.79208600806288
+400,6c8fcd3f-caf2-4623-b078-be83271158b6,2821,2/2/2018 12:00:00 AM,racheal.olarewaju, ,Oke / Sasere,EKSEME08,Emure,13006,Ekiti,EK,GRID,Eporo Police Station,5.50351300092433,7.33064892760598
+401,d3dbab5f-b0ee-477f-aaea-f261cefe8c83,2820,2/2/2018 12:00:00 AM,racheal.olarewaju, ,Ijero A,EKSIJO03,Ijero,13009,Ekiti,EK,GRID,Police Divisional Headquarter Ijero Ekiti,5.06581480830681,7.82531074879205
+402,0f736b12-bb92-40d4-9505-5cf390240c9f,2819,2/2/2018 12:00:00 AM,racheal.olarewaju, ,Ijero A,EKSIJO03,Ijero,13009,Ekiti,EK,GRID,Area Command Police Station,5.06498609473255,7.82534741505123
+403,6b929536-e589-4162-b859-48e7bd233f0f,2818,2/2/2018 12:00:00 AM,racheal.olarewaju, ,Iyin A,EKSIPN10,Irepodun/Ifelodun,13013,Ekiti,EK,GRID,Iyin Police Out Post,5.14523833318259,7.66019333255628
+404,b1abd239-5940-4374-a41f-44cc04dd00e6,2817,2/2/2018 12:00:00 AM,racheal.olarewaju, ,Erinmape 2,EKSMBA01,Moba,13015,Ekiti,EK,GRID,Oji Police Station,5.14421166713475,8.04696166674756
+405,fb345f09-b5ba-4ae9-8116-239470c1c286,2816,2/2/2018 12:00:00 AM,racheal.olarewaju, ,Itapaosin,EKSOYE09,Oye,13016,Ekiti,EK,GRID,Nigerian Police Divisional Headquarters,5.37212018479875,7.80175578580094
+406,dc1237d3-a595-4986-886d-b29a433af8ee,2815,2/2/2018 12:00:00 AM,racheal.olarewaju, ,Ozaa West,ABSKKE27,Ukwa West,1014,Abia,AB,GRID,Obehie Police Station,7.26150333261273,4.94539166709183
+407,d777ad06-f7c9-4fa4-99c0-dae9ab205e35,2814,2/2/2018 12:00:00 AM,racheal.olarewaju, ,Urban 2,ABSUMA18,Umuahia North,1016,Abia,AB,GRID,State Cid Station,7.49016666655848,5.54894000038075
+408,7f27542a-99fe-45de-94eb-83627347189e,2813,2/2/2018 12:00:00 AM,racheal.olarewaju, ,Oboro 3,ABSKWU12,Ikwuano,1005,Abia,AB,GRID,The Nigerian Police Divisional Headquarters,7.56173166718276,5.41534166708431
+409,af0cc603-f65d-4a61-bfb5-6d101e36e329,2812,2/2/2018 12:00:00 AM,racheal.olarewaju, ,Old Umuahia,ABSAPR10,Umuahia South,1017,Abia,AB,GRID,Nigeria Police Force 28 Squadron Umuobia,7.48426329991139,5.48653500039001
+410,e7c31628-275e-4b69-90f2-f2726cee84b6,2811,2/2/2018 12:00:00 AM,racheal.olarewaju, ,Urban 1,ABSUMA17,Umuahia North,1016,Abia,AB,GRID,Divisional Headquarters World Bank Division Ehimiri,7.52217999980718,5.51574000000107
+411,d7443ee4-e4c0-4338-8553-d521ae508c5f,2810,2/2/2018 12:00:00 AM,racheal.olarewaju, ,Eziukwu 1 / 2,ABSABA07,Aba South,1002,Abia,AB,GRID,Uratta Police Station,7.33644166684951,5.08957833307369
+412,dd014f71-4ae2-46b7-85b0-673e06c78362,2809,2/2/2018 12:00:00 AM,racheal.olarewaju, ,Aku-Na-Ekpu,ABSMBA01,Isiala-Ngwa South,1007,Abia,AB,GRID,The Nigeria Police Station Ndiolumbe,7.47602166716626,5.26543833281283
+413,e4e87e34-8b7d-40d1-ac80-6958a7304e90,2808,2/2/2018 12:00:00 AM,racheal.olarewaju, ,Umuasua,ABSMBL18,Isuikwuato,1008,Abia,AB,GRID,Police Station Isiukwuato Divisional Headquarters,7.49730833311315,5.73991166728968
+414,80335174-303a-412b-ab71-2249ff18cc94,2807,2/2/2018 12:00:00 AM,racheal.olarewaju, ,Afugiri 2,ABSUMA03,Umuahia North,1016,Abia,AB,GRID,Nigerian Police Umuegwu Ohuhu,7.47589833324156,5.60053500009025
+415,6b022669-ea82-4016-b233-38d3c0f6d8de,2806,2/2/2018 12:00:00 AM,racheal.olarewaju, ,Ibeku East 2,ABSUMA06,Umuahia North,1016,Abia,AB,GRID,The Nigeria Police Headquaters,7.52081011739307,5.60410440839178
+416,eb528a2b-6f6b-4fe9-828f-cfe386bc4b29,2805,2/2/2018 12:00:00 AM,racheal.olarewaju, ,Item 4,ABSBND10,Bende,1004,Abia,AB,GRID,Amaeke Police Station,7.68172166702135,5.75297666723947
+417,e3e9cf8b-a144-438b-a2bb-5e1d2e0effc9,2804,2/2/2018 12:00:00 AM,racheal.olarewaju, ,Ibeku West,ABSUMA07,Umuahia North,1016,Abia,AB,GRID,Umuopara Police Station,7.45742500026358,5.5391283330062
+418,eb421764-4fbe-4e47-9eda-05e6882aa2af,2803,2/2/2018 12:00:00 AM,racheal.olarewaju, ,Ndi Etiti,ABSHAF13,Ohafia,1010,Abia,AB,GRID,Nigeria Police Divisioal Headquarters Nkporo,7.76832333315537,5.78765333283508
+419,23a84046-c8c6-41ef-9058-999604314b15,2802,2/2/2018 12:00:00 AM,racheal.olarewaju, ,Mazat,PLSBLD12,Barkin Ladi,32001,Plateau,PL,GRID,Kuba Police Station,8.9281133002886,9.4153583001455
+420,c13902db-88c6-409c-9480-44c8f03cad37,2801,2/2/2018 12:00:00 AM,racheal.olarewaju, ,Tahu,PLSBSA17,Bassa,32002,Plateau,PL,GRID,The Nigerian Police Station Miango Bassa Division,8.68646830027188,9.85111670007569
+421,47f1114b-a412-4411-8513-752c4df53e11,2800,2/2/2018 12:00:00 AM,racheal.olarewaju, ,Buhit,PLSBSA03,Bassa,32002,Plateau,PL,GRID,Jebbu Bassa Station,8.74942500016368,9.95414830010401
+422,61e55089-08c7-44e4-9fb9-18e8ed645a3b,2798,2/2/2018 12:00:00 AM,racheal.olarewaju, ,Adiabo Efut,CRSDUK07,Odukpani,9015,Cross River,CR,GRID,Ikot Eneobong Police Post,8.36070166664865,5.05179499993932
+423,7889b00e-a3d8-45b7-a449-ae0b942e030d,2792,2/2/2018 12:00:00 AM,racheal.olarewaju, ,Alankwu,CRSBJE06,Boki,9007,Cross River,CR,GRID,Batriku Police Station,9.14507829982375,6.48372330039007
+424,236a8674-aefa-4abc-aacc-259f429668d3,2791,2/2/2018 12:00:00 AM,racheal.olarewaju, ,Okuku,CRSCKK03,Yala,9018,Cross River,CR,GRID,The Nigeria Police Okuku,8.7734833002142,6.71254499955211
+425,a4b9b39a-f975-485b-b432-7f474c585c86,2790,2/2/2018 12:00:00 AM,racheal.olarewaju, ,Mkpolo / Ukpawen,CRSGEP08,Yakurr,9017,Cross River,CR,GRID,Police Station Geneva,8.18293666719347,5.86374166704434
+426,3b9e12d9-730d-49a6-8520-b88e579da365,2451,2/2/2018 12:00:00 AM,najib.adam, ,Ilara,OGSION06,Imeko Afon,28013,Ogun,OG,GRID,The Nigeria Police Station Ilara Yewa,2.74808522465344,7.41496811978294
+427,5c2e1eb5-92b5-436a-bd40-019791b68b74,2450,2/2/2018 12:00:00 AM,najib.adam, ,Odeda,OGSODA07,Odeda,28016,Ogun,OG,GRID,Police Station Odeda,3.52349166720671,7.2323293766994
+428,9b8729c4-ad3f-4089-bf8d-598386ef1185,2449,2/2/2018 12:00:00 AM,najib.adam, ,Agbara,OGSADO03,Ado Odo/Ota,28003,Ogun,OG,GRID,Unilever Police Post,3.07789000042322,6.51479666673282
+429,7b866003-3947-4b91-ac5a-742779b542c1,2448,2/2/2018 12:00:00 AM,najib.adam, ,Oba,OGSOBE08,Obafemi Owode,28015,Ogun,OG,GRID,The Nigeria Police Station Oluwo,3.32970829959839,7.11941390003153
+430,c180f344-282e-4f08-984b-4c9824a9c35f,2788,2/2/2018 12:00:00 AM,racheal.olarewaju, ,Odukpani,CRSDUK06,Odukpani,9015,Cross River,CR,GRID,Divisional Headquarters Odukpani,8.34238169955586,5.15723000036428
+431,c1ed8bf9-d6f6-4421-a291-1ea573e271e1,2783,2/2/2018 12:00:00 AM,racheal.olarewaju, ,Ebo,CRSCKK14,Yala,9018,Cross River,CR,GRID,Ezekwe Okpodon Police Station,8.42693999988114,6.51791166738957
+432,ef1aeba5-1388-40d7-8819-d30a1d5ee47a,2782,2/2/2018 12:00:00 AM,racheal.olarewaju, ,Bunyia,CRSBJE08,Boki,9007,Cross River,CR,GRID,Nigerian Police Station Okubuchi Irruan,8.98157333294301,6.47281166682501
+433,e3525a8f-8db5-478d-8d7c-ee9315430d05,2781,2/2/2018 12:00:00 AM,racheal.olarewaju, ,Ilase,OSSOBN07,Obokun,30024,Osun,OS,GRID,Idominansi Police Station,4.70560833295826,7.69474000025087
+434,48a00df0-c6ff-4d44-b9ac-ca39e7bd8764,2780,2/2/2018 12:00:00 AM,racheal.olarewaju, ,Jaleyemi,OSSORU05,Orolu,30029,Osun,OS,GRID,Police Divisional Headquarters Ifon,4.46712833320606,7.8770750000113
+435,27831cf3-01d8-4b23-baa5-f326ee01d575,2779,2/2/2018 12:00:00 AM,racheal.olarewaju, ,Modakeke 2,OSSIET04,Ife East,30012,Osun,OS,GRID,Agaun Police Station,4.57090166707832,7.45860666716402
+436,d09e1ba7-6345-4300-8070-6f8e8498639a,2778,2/2/2018 12:00:00 AM,racheal.olarewaju, ,Olusokun,OSSENH08,Ede North,30007,Osun,OS,GRID,Ede Police Division Ede,4.4356333332118,7.73629333277114
+437,213cc6c9-6bc7-40a5-bad9-31cee0fa37ab,2775,2/2/2018 12:00:00 AM,racheal.olarewaju, ,Ilaodo / Ijabe,OSSODN07,Odo Otin,30025,Osun,OS,GRID,Ijabe Police Station,4.6849116672397,8.03545333300497
+438,63177762-f97f-42e7-8226-75275f97f13f,2703,2/2/2018 12:00:00 AM,racheal.olarewaju, ,Alaukwu Ohanze,ABSNGK07,Obi Nwga,1009,Abia,AB,GRID,Eastern Ngwa Division Headquarters,7.45789999968531,5.15194500036154
+439,16f870c6-d891-41dd-a219-b4750788b341,2702,2/2/2018 12:00:00 AM,racheal.olarewaju, ,Azumini,ABSKEK03,Ukwa East,1013,Abia,AB,GRID,Azumini Police Station,7.48114999987263,4.94492833277639
+440,6e28af19-ad46-4d05-9227-d462687ed582,2701,2/2/2018 12:00:00 AM,racheal.olarewaju, ,Uzuakoli 2,ABSBND20,Bende,1004,Abia,AB,GRID,Nigeria Police Divisional Headquarters Uzoakoli,7.55947166728367,5.63371000021641
+441,ad1c3389-7efe-4383-98a4-c9dd9881b5be,2700,2/2/2018 12:00:00 AM,racheal.olarewaju, ,Akwete Ohandu,ABSKEK01,Ukwa East,1013,Abia,AB,GRID,Akwete Nigeria Police,7.36258500009774,4.88809499978447
+442,042a7e64-4fc4-4184-ac2f-cc24b9648a4c,2699,2/2/2018 12:00:00 AM,racheal.olarewaju, ,Alayi 1,ABSBND01,Bende,1004,Abia,AB,GRID,Agboakoli Police Station,7.59372833329599,5.73534666721497
+443,d8a4ace0-939b-41a2-a590-43a9db59c604,2698,2/2/2018 12:00:00 AM,racheal.olarewaju, ,Ahiaba / Abala,ABSNGK04,Obi Nwga,1009,Abia,AB,GRID,Ohuru Ishimiri Police Station,7.3808616999076,5.14047999955238
+444,8313c324-7ae8-4be1-88e2-c7b4d3b005ad,2697,2/2/2018 12:00:00 AM,racheal.olarewaju, ,Ohafor 1,ABSACH15,Arochukwu,1003,Abia,AB,GRID,Ozu Abam Police Station,7.72876500000478,5.58878999985865
+445,0a112b42-8048-4948-9bc3-d3b93b894db3,2696,2/2/2018 12:00:00 AM,racheal.olarewaju, ,Mbarakom,CRSKAM10,Akamkpa,9002,Cross River,CR,GRID,Nigeria Police Force Calaro Estate Post,8.2933149998874,5.28372499980895
+446,ca888873-34a0-42c2-8434-7f3db77c837e,2695,2/2/2018 12:00:00 AM,racheal.olarewaju, ,Ito / Idere / Ukwa,CRSDUK13,Odukpani,9015,Cross River,CR,GRID,Ariyo Police Station,7.98888000011198,5.32464829967932
+447,57e794d6-8d36-4d68-aa96-9670da8f7c9f,2694,2/2/2018 12:00:00 AM,racheal.olarewaju, ,Akamkpa Urban,CRSKAM05,Akamkpa,9002,Cross River,CR,GRID,The Nigeria Police Divisional Headquarters Akamkpa Urban,8.35261333323876,5.31577166732865
+448,eab52917-cc20-4785-90dc-23b7f6cf364b,2692,2/2/2018 12:00:00 AM,racheal.olarewaju, ,Erei South,CRSAKP06,Biase,9006,Cross River,CR,GRID,Urugbam Police Station,7.92628999968377,5.73339170026679
+449,f5d2724d-f216-41c7-b685-25dfac19d5c4,2691,2/2/2018 12:00:00 AM,racheal.olarewaju, ,Abo,CRSBJE05,Boki,9007,Cross River,CR,GRID,Danare Police Station,9.06010330042704,6.01401329977404
+450,5497bd74-d8a9-4b98-9480-5e75d4e9b997,2690,2/2/2018 12:00:00 AM,racheal.olarewaju, ,Akamkpa Urban,CRSKAM05,Akamkpa,9002,Cross River,CR,GRID,The Nigeria Police Akamkpa Area Command Headquarters Old Netim,8.34980166671357,5.34959333306591
+451,42e24845-bba6-4fdc-b8c5-fb3f3c67741a,2689,2/2/2018 12:00:00 AM,racheal.olarewaju, ,Biakpan,CRSAKP01,Biase,9006,Cross River,CR,GRID,Nigeria Police Station Biakpan,7.92595329980497,5.58782829993612
+452,47b0a411-1a39-46fd-aa44-7b4feb7debcc,2688,2/2/2018 12:00:00 AM,racheal.olarewaju, ,Ikun-Etono,CRSAKP04,Biase,9006,Cross River,CR,GRID,Police Station Ikun,7.96473669973898,5.65160499987087
+453,5a161e7a-79b1-42c2-93e0-85ce03985279,2687,2/2/2018 12:00:00 AM,racheal.olarewaju, ,Ajere,CRSGEP03,Yakurr,9017,Cross River,CR,GRID,Police Station Egana,8.12263670042341,5.86984170013443
+454,6e486018-b490-4023-9dd0-13785564c2ba,2685,2/2/2018 12:00:00 AM,racheal.olarewaju, ,Creek Town 1,CRSDUK03,Odukpani,9015,Cross River,CR,GRID,Nigeria Police Station Creek Town Odukpani LGA,8.27439170011689,4.99358500004774
+455,35306abc-e796-419e-9cef-aab625f1a910,2684,2/2/2018 12:00:00 AM,racheal.olarewaju, ,Abo,CRSBJE05,Boki,9007,Cross River,CR,GRID,Polic Station,9.02207419966464,6.16063840014209
+456,d8b58730-4f1b-4f4c-9322-a8c2ed98d9e1,2682,2/2/2018 12:00:00 AM,racheal.olarewaju, ,Eneyo,CRSKTA09,Akpabuyo,9003,Cross River,CR,GRID,Ikot Ekpo Edem Police Station,8.56781830017445,4.94680829986322
+457,a69f0239-3a23-4037-ab64-9a1e5687141e,2681,2/2/2018 12:00:00 AM,racheal.olarewaju, ,Obubra Urban,CRSBRA03,Obubra,9013,Cross River,CR,GRID,Obubra Police Station,8.33763666689873,6.06683833282284
+458,c4e21293-6719-45b6-9e75-b69dc694dfe7,2680,2/2/2018 12:00:00 AM,racheal.olarewaju, ,Yache,CRSCKK02,Yala,9018,Cross River,CR,GRID,Alifokpa Police Station,8.8069817001454,6.8362133003036
+459,dd9aa715-0a05-426f-91c9-c6dd26796980,2678,2/2/2018 12:00:00 AM,racheal.olarewaju, ,Alankwu,CRSBJE06,Boki,9007,Cross River,CR,GRID,Beteriko Police Station,9.14525339962472,6.48380860018682
+460,72c8c697-25b4-4d2c-b1c7-e5b6f51868b5,2676,2/2/2018 12:00:00 AM,racheal.olarewaju, ,Oban,CRSKAM02,Akamkpa,9002,Cross River,CR,GRID,Jb Farm Police Post,8.60725330029959,5.35565329956017
+461,a5a6ba4e-6422-484c-a048-60d4c34a95c4,2675,2/2/2018 12:00:00 AM,racheal.olarewaju, ,Oban,CRSKAM02,Akamkpa,9002,Cross River,CR,GRID,Oban Police Station,8.59568170015041,5.33143999955638
+462,fc3342bb-6ae4-41db-8c89-148535a626a5,2674,2/2/2018 12:00:00 AM,racheal.olarewaju, ,Odukpani,CRSDUK06,Odukpani,9015,Cross River,CR,GRID,Police Training School,8.34829669983287,5.1472982995769
+463,3cb39135-67eb-40d4-96bb-76f1acea3a3d,2673,2/2/2018 12:00:00 AM,racheal.olarewaju, ,Ekim-Effraya,CRSEFE06,Etung,9010,Cross River,CR,GRID,Divisional Police Headquarters Effraya Stung Lga,8.78747833315862,5.90506833263748
+464,6e86bbee-7b87-4d30-aa56-f3eecee48ec7,2672,2/2/2018 12:00:00 AM,racheal.olarewaju, ,Idundu-Anyaganse,CRSKTA10,Akpabuyo,9003,Cross River,CR,GRID,Nigerian Police Rifle Range Squad Station Asabanka,8.41905333314486,5.05427833297875
+465,e55037f6-91ee-4269-9887-ad9ac8412563,2671,2/2/2018 12:00:00 AM,racheal.olarewaju, ,Idundu-Anyaganse,CRSKTA10,Akpabuyo,9003,Cross River,CR,GRID,Nigerian Police Force Asabanka,8.42465666707159,5.05521000004154
+466,e407716b-a86e-4076-8511-d7c8a7e1d2d5,2670,2/2/2018 12:00:00 AM,racheal.olarewaju, ,Ugaga,CRSCKK04,Yala,9018,Cross River,CR,GRID,Igbekurikor Police Station,8.72558170013542,6.67610330022717
+467,fc7591f0-8c82-4dc2-ba98-6d331529fb06,2669,2/2/2018 12:00:00 AM,racheal.olarewaju, ,Mkpani / Agoi,CRSGEP13,Yakurr,9017,Cross River,CR,GRID,Ayoyoa Police Post,8.17194999959287,5.72413500003029
+468,31a1c91b-fe77-465a-8e73-688442502b38,2668,2/2/2018 12:00:00 AM,racheal.olarewaju, ,Mkpani / Agoi,CRSGEP13,Yakurr,9017,Cross River,CR,GRID,Police Post,8.17210329982748,5.72420170004847
+469,144c56b5-3199-4fb8-abe3-fb0a1aa73124,2667,2/2/2018 12:00:00 AM,racheal.olarewaju, ,Ikpai,CRSKAM07,Akamkpa,9002,Cross River,CR,GRID,Ekang Police Station,8.84139009977332,5.67554920023542
+470,88845b19-2e1d-4f8d-a083-64c4ce258988,2666,2/2/2018 12:00:00 AM,racheal.olarewaju, ,Ogep,CRSBJE04,Boki,9007,Cross River,CR,GRID,Nigerian Police Barack Okundi,8.79660329980248,6.43597170003397
+471,71a9324a-50cd-4dbb-a620-b19e271af9bf,2665,2/2/2018 12:00:00 AM,racheal.olarewaju, ,Abayom,CRSKMM10,Ikom,9011,Cross River,CR,GRID,Edor Police Station,8.63338330019917,6.20168380006737
+472,b8cc13fa-c363-48ae-96ee-d178bce7db03,2664,2/2/2018 12:00:00 AM,racheal.olarewaju, ,Kakwagom,CRSBJE01,Boki,9007,Cross River,CR,GRID,Kakwagom Police Station,8.81124610002752,6.49208959985521
+473,dbeb2d00-5406-4069-937e-5ea528b17325,2663,2/2/2018 12:00:00 AM,racheal.olarewaju, ,Utugwang South,CRSUDU05,Obudu,9014,Cross River,CR,GRID,Police Station,9.02705000015743,6.6477000003548
+474,df7acb12-8ae4-47a5-8493-f4e556964690,2662,2/2/2018 12:00:00 AM,racheal.olarewaju, ,Wanihem,CRSCKK07,Yala,9018,Cross River,CR,GRID,Wahinem Police Post,8.45295333342966,6.72371999957835
+475,0bec08ff-56b4-47d2-9d45-7dcaf1bd5d85,2659,2/2/2018 12:00:00 AM,racheal.olarewaju, ,Bunyia,CRSBJE08,Boki,9007,Cross River,CR,GRID,The Nigerian Police Okubuchi Irruan,8.98148060024954,6.47275360029846
+476,c6993dbf-0ee9-43fc-83e5-0c43a669b5e7,2658,2/2/2018 12:00:00 AM,racheal.olarewaju, ,Ekajuk 1,CRSGGJ09,Ogoja,9016,Cross River,CR,GRID,Nfom Police Post,8.55636000021389,6.50019666704259
+477,9ceae67c-4a66-4a4d-9cb2-757cad9d8d90,2657,2/2/2018 12:00:00 AM,racheal.olarewaju, ,Becheve,CRSBNS03,Obanliku,9012,Cross River,CR,GRID,Cattle Ranch Police Post,9.37812999979968,6.37509830034634
+478,a2194257-04e5-4976-beb9-5513e20ca0e7,2655,2/2/2018 12:00:00 AM,racheal.olarewaju, ,Iperindo,OSSAME06,Atakunmosa East,30003,Osun,OS,GRID,Police Station Iperindo,4.82536166720723,7.50335333308988
+479,169d16ef-38ec-4e36-b9d9-d4829ccc8b62,2651,2/2/2018 12:00:00 AM,racheal.olarewaju, ,Isale Oba 3,OSSIWO06,Iwo,30023,Osun,OS,GRID,Security Post,4.20154490017705,7.63381800030055
+480,35820b80-5812-4efe-ad2b-9097f27b5b49,2650,2/2/2018 12:00:00 AM,racheal.olarewaju, ,Awo,OSSEDE04,Egbedore,30009,Osun,OS,GRID,Police Divisional Headquarters Awo,4.38992333329526,7.76941000017143
+481,f9294df1-5b26-48f8-ac4e-cf3970478c09,2649,2/2/2018 12:00:00 AM,racheal.olarewaju, ,Erinmo Jesa,OSSOIE04,Oriade,30028,Osun,OS,GRID,Erinmo Police Post,4.85353666698364,7.62340333299744
+482,e9d982ec-81ee-4d79-afdc-cebde2e5f6f5,2648,2/2/2018 12:00:00 AM,racheal.olarewaju, ,Moreojaja,OSSICL11,Ife Central,30011,Osun,OS,GRID,Moore Police Station,4.56679833307663,7.4916516666911
+483,25970fb2-86c2-4348-9544-956d5ab634d8,2647,2/2/2018 12:00:00 AM,racheal.olarewaju, ,Osu 2,OSSAMW10,Atakunmosa West,30004,Osun,OS,GRID,NSCDC Iloba Outpost,4.61995833301069,7.63392499983894
+484,e63de19a-6680-422d-a4ce-698c84eedab1,2646,2/2/2018 12:00:00 AM,racheal.olarewaju, ,Igbayi / Emuleke,OSSODN06,Odo Otin,30025,Osun,OS,GRID,Igbaye Police Station,4.63371999997804,8.0309566670166
+485,aeaf9d1f-9c37-495a-ad8b-bec8531330b0,2644,2/2/2018 12:00:00 AM,racheal.olarewaju, ,Iloko Ijeda,OSSOIE09,Oriade,30028,Osun,OS,GRID,Police Station Iloko Ijesa,4.82002833314112,7.64724166696942
+486,2e01b75b-8677-4dcb-ab43-05f76657005e,2641,2/2/2018 12:00:00 AM,racheal.olarewaju, ,Ogbon Aare,OSSISH07,Ife South,30014,Osun,OS,GRID,Police Station Alagbado,4.69582000029283,7.1795033328126
+487,530ef5bd-8a8f-4894-b058-95f054c3abf0,2640,2/2/2018 12:00:00 AM,racheal.olarewaju, ,Gidigbo 3,OSSIWO03,Iwo,30023,Osun,OS,GRID,Adeke Police Station Iwo,4.15854166716423,7.62743833291279
+488,cf92482c-3ec1-40b0-ac39-4428d571ed06,2639,2/2/2018 12:00:00 AM,racheal.olarewaju, ,Bode-Osi,OSSOUA03,Ola Oluwa,30026,Osun,OS,GRID,Nigerian Police Bode Osi,4.22575333304991,7.7555283330662
+489,f4307db5-7e94-44c8-a211-3b73a40519ed,2638,2/2/2018 12:00:00 AM,racheal.olarewaju, ,Ipetu Ijesa 1,OSSOIE10,Oriade,30028,Osun,OS,GRID,Ipetu Ijesa Police Station,4.89187333318785,7.45680999978174
+490,5793cac3-401e-49d8-8699-e63aab0570e9,2637,2/2/2018 12:00:00 AM,racheal.olarewaju, ,Olorunsogo / Offatedo,OSSEDE10,Egbedore,30009,Osun,OS,GRID,Dada Estate Division,4.52171499964754,7.78704166663965
+491,191781a0-4f17-41b6-a9fb-264d4896f237,2636,2/2/2018 12:00:00 AM,racheal.olarewaju, ,Alajue 1,OSSESH01,Ede South,30008,Osun,OS,GRID,Nigeria Police Force B Division Ede,4.44995333258026,7.70350166686848
+492,d085c62b-a05f-4fa8-a967-1b1973622a46,2635,2/2/2018 12:00:00 AM,racheal.olarewaju, ,Erin Oke,OSSOIE03,Oriade,30028,Osun,OS,GRID,Police Station Erin Oke Express Way,4.88528333325928,7.5532366666389
+493,1a670fed-c900-4148-a05e-d5328a76ff39,2634,2/2/2018 12:00:00 AM,racheal.olarewaju, ,Itagunmodi,OSSAMW06,Atakunmosa West,30004,Osun,OS,GRID,NPCF Post Itagunmodi,4.64850833299323,7.53011666705061
+494,0db3ecb9-ee50-4df9-b3e3-fd103f5bac04,2631,2/2/2018 12:00:00 AM,racheal.olarewaju, ,Ibokun,OSSOBN04,Obokun,30024,Osun,OS,GRID,Nigeria Police Division,4.72891666677083,7.79433333291701
+495,cd71c7bb-7767-4d0b-873f-c314e30de1df,2630,2/2/2018 12:00:00 AM,racheal.olarewaju, ,Ifewara 2,OSSAMW04,Atakunmosa West,30004,Osun,OS,GRID,Police Post Iwara,4.67222500038349,7.46648166699538
+496,3536d370-f848-4e8d-b542-6c98124db424,2629,2/2/2018 12:00:00 AM,racheal.olarewaju, ,Imesi Ile,OSSOBN08,Obokun,30024,Osun,OS,GRID,Imesi Ile Police Station,4.83423166705785,7.82700666692421
+497,1ac39674-e703-465c-978b-242cffb2fbf7,2628,2/2/2018 12:00:00 AM,racheal.olarewaju, ,Ara 2,OSSEDE02,Egbedore,30009,Osun,OS,GRID,Ara Police Station,4.38228499995284,7.85405999986915
+498,c146be77-92aa-40c6-8f48-fcba11c16151,2627,2/2/2018 12:00:00 AM,racheal.olarewaju, ,Esa Oke,OSSOBN02,Obokun,30024,Osun,OS,GRID,Esa Oke Police Station,4.89833833274793,7.76638666741081
+499,61d5684f-b0e3-4c2f-aee1-19d1930cd65f,2626,2/2/2018 12:00:00 AM,racheal.olarewaju, ,Songbe,OSSEGO11,Ejigbo,30010,Osun,OS,GRID,Songbe Police Post,4.31702833339091,7.7537383332575
+500,22f8e1e3-3e7b-4da7-9507-81f00ffab02d,2625,2/2/2018 12:00:00 AM,racheal.olarewaju, ,Ajaba,OSSILA01,Ila,30017,Osun,OS,GRID,Nigeria Police Station Kajola Ajaba,4.90052833301621,7.91706499965005
+501,8c810245-9761-4339-95b2-502ed48b3349,2624,2/2/2018 12:00:00 AM,racheal.olarewaju, ,Gbogon Rural,OSSADE03,Ayedade,30001,Osun,OS,GRID,Odeyinka Police Station,4.36150833324302,7.32437166691892
+502,31ad451b-a9a9-4321-869d-3a9ecba02561,2623,2/2/2018 12:00:00 AM,racheal.olarewaju, ,Oke Iyin,OSSIEW10,Ilesha West,30019,Osun,OS,GRID,The Nigerian Police Force,4.72899666686271,7.61995666686676
+503,7ee98735-fb54-4c18-964a-9bc3fe11829f,2622,2/2/2018 12:00:00 AM,racheal.olarewaju, ,Ikeji Arakeji,OSSOIE06,Oriade,30028,Osun,OS,GRID,Police Station Ikeji Arakeji,4.95495333283009,7.42533333336667
+504,724aca44-e491-4494-9a1d-fc099a4531b3,2621,2/2/2018 12:00:00 AM,racheal.olarewaju, ,Ogbagba 1,OSSOUA08,Ola Oluwa,30026,Osun,OS,GRID,Police Station Ogbaagbaa,4.25187666717449,7.70178333313436
+505,7bf305c9-154c-42b8-ac1c-39ea4c217897,3016,2/2/2018 12:00:00 AM,racheal.olarewaju, ,Sabo-Oniba,LASOJO14,Ojo,25015,Lagos,LA,GRID,Ajangbadi Police Station,3.16801035759198,6.46254479860363
+506,e28971d9-ae1d-41a8-bf6a-e4e5f569f743,3015,2/2/2018 12:00:00 AM,racheal.olarewaju, ,Mosafejo Ojuelegba,LASSUE14,Surulere,25018,Lagos,LA,GRID,Tejuosho Police Post,3.37076350842921,6.50912718137437
+507,00bcd9a1-3e3a-4611-a73a-bfdb44537737,3014,2/2/2018 12:00:00 AM,racheal.olarewaju, ,Okekoto,LASAGG07,Agege,25001,Lagos,LA,GRID,The Nigeria Police Station Elere Division,3.3203551218914,6.62897981696506
+508,c35163c1-385b-42a7-9208-9da53020c96c,3013,2/2/2018 12:00:00 AM,racheal.olarewaju, ,Falomo / Oyinkan Abayomi,LASEOA07,Eti Osa,25008,Lagos,LA,GRID,Nigerian Police Stationmedical Service,3.42877966844696,6.4437336730706
+509,91808042-5dce-4e15-8fdc-c1c69f9d94fd,3012,2/2/2018 12:00:00 AM,racheal.olarewaju, ,Igbokuta / Oke-Agbo / Igbalu,LASIKU14,Ikorodu,25012,Lagos,LA,GRID,Imota Police Station Ebute Ajebo Road Imota,3.66931676305819,6.65762184996845
+510,6373d690-dc7a-43b2-9269-951e04fad84d,3011,2/2/2018 12:00:00 AM,racheal.olarewaju, ,Alagomeji,LASLMD05,Lagos Mainland,25019,Lagos,LA,GRID,Sabo Police Station,3.37812050595664,6.50539425833841
+511,5d0c0fa1-7278-43e4-8b00-d5823787a6a2,3010,2/2/2018 12:00:00 AM,racheal.olarewaju, ,Ajaguro,LASIKU06,Ikorodu,25012,Lagos,LA,GRID,Rofo Police Post,3.5014177752102,6.65485164129024
+512,05b45f69-99b9-4fe3-a8b0-1909990cdc26,3009,2/2/2018 12:00:00 AM,racheal.olarewaju, ,Lafiaji,LASLID12,Lagos Island,25020,Lagos,LA,GRID,Kam Salem House Nigeria Police Hqts Annex,3.40696407523194,6.4492280190579
+513,05c4af0c-b25a-4c1b-9f62-bacdd9600332,3008,2/2/2018 12:00:00 AM,racheal.olarewaju, ,Araromi Odo,LASLID04,Lagos Island,25020,Lagos,LA,GRID,Zone 2 Police Officer Mess Police Mini Market,3.4029970235938,6.44192196272843
+514,2bc05d11-2feb-4442-90e1-1bc9398c8360,3007,2/2/2018 12:00:00 AM,racheal.olarewaju, ,Anjorin,LASAPA04,Apapa,25005,Lagos,LA,GRID,Apapa Police Station,3.36735633872411,6.45008931057328
+515,b8072ba1-6aed-46a5-b194-e04e2335bc06,3005,2/2/2018 12:00:00 AM,racheal.olarewaju, ,Lekki 1,LASIUI06,Ibeju Lekki,25009,Lagos,LA,GRID,Lekki Police Post,4.09528759204881,6.41447373387575
+516,68d4d1e1-da29-49a6-b6c2-220fe3e8f30d,3004,2/2/2018 12:00:00 AM,racheal.olarewaju, ,Ibereko,LASBDY11,Badagry,25006,Lagos,LA,GRID,Area K Police Station,3.03889482543588,6.48373826420959
+517,dbf5fb6f-6880-4d5a-9d09-242ce570ac3a,3003,2/2/2018 12:00:00 AM,racheal.olarewaju, ,Aralile,LASSUE05,Surulere,25018,Lagos,LA,GRID,Anti Kidnapping Police Post Hogan Basset Crescent,3.36419066306871,6.50264022666516
+518,5368c400-bdc0-4fc5-8cbe-7f80f5601563,3002,2/2/2018 12:00:00 AM,racheal.olarewaju, ,G R A,LASIKA06,Ikeja,25011,Lagos,LA,GRID,Ikeja Area f Command,3.34506200490767,6.58969711612906
+519,febb7657-fea8-4fdb-a774-eb5560472b31,3001,2/2/2018 12:00:00 AM,racheal.olarewaju, ,Orimedu 2,LASIUI09,Ibeju Lekki,25009,Lagos,LA,GRID,Eleko Police Post,3.85376443308218,6.44117246143998
+520,98b6949d-e156-49bd-9683-6fb54af3aa9e,3000,2/2/2018 12:00:00 AM,racheal.olarewaju, ,Odo-Ogun / Ajegunle,LASKSE14,Kosofe,25013,Lagos,LA,GRID,Owode Onirin Police Station,3.41508322930764,6.60640461588036
+521,347836b2-b155-40b1-8f86-45414b3e617b,2999,2/2/2018 12:00:00 AM,racheal.olarewaju, ,Jegba Quarters,LASBDY16,Badagry,25006,Lagos,LA,GRID,Badagry Divisional Police,2.89293940702805,6.41267294130324
+522,ddc05a46-96c4-474b-8999-6cb8c6ff49f4,2998,2/2/2018 12:00:00 AM,racheal.olarewaju, ,Abosan,LASIKU01,Ikorodu,25012,Lagos,LA,GRID,Police Mobile Force No 63 Pmf Squadron,3.51800273963477,6.58969548026226
+523,988588f0-93a0-4f4c-a839-2b4ad5a6c893,2996,2/2/2018 12:00:00 AM,racheal.olarewaju, ,Ilado Tomaro,LASAON09,Amuwo Odofin,25004,Lagos,LA,GRID,Igbologun Station,3.33284338571372,6.42544535761721
+524,fd127244-c04a-4ec4-9764-4a98d0a1f158,2995,2/2/2018 12:00:00 AM,racheal.olarewaju, ,Owoyemi,LASATO14,Ajeromi/Ifelodun,25002,Lagos,LA,GRID,Layeni Police Station,3.32780666694418,6.46107068926096
+525,8891b126-960d-42e1-8909-bf335c4c9ea2,2994,2/2/2018 12:00:00 AM,racheal.olarewaju, ,Oduduwa,LASAPA10,Apapa,25005,Lagos,LA,GRID,Alayabiagba Police Station,3.35183333334169,6.45451000003652
+526,0b8cec06-33a2-4308-85d9-3e818229636f,2993,2/2/2018 12:00:00 AM,racheal.olarewaju, ,Iponri  /  Eric Moore,LASSUE11,Surulere,25018,Lagos,LA,GRID,Bode Thomas Police Station,3.35795431074291,6.48920920623993
+527,1655d282-4388-4846-98c3-3193b1a476b8,2992,2/2/2018 12:00:00 AM,racheal.olarewaju, ,Egbe-Liasu,LASAMO20,Alimosho,25003,Lagos,LA,GRID,Ikotun Divisional Hq,3.26886773955459,6.55146897021683
+528,c46c63d3-d663-49d2-a398-b96f982607f9,2991,2/2/2018 12:00:00 AM,racheal.olarewaju, ,Ailegun,LASOIO03,Oshodi/Isolo,25016,Lagos,LA,GRID,Ashamu Police Station,3.2947524871376,6.52570561132495
+529,4790fa73-c580-42bd-b5d2-b591b3690718,2990,2/2/2018 12:00:00 AM,racheal.olarewaju, ,Onilekere,LASIKA13,Ikeja,25011,Lagos,LA,GRID,Police Post,3.33515128260564,6.58975493893934
+530,6bec6462-4255-4251-848e-a5c2da528453,2989,2/2/2018 12:00:00 AM,racheal.olarewaju, ,Opebi,LASIKA14,Ikeja,25011,Lagos,LA,GRID,NPF Police B Department Ikeja HQ Annex,3.35501455467801,6.59020204229046
+531,eb10e799-6ec5-43d5-bcc6-2f380047da78,2988,2/2/2018 12:00:00 AM,racheal.olarewaju, ,G R A,LASIKA06,Ikeja,25011,Lagos,LA,GRID,Lagos State Police Command,3.34410112606616,6.58559966009631
+532,33cf65ac-dcc2-41c8-aee5-abce24d8158c,2488,2/2/2018 12:00:00 AM,najib.adam, ,Ketu,OGSADO12,Ado Odo/Ota,28003,Ogun,OG,GRID,Ketu Adie Owe Station,3.07492757424819,6.5970209997194
+533,1cdc3754-d5fd-491e-bd59-7c300c885657,2482,2/2/2018 12:00:00 AM,najib.adam, ,Totoro 2,OGSABN14,Abeokuta North,28001,Ogun,OG,GRID,Lafenwa,3.3301683334019,7.15588772493862
+534,15b950ce-7009-4666-b595-8ab1f5f2beec,2481,2/2/2018 12:00:00 AM,najib.adam, ,Obantoto,OGSODA05,Odeda,28016,Ogun,OG,GRID,The Nigerian Police Divisional Head Qrts,3.39167666704458,7.17802500025363
+535,5458d94d-5990-43a8-bcd3-14f298d99c66,2480,2/2/2018 12:00:00 AM,najib.adam, ,Imushin 1,OGSIUU07,Ijebu East,28008,Ogun,OG,GRID,The Nigerian Police Ilese Division,3.96529296989468,6.80208272823535
+536,2d505fe6-2044-4f31-b614-1d102b2b7019,2479,2/2/2018 12:00:00 AM,najib.adam, ,Porogun 2,OGSIUE11,Ijebu Ode,28011,Ogun,OG,GRID,Obalende Divisional Police Headquarters,3.90567575942879,6.83166512834305
+537,4fcaa5b2-feb6-4655-b695-187cc3f8b949,2477,2/2/2018 12:00:00 AM,najib.adam, ,Owode 1,OGSYES10,Yewa South,28005,Ogun,OG,GRID,Owode Police Station,2.97514563126595,6.69769621320972
+538,c9c1e980-2927-4707-b022-9af7ef8bc521,2476,2/2/2018 12:00:00 AM,najib.adam, ,Ibara 1,OGSABS05,Abeokuta South,28002,Ogun,OG,GRID,The Nigeria Police Force State Traffic Division,3.3396233332503,7.14171999967829
+539,3a231157-183a-4a21-a5d6-78de3ab1b78b,2474,2/2/2018 12:00:00 AM,najib.adam, ,Imushin 2,OGSIUU08,Ijebu East,28008,Ogun,OG,GRID,The Nigerian Police Isonyin Police Post,3.98804459278375,6.83284648138005
+540,d60d41f6-2cba-4902-a34e-53107aead72e,2473,2/2/2018 12:00:00 AM,najib.adam, ,Egbeda,OGSOBE04,Obafemi Owode,28015,Ogun,OG,GRID,Police College,3.39852253758511,7.09096436601271
+541,e062cc7f-3bb4-4ddf-8238-d192108ba617,2472,2/2/2018 12:00:00 AM,najib.adam, ,Laminga,NASNSW05,Nasarawa,26009,Nasarawa,NA,GRID,Nahuche Police Station Zakun Bello Road Laminga,7.81067333280811,8.68446833304716
+542,dcd44b11-b1fd-485e-bf17-e4074c050b78,2471,2/2/2018 12:00:00 AM,najib.adam, ,Assakio,NASLFA06,Lafia,26008,Nasarawa,NA,GRID,The Nigeria Police Station Assakio,8.85129932020749,8.59778994664879
+543,d94f3c40-81b7-4a08-9120-ff44b7e75119,2470,2/2/2018 12:00:00 AM,najib.adam, ,Tunga Bakono,NASNSW15,Nasarawa,26009,Nasarawa,NA,GRID,Police Outpost Ajaga,7.6036665370811,8.34544362222545
+544,a47a6279-7ac5-4407-88fb-1f17a05d4e96,2469,2/2/2018 12:00:00 AM,najib.adam, ,Owode,OGSOBE12,Obafemi Owode,28015,Ogun,OG,GRID,Owode Egba Police Area Command,3.49592109997883,6.92717119969114
+545,a1d4de57-3eb1-4fcf-b790-55a6ec54c7f4,2467,2/2/2018 12:00:00 AM,najib.adam, ,Sabo 1,OGSABN11,Abeokuta North,28001,Ogun,OG,GRID,Lafenwa Divisional Headquarters,3.32552833256653,7.15583500038503
+546,e2312099-fb25-449d-9403-2b6d775c4bd7,2466,2/2/2018 12:00:00 AM,najib.adam, ,Ogbere,OGSIUU10,Ijebu East,28008,Ogun,OG,GRID,Ogbere Divisional Headquarters,4.16709012880642,6.73860826256134
+547,97bf2595-d297-47b8-93e3-78adac370e2e,2465,2/2/2018 12:00:00 AM,najib.adam, ,Ogbere,OGSIUU10,Ijebu East,28008,Ogun,OG,GRID,Ogbere Area Command Headquarters,4.16521489665018,6.7390054904111
+548,74dd2daf-ed2e-4d5b-ae30-3e611b45a5d4,2464,2/2/2018 12:00:00 AM,najib.adam, ,Ifonyintedo,OGSIKA05,Ipokia,28014,Ogun,OG,GRID,Ifonyintedo Police Station,2.78957999961733,6.77859500035902
+549,0bc7f4a2-e028-4bfd-a09e-63cae1502bc4,2463,2/2/2018 12:00:00 AM,najib.adam, ,Ibefun,OGSOGU02,Odogbolu,28017,Ogun,OG,GRID,Ibefun Town Police Post,3.79623000031432,6.7207566668867
+550,5921761c-8e5e-4024-bb48-227fafb0b01e,2987,2/2/2018 12:00:00 AM,racheal.olarewaju, ,Ifako Pele,LASIOE05,Ifako/Ijaye,25010,Lagos,LA,GRID,Olowosokodile Police Post,3.32347268831398,6.65045410127578
+551,3f5c7fd5-5ed9-42cd-82b1-a950d694e5a6,2986,2/2/2018 12:00:00 AM,racheal.olarewaju, ,Ajah,LASEOA03,Eti Osa,25008,Lagos,LA,GRID,Ajah Police Station,3.57729424982983,6.46992742591004
+552,ae016dc5-d429-4b3c-91e6-dd7976a0288e,2985,2/2/2018 12:00:00 AM,racheal.olarewaju, ,Owu / Ota,LASEPE17,Epe,25007,Lagos,LA,GRID,Orugbo Police Post,3.77295380377507,6.63129378697874
+553,e1c3eb97-9b4f-41d5-9bcb-01f323506f76,2984,2/2/2018 12:00:00 AM,racheal.olarewaju, ,Pedro / Gbagada,LASSMU15,Shomolu,25017,Lagos,LA,GRID,Pedro Divisional Police Station,3.37238185014235,6.54502591591336
+554,0894318d-cc54-454b-8d56-4627a35d5daf,2618,2/2/2018 12:00:00 AM,racheal.olarewaju, ,Popo,OSSAYE10,Ayedire,30002,Osun,OS,GRID,Nigerian Police Post Oluponna,4.18953833302771,7.60540833322807
+555,3ccd5d91-a7bc-4ea7-ae11-91ccea872a3a,2617,2/2/2018 12:00:00 AM,racheal.olarewaju, ,Isale Osolo,OSSEGO06,Ejigbo,30010,Osun,OS,GRID,Nigerian Police Station Ejigbo,4.30805499963856,7.89471999982817
+556,949b7ac9-47c2-4f05-b440-86b0a2984012,2616,2/2/2018 12:00:00 AM,racheal.olarewaju, ,Oke Oba 2,OSSIWO15,Iwo,30023,Osun,OS,GRID,Idi Iroko Police Post,4.07802166726617,7.7133749998564
+557,cd22b76e-5dda-49d7-9a10-b8c331b9f739,2615,2/2/2018 12:00:00 AM,racheal.olarewaju, ,Otun Balogun,OSSADE08,Ayedade,30001,Osun,OS,GRID,Gbongan Police Station,4.37022833337096,7.47047666686473
+558,603dbb1f-a78e-4751-9a42-988ccc5909b1,2614,2/2/2018 12:00:00 AM,racheal.olarewaju, ,Kwadon / Liji / Kurba,GMSYDB07,Yamaltu/Deba,16011,Gombe,GO,GRID,Police Outputs Liji,11.2316466699579,10.2767316700306
+559,979b617f-433c-4c03-be0a-f5153ba2058c,2613,2/2/2018 12:00:00 AM,racheal.olarewaju, ,Bage,GMSFKY02,Funakaye,16005,Gombe,GO,GRID,Bage Out Forces,11.3828250000738,10.9513066697671
+560,1e723620-f2ad-4565-8bc3-245900d6a206,2612,2/2/2018 12:00:00 AM,racheal.olarewaju, ,Zambuk / Kwali,GMSYDB11,Yamaltu/Deba,16011,Gombe,GO,GRID,Zambuk Police Station,11.3589716699067,10.3197016703958
+561,764f65f0-c2b5-4405-9140-eed6f7f83322,2611,2/2/2018 12:00:00 AM,racheal.olarewaju, ,Kumo West,GMSAKK08,Akko,16001,Gombe,GO,GRID,Kobuwa Police Station,11.1561283296587,10.0239533301821
+562,2408e5a7-cd1e-469c-8dda-a9f9dc038ac4,2610,2/2/2018 12:00:00 AM,racheal.olarewaju, ,Shamaki,GMSGME11,Gombe,16006,Gombe,GO,GRID,Gombe Area Command,11.1622616700401,10.2994716700816
+563,1230d3e4-84c1-4e2e-b3f7-798ccd660672,2446,2/2/2018 12:00:00 AM,najib.adam, ,Imala,OGSABN09,Abeokuta North,28001,Ogun,OG,GRID,Imala Division,3.13159132567921,7.27257076562836
+564,515317b4-48b5-49c1-ac24-e25c31725230,2445,2/2/2018 12:00:00 AM,najib.adam, ,Imala,OGSABN09,Abeokuta North,28001,Ogun,OG,GRID,Nigeria Security And Civil Defense Corps,3.13061489126426,7.27291411329571
+565,7c5d85ed-549d-47c1-add7-9c8e2c3d1814,2609,2/2/2018 12:00:00 AM,racheal.olarewaju, ,Wange,GMSKLT09,Kaltungo,16007,Gombe,GO,GRID,Divisional Headquarter Tula,11.4725633297339,9.84606666684323
+566,db96e504-526c-4eb3-ad36-509b02c05285,2608,2/2/2018 12:00:00 AM,racheal.olarewaju, ,Tumu,GMSAKK11,Akko,16001,Gombe,GO,GRID,Tumu Police Station,11.0083883298576,10.0064933299033
+567,1a4435dd-c47e-43e6-8d5e-261446336222,2607,2/2/2018 12:00:00 AM,racheal.olarewaju, ,Wange,GMSKLT09,Kaltungo,16007,Gombe,GO,GRID,Police Station,11.5123632999264,9.83120670012914
+568,326472e1-8edd-4eee-ba43-e4c96a33465d,2606,2/2/2018 12:00:00 AM,racheal.olarewaju, ,Degri,GMSBLG04,Balanga,16002,Gombe,GO,GRID,Kulani Police Station,11.6290750002111,9.81462999957489
+569,bda4973f-dff7-4b74-b4c5-63134144ac02,2605,2/2/2018 12:00:00 AM,racheal.olarewaju, ,Hinna,GMSYDB03,Yamaltu/Deba,16011,Gombe,GO,GRID,Dadin Kowa Police Division,11.4950450004265,10.2804716698317
+570,eee4b274-d770-46c9-ae71-ce90fed83375,2604,2/2/2018 12:00:00 AM,racheal.olarewaju, ,Lubo / Difa / Kinafa,GMSYDB09,Yamaltu/Deba,16011,Gombe,GO,GRID,Nigeria Police Kinafa Outpost,11.4366383295953,10.4275600001939
+571,4102eb42-0f99-4a90-98f8-e152a06cfd92,2603,2/2/2018 12:00:00 AM,racheal.olarewaju, ,Pindiga,GMSAKK09,Akko,16001,Gombe,GO,GRID,Pindiga Police Station,10.9591183303467,9.98960666721399
+572,3641edf0-6fc8-447a-b8ec-b1798a273a7e,2602,2/2/2018 12:00:00 AM,racheal.olarewaju, ,Nyuwar / Jessu,GMSBLG08,Balanga,16002,Gombe,GO,GRID,Nyuwar Police Station,11.7525600002439,9.77923999982619
+573,e9a648e1-1a79-48c7-9b09-961c1b5107bf,2601,2/2/2018 12:00:00 AM,racheal.olarewaju, ,Marit,PLSBLD11,Barkin Ladi,32001,Plateau,PL,GRID,The Nigerian Police Outpost D Division Marit,8.99202829976628,9.47251999989811
+574,edb4750c-bd98-46a8-b83e-d80400146af6,2600,2/2/2018 12:00:00 AM,racheal.olarewaju, ,Lobring,PLSBLD10,Barkin Ladi,32001,Plateau,PL,GRID,Dorowa Police Station,8.98254330033308,9.52603669973394
+575,a0e63267-c25b-4027-abb7-2669ae42d214,2599,2/2/2018 12:00:00 AM,racheal.olarewaju, ,Jenta Adamu,PLSJJN08,Jos North,32005,Plateau,PL,GRID,Area Command Police Station Jos,8.88355850022464,9.91720700040281
+576,f7a5ee47-00de-4603-bb8c-21743c5bcd47,2598,2/2/2018 12:00:00 AM,racheal.olarewaju, ,Gangare,PLSJJN05,Jos North,32005,Plateau,PL,GRID,Gangare Police Station,8.89342333282059,9.91589666659792
+577,59e82ca8-81ef-430c-b365-c205c79534c5,2597,2/2/2018 12:00:00 AM,racheal.olarewaju, ,Moeda,PLSQAP17,Qua'An Pan,32014,Plateau,PL,GRID,Kwalla Police Rural Station Office,9.2911050002956,8.90446000002902
+578,d0e0eb36-a4f8-4139-bfff-f773b3e9639a,2596,2/2/2018 12:00:00 AM,racheal.olarewaju, ,Dengi,PLSDNG02,Kanam,32007,Plateau,PL,GRID,Dengi Police Station,9.96444830024893,9.37393000036928
+579,49c6e43e-4531-4383-94c1-d8786d54bae9,2595,2/2/2018 12:00:00 AM,racheal.olarewaju, ,Garga,PLSDNG06,Kanam,32007,Plateau,PL,GRID,Police Station,10.3139317001879,9.4998250000238
+580,9a70fadf-07b1-44b0-b27b-0cd0bad552eb,2594,2/2/2018 12:00:00 AM,racheal.olarewaju, ,Kurgwi West,PLSQAP08,Qua'An Pan,32014,Plateau,PL,GRID,Nigeria Police Station Kurgwi,9.29350833324304,8.78055666685674
+581,dab99a71-78d9-444a-865f-2ac5596f04e9,2593,2/2/2018 12:00:00 AM,racheal.olarewaju, ,Mangun,PLSMGU17,Mangu,32011,Plateau,PL,GRID,Mangun Police Station,9.15441829976476,9.22273670013863
+582,5267d63a-abf5-4bf5-afc7-49b91de7b069,2592,2/2/2018 12:00:00 AM,racheal.olarewaju, ,Kabong,PLSJJN11,Jos North,32005,Plateau,PL,GRID,Alheri Police Station Jos,8.87057833332346,9.93682000014292
+583,ead61577-eef9-4ca9-8fc5-d79307221186,2591,2/2/2018 12:00:00 AM,racheal.olarewaju, ,Shendam A,PLSSHD16,Shendam,32016,Plateau,PL,GRID,The Nigeria Police Divisional Headquarters Shendam,9.54729166727668,8.8752466672999
+584,55742522-1361-40c4-bdb6-73379be8fa83,2590,2/2/2018 12:00:00 AM,racheal.olarewaju, ,Poeship,PLSSHD15,Shendam,32016,Plateau,PL,GRID,The Nigeria Police Station Pueship,9.44827999992214,8.81250499980592
+585,bc92a8e9-5c81-49d6-b15e-560b6672747c,2589,2/2/2018 12:00:00 AM,racheal.olarewaju, ,Amper C,PLSKWK04,Kanke,32008,Plateau,PL,GRID,Amper Police Outpost,9.69800833311814,9.35427499959161
+586,068ca431-4348-49c1-a793-48d3ba43a0cd,2588,2/2/2018 12:00:00 AM,racheal.olarewaju, ,Dadin Kowa,PLSMBD01,Langtang South,32010,Plateau,PL,GRID,Dadinkowa Police Station,9.87652670004724,8.75324669977545
+587,790e4a90-ade2-4214-b6a0-72f0a5892bbd,2587,2/2/2018 12:00:00 AM,racheal.olarewaju, ,Pankshin,PLSPKN15,Pankshin,32013,Plateau,PL,GRID,The Nigeria Police Force,9.43319329973104,9.32416999984565
+588,c9ee813b-ba59-46ef-ba94-afdb2953719b,2586,2/2/2018 12:00:00 AM,racheal.olarewaju, ,Abba Nashehu,PLSJJN01,Jos North,32005,Plateau,PL,GRID,Salisu Adamu Police Station,8.89273549984347,9.93431170012491
+589,994bdc48-f2c8-424a-9438-ec82e3aaf09a,2585,2/2/2018 12:00:00 AM,racheal.olarewaju, ,Zabot,PLSBLD20,Barkin Ladi,32001,Plateau,PL,GRID,Bisichi Police Station,8.90716333332125,9.71516333282159
+590,c8974681-198f-4a9e-b729-9565145c7585,2584,2/2/2018 12:00:00 AM,racheal.olarewaju, ,Jenta Apata,PLSJJN09,Jos North,32005,Plateau,PL,GRID,Laronto Police Station,8.87777070005779,9.94229800005269
+591,6118b726-3919-4edc-80cd-b60d985705a9,2583,2/2/2018 12:00:00 AM,racheal.olarewaju, ,Angwan Rogo / Rimi,PLSJJN04,Jos North,32005,Plateau,PL,GRID,The Nigeria Police Divisional Headquarters Anguwan Rogo,8.88906000031881,9.94438500006777
+592,264f272e-bc58-4d86-9bbb-ae157675303d,2582,2/2/2018 12:00:00 AM,racheal.olarewaju, ,Kadarko,PLSWAS07,Wase,32017,Plateau,PL,GRID,Police Station Kadarko,10.0217283004208,8.9087417001694
+593,bffa6e6e-3705-4b21-9171-0c8aec8811bb,2581,2/2/2018 12:00:00 AM,racheal.olarewaju, ,Langai,PLSMGU14,Mangu,32011,Plateau,PL,GRID,Police Outpost Langai,9.2149833003391,9.62597000041524
+594,82cf3851-840b-471f-86e1-c275f8128014,2580,2/2/2018 12:00:00 AM,racheal.olarewaju, ,Kalong,PLSSHD04,Shendam,32016,Plateau,PL,GRID,Kalong Police Station,9.50853499969054,8.71271833268497
+595,cc63f3ce-1f88-45be-95ca-27bc084537b9,2579,2/2/2018 12:00:00 AM,racheal.olarewaju, ,Pangshom,PLSSHD13,Shendam,32016,Plateau,PL,GRID,Post Nigeria Police Station Gidan Adamu,9.45729833305165,8.93677833295374
+596,a58d5ae7-e976-4fe9-b8a6-e7cb44cf87e4,2578,2/2/2018 12:00:00 AM,racheal.olarewaju, ,Yelwa East,PLSSHD18,Shendam,32016,Plateau,PL,GRID,Yelwa Police Station 2,9.65910499959608,8.81144999971775
+597,4e67d0f7-19d4-4e94-9aa7-ccd5c99559e9,2576,2/2/2018 12:00:00 AM,racheal.olarewaju, ,Yelwa East,PLSSHD18,Shendam,32016,Plateau,PL,GRID,Yelwa Police Station 1,9.65909666737736,8.81152000024787
+598,3347ad35-aa4d-40f2-97dc-dfb39f03205d,2575,2/2/2018 12:00:00 AM,racheal.olarewaju, ,Fobur A,PLSANW03,Jos East,32004,Plateau,PL,GRID,New Fobur Police Station,9.0222849998529,9.85545499994834
+599,64734602-7baf-40cb-80fe-6fa021b2f1c7,2574,2/2/2018 12:00:00 AM,racheal.olarewaju, ,Mushere North,PLSBKK15,Bokkos,32003,Plateau,PL,GRID,Nigerian Police Post Kawel,9.06607166737359,9.20358833333495
+600,efea897e-0447-445b-b87f-7370d80f0142,2573,2/2/2018 12:00:00 AM,racheal.olarewaju, ,Mushere Central,PLSBKK14,Bokkos,32003,Plateau,PL,GRID,Ikngwakap Police Station,9.04727833312865,9.15986166678255
+601,5413464d-5ed0-446a-a0e1-3d02e1dd89e1,2572,2/2/2018 12:00:00 AM,racheal.olarewaju, ,Gagdi,PLSDNG04,Kanam,32007,Plateau,PL,GRID,Anguwan Hakimi Police Station,9.96417170026382,9.60950330043704
+602,b9298683-40c5-4388-aeaa-c777a16e8849,2571,2/2/2018 12:00:00 AM,racheal.olarewaju, ,Bukuru,PLSBUU01,Jos South,32006,Plateau,PL,GRID,Bukuru Police Division,8.86704000019591,9.79616333327124
+603,a048c095-0b55-489c-9780-63ab9ec5fe76,2570,2/2/2018 12:00:00 AM,racheal.olarewaju, ,Kabong,PLSJJN11,Jos North,32005,Plateau,PL,GRID,Alama Police Station,8.86331833307469,9.9363300000295
+604,3cbac2c3-2747-4ff2-8e2e-ca71a96302e4,2569,2/2/2018 12:00:00 AM,racheal.olarewaju, ,Tangur,PLSBKK19,Bokkos,32003,Plateau,PL,GRID,Mushu Police Outpost,9.09016499961507,9.28666170007745
+605,ea943e43-798b-4b4b-9a5e-1444aaf2d2a1,2444,2/2/2018 12:00:00 AM,najib.adam, ,Obafemi,OGSOBE09,Obafemi Owode,28015,Ogun,OG,GRID,Police Post Obafemi,3.61597370072576,7.11624794288832
+606,f2882411-a85b-4466-84ab-b902cb7edfa7,2443,2/2/2018 12:00:00 AM,najib.adam, ,Akute / Ajuwon,OGSIFO02,Ifo,28007,Ogun,OG,GRID,The Nigerian Police Force Ajuwon Division,3.34863488459229,6.67489329658844
+607,44ab4bf3-27ad-4cd1-b153-bb59e2b05123,2568,2/2/2018 12:00:00 AM,racheal.olarewaju, ,Du B,PLSBUU05,Jos South,32006,Plateau,PL,GRID,Fwavei Police Station,8.89375669981189,9.84743000039424
+608,f71d25f4-5b03-4da6-a031-afd3cfd7c3f4,2567,2/2/2018 12:00:00 AM,racheal.olarewaju, ,Richa,PLSBKK17,Bokkos,32003,Plateau,PL,GRID,Richa Police Outposts,8.87292166710131,9.12454666689518
+609,2fa75cd1-83a1-4150-a57b-55be48af9606,2566,2/2/2018 12:00:00 AM,racheal.olarewaju, ,Bum,PLSRYM02,Riyom,32015,Plateau,PL,GRID,Bum Police Station,8.67057666727942,9.7062316673576
+610,041c9bab-4f75-451d-91a5-9e7a1ca7f4d8,2565,2/2/2018 12:00:00 AM,racheal.olarewaju, ,Gwamlar,PLSDNG09,Kanam,32007,Plateau,PL,GRID,Gwamlar Police Station,9.79032030034165,9.41759839984633
+611,b6cd5ecc-c203-49b9-a61d-3b532d4caaac,2564,2/2/2018 12:00:00 AM,racheal.olarewaju, ,Heipang,PLSBLD04,Barkin Ladi,32001,Plateau,PL,GRID,The Nigeria Police Heipang Station,8.88855000018242,9.63547499987141
+612,6989fc45-f4a4-45a7-8440-f6cb4ca8bdd7,2563,2/2/2018 12:00:00 AM,racheal.olarewaju, ,Kwarip,PLSKWK12,Kanke,32008,Plateau,PL,GRID,Police Station Kwal,9.61865829994065,9.36962329997539
+613,cc8354c6-bd15-4973-9a63-211c0615e251,2562,2/2/2018 12:00:00 AM,racheal.olarewaju, ,Mangor,PLSBKK10,Bokkos,32003,Plateau,PL,GRID,Police Outpost Garwaza,8.86974170031925,9.33736169988259
+614,f2865928-7848-4373-908f-f8ffce178b56,2561,2/2/2018 12:00:00 AM,racheal.olarewaju, ,Maigemu,PLSANW12,Jos East,32004,Plateau,PL,GRID,Gada Police Station,9.11144333334323,10.0384516696089
+615,dcbfdb6d-8aca-4847-a76d-d301acd73672,2560,2/2/2018 12:00:00 AM,racheal.olarewaju, ,Turaki,PLSMBD15,Langtang South,32010,Plateau,PL,GRID,Police Station Turaki,9.70686333317633,8.60991833326455
+616,461787a8-9316-4c20-a5af-92c82b1d5d84,2559,2/2/2018 12:00:00 AM,racheal.olarewaju, ,Kantana,PLSDNG14,Kanam,32007,Plateau,PL,GRID,Dogon Ruwa Police Station,10.0943016703858,9.59889500010422
+617,53ae89f5-e2a4-495d-8a79-87ebc0403fa6,2558,2/2/2018 12:00:00 AM,racheal.olarewaju, ,Namaran,PLSDNG20,Kanam,32007,Plateau,PL,GRID,Kafel Police Station,9.91514799988033,9.22659009995317
+618,02b67230-70c6-49b0-9c38-95e2907fc421,2557,2/2/2018 12:00:00 AM,racheal.olarewaju, ,Doka East,PLSQAP03,Qua'An Pan,32014,Plateau,PL,GRID,Dokan Kasuwa Police Station,9.32094999974277,9.09371499964755
+619,24507ffa-2b18-463c-b387-2d6274ad93e0,2556,2/2/2018 12:00:00 AM,racheal.olarewaju, ,Bwonpe,PLSMGU02,Mangu,32011,Plateau,PL,GRID,Bwonpe Police Station,9.2201316672427,9.30001833307966
+620,c1a6d539-6df7-4ab3-a1fb-257e0ead8478,2555,2/2/2018 12:00:00 AM,racheal.olarewaju, ,Giring,PLSBUU06,Jos South,32006,Plateau,PL,GRID,Abattoir Police,8.88628833294024,9.88418666658146
+621,c9f572fd-20db-430d-875d-0ece1910f0e5,2554,2/2/2018 12:00:00 AM,racheal.olarewaju, ,Kurumbur B,PLSSHD06,Shendam,32016,Plateau,PL,GRID,Lakushi Police Station,9.6478949997545,8.55879333274618
+622,802e9f1f-b192-47e3-8cb0-681d9b688094,2553,2/2/2018 12:00:00 AM,racheal.olarewaju, ,Kurumbur B,PLSSHD06,Shendam,32016,Plateau,PL,GRID,Police Station Yamini,9.66035000035231,8.52561000040123
+623,0d613799-9de2-4c0f-b0ef-de900168c0d8,2552,2/2/2018 12:00:00 AM,racheal.olarewaju, ,Lamingo,PLSJJN12,Jos North,32005,Plateau,PL,GRID,Flaming Police Station,8.94441499985243,9.9122716667041
+624,dd92eac2-6226-4852-a91a-9a599372e49a,2551,2/2/2018 12:00:00 AM,racheal.olarewaju, ,Juban,PLSSHD03,Shendam,32016,Plateau,PL,GRID,The Nigerian Police Station Kuka,9.69610666718899,8.44327333309792
+625,13a7d9b3-2387-4581-8da3-aa087267d2b2,2550,2/2/2018 12:00:00 AM,racheal.olarewaju, ,Kwande Central,PLSQAP10,Qua'An Pan,32014,Plateau,PL,GRID,Rural Police Station Kwande,9.29840499969106,8.70832000036779
+626,6fcbba77-986a-4afe-bd37-5339bb875683,2549,2/2/2018 12:00:00 AM,racheal.olarewaju, ,Kwande Central,PLSQAP10,Qua'An Pan,32014,Plateau,PL,GRID,Gidan Dabat Police Station,9.23418999986865,8.71737333331271
+627,8bad7c41-1852-42a8-af3c-3687870c5707,2547,2/2/2018 12:00:00 AM,racheal.olarewaju, ,Igbope 2,OYSOLE05,Orelope,31027,Oyo,OY,GRID,Igbope Police Station,3.78730276041409,8.83359742388205
+628,bae7d2db-fbc7-4467-944a-ec0ca48b88fb,2546,2/2/2018 12:00:00 AM,racheal.olarewaju, ,Akinyele,OYSAKE01,Akinyele,31002,Oyo,OY,GRID,Kara Police Station,3.91610838799176,7.60671114780126
+629,3269fedb-0f29-4697-9b8b-5756f2a362e4,2545,2/2/2018 12:00:00 AM,racheal.olarewaju, ,Agugu,OYSINE01,Ibadan North East,31007,Oyo,OY,GRID,Agugu Police Station,3.92492659768436,7.38434780131001
+630,7918235e-69ce-437d-bc68-8b8e84ce1198,2543,2/2/2018 12:00:00 AM,racheal.olarewaju, ,Moniya,OYSAKE08,Akinyele,31002,Oyo,OY,GRID,Moniya Police Station,3.91043499957561,7.53104333298347
+631,5d448e19-d0c0-4d16-ae71-8fa41e14ecea,2542,2/2/2018 12:00:00 AM,racheal.olarewaju, ,Ido,OYSIDO07,Ido,31014,Oyo,OY,GRID,Ido Divisional Headquarter,3.76179833342638,7.47264388011104
+632,acea8a7d-922a-4d5b-8a91-60dc099d42fa,2541,2/2/2018 12:00:00 AM,racheal.olarewaju, ,Oyedeji 1,OYSLAU12,Lagelu,31020,Oyo,OY,GRID,Ogburo Police Station,4.12501769860796,7.59597585420238
+633,5488f933-1005-4801-a612-1c7e508af1a8,2540,2/2/2018 12:00:00 AM,racheal.olarewaju, ,Idi Ayunre,OYSOYE05,Oluyole,31025,Oyo,OY,GRID,Mamu Police Station,3.91069997222598,7.0876560380957
+634,13ba421d-c8e8-42e7-a37e-568aa588f032,2539,2/2/2018 12:00:00 AM,racheal.olarewaju, ,Omi Adio,OYSIDO10,Ido,31014,Oyo,OY,GRID,Kuola Police Station,3.8150744942925,7.3663144400594
+635,f9ba1997-198c-4647-9fa9-756471fcb71b,2538,2/2/2018 12:00:00 AM,racheal.olarewaju, ,Moniya,OYSAKE08,Akinyele,31002,Oyo,OY,GRID,Rehabilitation Police Station,3.90895002102667,7.56027939877526
+636,e18be563-cfe7-41f6-8458-f70ff4fa8b0d,2537,2/2/2018 12:00:00 AM,racheal.olarewaju, ,Ekotedo,OYSINW06,Ibadan North West,31008,Oyo,OY,GRID,Swift Response Squad,3.88103550628364,7.38898207616194
+637,09b92dd1-8735-4f77-bc15-6c893781dd0e,2536,2/2/2018 12:00:00 AM,racheal.olarewaju, ,Yemetu,OYSIBN12,Ibadan North,31006,Oyo,OY,GRID,Yemeni Police Station,3.90731336102283,7.39628329234012
+638,71a8ea77-da2c-4b5a-8b93-1fcef4ba4a12,2441,2/2/2018 12:00:00 AM,najib.adam, ,Ago Iwoye 1,OGSIUN01,Ijebu North,28009,Ogun,OG,GRID,Mini Campus Police Post,3.90389909926409,6.95007078084188
+639,2e81a95b-1360-455e-8160-5ca16ce46078,2440,2/2/2018 12:00:00 AM,najib.adam, ,Ago Iwoye 1,OGSIUN01,Ijebu North,28009,Ogun,OG,GRID,Abobi Police Station,3.92373514795878,6.93635739667656
+640,076000fe-5166-4dd1-b7ce-1cbae081cd8a,2439,2/2/2018 12:00:00 AM,najib.adam, ,Obada,OGSIUN06,Ijebu North,28009,Ogun,OG,GRID,Top On Police Station,3.98806651915459,6.95520971115928
+641,b1c8154f-d79b-4393-985d-6828985fd017,2437,2/2/2018 12:00:00 AM,racheal.olarewaju, ,Muri C,TRSKLD11,Karim Lamido,35008,Taraba,TA,GRID,Police Station Outpost Didango Old Muri,11.0379083332031,9.15869453472504
+642,113bafb8-e233-4dd2-9ecf-48446bf19823,2535,2/2/2018 12:00:00 AM,racheal.olarewaju, ,Akeetan,OYSOWT02,Oyo West,31030,Oyo,OY,GRID,Durbar Police Station Oyo,3.93674223966269,7.83435274578267
+643,a41190c0-5bc9-4ebe-9d78-cc72d956481d,2534,2/2/2018 12:00:00 AM,racheal.olarewaju, ,Akanran,OYSONA02,Ona Ara,31026,Oyo,OY,GRID,Nigeria Police Station Akanran Head Quarters,4.02547612012688,7.27995946785518
+644,a327b32f-c598-4f0e-bc7a-597a63044aa0,2533,2/2/2018 12:00:00 AM,racheal.olarewaju, ,Agodi,OYSIBN03,Ibadan North,31006,Oyo,OY,GRID,Agodi Gate Police Station,3.91991166679003,7.39657833292375
+645,22c3cc3c-4355-48b9-827a-b78dd45caa91,2532,2/2/2018 12:00:00 AM,racheal.olarewaju, ,Agodi,OYSIBN03,Ibadan North,31006,Oyo,OY,GRID,Idi Ogungun Police Station,3.91798499970804,7.39518217231944
+646,4ec4721a-b05a-4c62-bd94-015ac00b8255,2530,2/2/2018 12:00:00 AM,racheal.olarewaju, ,Ijaye,OYSAKE04,Akinyele,31002,Oyo,OY,GRID,Ijaye Police Station,3.84953008224755,7.6292861195588
+647,78d29286-c554-4fa2-9b14-2b7b484ac7fb,2529,2/2/2018 12:00:00 AM,racheal.olarewaju, ,Apete,OYSIDO03,Ido,31014,Oyo,OY,GRID,Nigeria Security And Civil Defense Corps,3.85890719900806,7.45060326482889
+648,53fc1764-a2d2-480f-880f-80864e1b5be1,2528,2/2/2018 12:00:00 AM,racheal.olarewaju, ,Ogidigbo,OYSSWT09,Saki West,31032,Oyo,OY,GRID,Saki Divisional Police Station,3.21958829986022,8.65075000031231
+649,6e4a4c64-6761-4125-b37e-b3c3cd48f7ef,2524,2/2/2018 12:00:00 AM,racheal.olarewaju, ,Ijio / Ayegun,OYSIJA05,Iwajowa,31018,Oyo,OY,GRID,B Dept Mounted Troop Okooko Outpost,2.89025781394702,7.86793493105228
+650,44cac6b3-eba0-4e0a-b354-e072d8791204,2523,2/2/2018 12:00:00 AM,racheal.olarewaju, ,Ikoyi Ile,OYSOIE06,Ori Ire,31028,Oyo,OY,GRID,Ikoyi Police Station Headquarters,4.17591325689136,8.24516450164049
+651,b74a0eab-67de-4131-aa5f-a3e24f9c96a6,2522,2/2/2018 12:00:00 AM,racheal.olarewaju, ,Basorun,OYSINE05,Ibadan North East,31007,Oyo,OY,GRID,Testing Ground Police Station,3.92916718621672,7.40321117475594
+652,006f28f4-c187-482f-a4ab-ad9d17816974,2520,2/2/2018 12:00:00 AM,racheal.olarewaju, ,Old Bodija,OYSIBN08,Ibadan North,31006,Oyo,OY,GRID,Housing Police Station,3.90189613369967,7.41921165269565
+653,4427ebc6-bd57-40c1-a16b-6bc597a53117,2519,2/2/2018 12:00:00 AM,racheal.olarewaju, ,Ita-Ege,OYSISE05,Ibadan South East,31009,Oyo,OY,GRID,The Nigerian Police Division Headquarters Idi Aro,3.90475393364716,7.36806607928617
+654,e4ef5b04-1f4c-4432-bf26-43bc16cb9da7,2518,2/2/2018 12:00:00 AM,racheal.olarewaju, ,Bashorun,OYSIBN04,Ibadan North,31006,Oyo,OY,GRID,Ikolaba Police Station,3.91693665280434,7.41570837424212
+655,74520ad7-ac75-42f2-9093-f0de5f1df77b,2517,2/2/2018 12:00:00 AM,racheal.olarewaju, ,Olorunda 1,OYSLAU07,Lagelu,31020,Oyo,OY,GRID,Akobo Division,3.9431493714464,7.4335144678185
+656,3fa2b34e-f06e-4ba0-95cb-d924b1ed5581,2516,2/2/2018 12:00:00 AM,racheal.olarewaju, ,Isemi Ile / Ilua,OYSKAA07,Kajola,31019,Oyo,OY,GRID,Ifelodun Police Post Isemi Ile,3.37092237726597,7.99351288281332
+657,3d9da7e2-a914-472d-ab8d-da6ec47dad5b,2515,2/2/2018 12:00:00 AM,racheal.olarewaju, ,Oke Ado / Liberty,OYSISW09,Ibadan South West,31010,Oyo,OY,GRID,Joyce B Police Post,3.86756110076425,7.36917107898216
+658,cbc3c4b2-2595-4a29-9411-55b9f223f1e6,2514,2/2/2018 12:00:00 AM,racheal.olarewaju, ,Sango,OYSIBN11,Ibadan North,31006,Oyo,OY,GRID,Ijokodo Police Station,3.88128997215455,7.42289219921565
+659,a5625513-58a3-4783-944d-31b50aabce0a,2513,2/2/2018 12:00:00 AM,racheal.olarewaju, ,Bashorun,OYSIBN04,Ibadan North,31006,Oyo,OY,GRID,Oluwo Nla Police Station,3.92985717217078,7.41558726793812
+660,a94eccb3-58ae-4700-84d6-94d7c56b0a2d,2512,2/2/2018 12:00:00 AM,racheal.olarewaju, ,Oke Yidi,OYSSET11,Saki East,31031,Oyo,OY,GRID,Station Araromi Ogunsipe,3.70922501971893,8.70929666141183
+661,7ba54a0c-38b5-4117-9f19-b4ae8e87bf95,2511,2/2/2018 12:00:00 AM,racheal.olarewaju, ,Isia,OYSKAA08,Kajola,31019,Oyo,OY,GRID,Police Station,3.3548027049809,8.03266064217496
+662,9c01800a-6262-40c5-9ed6-98663344147c,2510,2/2/2018 12:00:00 AM,racheal.olarewaju, ,Monatan / Iyanachurch,OYSLAU05,Lagelu,31020,Oyo,OY,GRID,Jonku Police Station,3.94535166724569,7.41624499970703
+663,a0ec9e0c-77dc-4775-9bf6-dcf2eb4b77c4,2509,2/2/2018 12:00:00 AM,racheal.olarewaju, ,Alakia,OYSEGA02,Egbeda,31005,Oyo,OY,GRID,The Nigerian Police Station Kobolese Idi Osan,3.94681167971527,7.37802455019289
+664,9f67e2ea-2fbe-4ec7-902e-cd597dbc909a,2508,2/2/2018 12:00:00 AM,racheal.olarewaju, ,Ajegunle,OYSSWT03,Saki West,31032,Oyo,OY,GRID,Nigeria Police Area Command Office Saki,3.40643631978037,8.65216699640979
+665,3b6cd426-50e7-4ea4-9246-1e148a150c57,2507,2/2/2018 12:00:00 AM,racheal.olarewaju, ,Elero,OYSKAA02,Kajola,31019,Oyo,OY,GRID,Nigeria Police Force Divisional Headquarters Ilero,3.34952166739106,8.08937333291306
+666,f0da52c1-65cc-491f-b0e7-24b330038eaf,2506,2/2/2018 12:00:00 AM,racheal.olarewaju, ,Ipapo,OYSIWU03,Itesiwaju,31017,Oyo,OY,GRID,Ipapo House Police Station,3.50756156121713,8.12101292230858
+667,9ed014d1-e4e0-4025-a827-d5fe60306bde,2505,2/2/2018 12:00:00 AM,racheal.olarewaju, ,Oke Oro,OYSSWT10,Saki West,31032,Oyo,OY,GRID,Nigeria Police Force Divisional Headquarter Saki,3.39605131931296,8.67129691811834
+668,ca20dd35-f79c-4c10-b643-445d56130d7b,2577,2/2/2018 12:00:00 AM,racheal.olarewaju, ,Yelwa East,PLSSHD18,Shendam,32016,Plateau,PL,GRID,Yelwa Police Station,9.65911166716973,8.81137666719945
+669,724a4e53-8725-44fa-8885-f540d01c09e5,2527,2/2/2018 12:00:00 AM,racheal.olarewaju, ,Ojoo,OYSAKE09,Akinyele,31002,Oyo,OY,GRID,Ojoo Police Station,3.91219338012047,7.46801674137959
+670,a5e73469-63ab-4ef9-9328-680ad12a93a2,2526,2/2/2018 12:00:00 AM,racheal.olarewaju, ,Ojoo,OYSAKE09,Akinyele,31002,Oyo,OY,GRID,Orogun Police Station,3.91443723988675,7.45537114835986
+671,3694ba7f-89ad-4fe5-8527-15293454197d,2486,2/2/2018 12:00:00 AM,najib.adam, ,Iwoye,OGSION08,Imeko Afon,28013,Ogun,OG,GRID,Police Post Iwoye Ketu,2.74335109987339,7.56577540041445
+672,551e1211-0b58-4668-b1b8-6457cbda8aa4,2436,2/2/2018 12:00:00 AM,racheal.olarewaju, ,Idumoyingbo,LASLID08,Lagos Island,25020,Lagos,LA,GRID,Ebute Ero Police Station,3.38646195355636,6.46425444128948
+673,e63c2e17-a2d7-4ca7-9d89-31117a57baa3,2435,2/2/2018 12:00:00 AM,racheal.olarewaju, ,Ilamoshe,LASOIO12,Oshodi/Isolo,25016,Lagos,LA,GRID,Area A West Airport Command HQ,3.32059660514926,6.56155431118259
+674,4f4228c6-995b-4870-aa60-d91314d10286,2432,2/2/2018 12:00:00 AM,racheal.olarewaju, ,Ibrahim Katsina,PLSJJN07,Jos North,32005,Plateau,PL,GRID,C Divisional Police Head Quarter Jos The Nigerian Police Force Masallacin Jummaa,8.88888829995511,9.92705169987607
+675,d5bfa94d-a508-4f9a-baaa-07d603f84bf5,2934,2/2/2018 12:00:00 AM,racheal.olarewaju, ,Bali A,TRSBAL01,Bali,35002,Taraba,TA,GRID,Police Station 4,10.9681950897316,7.85644867836385
+676,306a735a-6cdf-483f-91a2-de1d54372030,3246,2/2/2018 12:00:00 AM,najib.adam, ,Imeko,OGSION07,Imeko Afon,28013,Ogun,OG,GRID,Police Station Idofa,2.82751474890659,7.446656113389
+677,2b22d111-5fe8-4f55-9613-b4a600499c03,2774,2/2/2018 12:00:00 AM,racheal.olarewaju, ,Iba 1,OSSIDN05,Ifelodun,30016,Osun,OS,GRID,Iba Police Station,4.70682333323032,7.96593166671312
+678,13f8d502-c1e0-4d0d-8454-7c91bc4592ab,2769,2/2/2018 12:00:00 AM,racheal.olarewaju, ,Ikeji Ira,OSSOIE08,Oriade,30028,Osun,OS,GRID,Ikeji Ile Police Station,4.92413333338669,7.48533999974126
+679,48665792-3cab-464d-9e3c-f42bac7f12f6,2768,2/2/2018 12:00:00 AM,racheal.olarewaju, ,Oke-Aree,OSSBOE08,Boripe,30006,Osun,OS,GRID,Police Station Iree,4.72745166666112,7.93850833289332
+680,eb31c24a-e4cc-4c3b-8772-95276bca768c,2767,2/2/2018 12:00:00 AM,racheal.olarewaju, ,Isarun / Owena,ODSIDE10,Ifedore,29009,Ondo,ON,GRID,Owena Police Station,5.00868833320004,7.40023333330174
+681,c921021b-8a73-42df-a0ce-a0e5f7fb8a53,2766,2/2/2018 12:00:00 AM,racheal.olarewaju, ,Igangan,OSSAME05,Atakunmosa East,30003,Osun,OS,GRID,The Nigeria Police Ajido,4.76238499966803,7.46383666732839
+682,34d64357-8440-49d6-98d4-93b900de96d8,2764,2/2/2018 12:00:00 AM,racheal.olarewaju, ,Oba-Oke,OSSOLA05,Olorunda,30027,Osun,OS,GRID,Dagjolu Ataoja Police Post,4.60725499991838,7.84784500014666
+683,b4a6762f-4b69-4ca2-ac56-8c8f8dfdfe9c,2763,2/2/2018 12:00:00 AM,racheal.olarewaju, ,Ajiya,GMSGME01,Gombe,16006,Gombe,GO,GRID,State Headquarters Nigerian Police Force,11.1409433299708,10.290824999774
+684,b70b1c36-3e3e-4f53-91c2-4ab7f318b043,2762,2/2/2018 12:00:00 AM,racheal.olarewaju, ,Yitlaar,PLSQAP20,Qua'An Pan,32014,Plateau,PL,GRID,Quan An Pan Police Station,9.25647000029034,8.94167169978914
+685,730267a9-dbdf-4b12-956d-8ba3115111ba,2761,2/2/2018 12:00:00 AM,racheal.olarewaju, ,Vandapuye,PLSJJN20,Jos North,32005,Plateau,PL,GRID,Jos Main Market Police Station,8.89059666740235,9.92068166692542
+686,0cfd5fc0-c49c-4472-ab7d-f876c8c5fbd8,2760,2/2/2018 12:00:00 AM,racheal.olarewaju, ,Naraguta B,PLSJJN15,Jos North,32005,Plateau,PL,GRID,Nasarawa Gwang Division,8.90057499983641,9.93019000016841
+687,3e17252d-548b-4ee1-bf2f-06e03023cde7,2759,2/2/2018 12:00:00 AM,racheal.olarewaju, ,Jarawa Kogi A,PLSANW10,Jos East,32004,Plateau,PL,GRID,Angware Division Head Quarter,9.10584670026503,9.99027669990983
+688,36ea50e6-773a-444a-ab2d-eb1334ed45d8,2758,2/2/2018 12:00:00 AM,racheal.olarewaju, ,Giring,PLSBUU06,Jos South,32006,Plateau,PL,GRID,The Nigerian Police Divisional Headquarters Anglo Jos,8.88149833328151,9.87308833286033
+689,19b4e04b-e30f-4fa9-a157-8b11192f9b98,2757,2/2/2018 12:00:00 AM,racheal.olarewaju, ,Luukwu,PLSQAP16,Qua'An Pan,32014,Plateau,PL,GRID,Bakin Chiyawa Police Post,9.2900266672969,8.61182166743606
+690,ebe2cd5f-d4ed-4968-8be9-fd139e928321,2755,2/2/2018 12:00:00 AM,racheal.olarewaju, ,Laha / Ajana,OYSIRO10,Irepo,31015,Oyo,OY,GRID,The Divisional Headquarter,3.84857161988441,9.08293499985041
+691,7022f98a-7b07-4788-8e77-03993169024b,2754,2/2/2018 12:00:00 AM,racheal.olarewaju, ,Oke Ola,OYSISN11,Iseyin,31016,Oyo,OY,GRID,Nigeria Civil Defence Corps,3.5723805322358,7.98354006861933
+692,bba7145b-d774-4b11-ad6a-cbf1721ac0b2,2753,2/2/2018 12:00:00 AM,racheal.olarewaju, ,Alakia,OYSEGA02,Egbeda,31005,Oyo,OY,GRID,Air Force Police Station,3.96987170801299,7.38901841506782
+693,3fc061da-8cbb-4d64-9204-7d4dd7407514,2752,2/2/2018 12:00:00 AM,racheal.olarewaju, ,Iseke,OYSOWT04,Oyo West,31030,Oyo,OY,GRID,Ojongbodu Police Station,3.90903222715559,7.8500304651339
+694,7604cda2-33fb-411d-9242-eff75e09791b,2751,2/2/2018 12:00:00 AM,racheal.olarewaju, ,Oke Ola,OYSISN11,Iseyin,31016,Oyo,OY,GRID,Iseyin Police Station,3.60726105165628,7.96631439929013
+695,b9c8d17c-e55e-471b-8efb-83b1ffc59741,2750,2/2/2018 12:00:00 AM,racheal.olarewaju, ,Olorunda,OYSOIE08,Ori Ire,31028,Oyo,OY,GRID,The Nigeria Police Divisional Headquarters Otte,4.3813122401678,8.3116243172085
+696,3db7db53-4cb4-4129-b3a9-faab5aa46038,2749,2/2/2018 12:00:00 AM,racheal.olarewaju, ,Onipe,OYSOYE09,Oluyole,31025,Oyo,OY,GRID,The Nigeria Police Idi Ayunre Division,3.85816625656753,7.24058784205533
+697,acc492a1-0bf1-4f67-bdcd-617086b1ca4a,2748,2/2/2018 12:00:00 AM,racheal.olarewaju, ,Onipe,OYSOYE09,Oluyole,31025,Oyo,OY,GRID,The Nigeria Police Station Toll Gate Ibadan,3.87358342883221,7.32167184368069
+698,73f70f61-7447-443e-a2ea-dfc2df81814a,2747,2/2/2018 12:00:00 AM,racheal.olarewaju, ,Imini / Abanti,OYSAFO09,Afijio,31001,Oyo,OY,GRID,Alaseyori Police Station,3.80424719914896,7.63876065627932
+699,0fd30a8e-c0a1-4d7d-b5ea-88186e8e5361,2746,2/2/2018 12:00:00 AM,racheal.olarewaju, ,Igbole,OYSICL03,Ibarapa Central,31011,Oyo,OY,GRID,Onimangoro Police Station,3.29984322368585,7.44008128412401
+700,ff71d4a2-cba0-40f6-af35-0a7b59bf4a5a,2745,2/2/2018 12:00:00 AM,racheal.olarewaju, ,Okeserin,OYSICL08,Ibarapa Central,31011,Oyo,OY,GRID,Igboora Police Station,3.28710825873918,7.43680549907458
+701,db13018e-a1c0-4e3f-b7c6-b0a37d7ca494,2744,2/2/2018 12:00:00 AM,racheal.olarewaju, ,Isale Togun,OYSIBE04,Ibarapa East,31012,Oyo,OY,GRID,The Nigeria Police Force Divisional Headquarter Lanlate,3.44946680315047,7.60652286933498
+702,22513700-39a3-419b-be6d-b95b4ac6e97a,2743,2/2/2018 12:00:00 AM,racheal.olarewaju, ,Isia,OYSKAA08,Kajola,31019,Oyo,OY,GRID,The Nigeria Police Divisional Headquarters,3.34424493125863,8.03625952215924
+703,d613c47c-b6a4-43b8-8a93-efcb6c3d32d9,2525,2/2/2018 12:00:00 AM,racheal.olarewaju, ,Alesinloye,OYSISW02,Ibadan South West,31010,Oyo,OY,GRID,Iyaganku Police Station,3.87401322383124,7.38393732284919
+704,591f0747-daa3-4c40-bc4f-e19bd191c4e5,2740,2/2/2018 12:00:00 AM,racheal.olarewaju, ,Ofiki,OYSATIB08,Atisbo,31004,Oyo,OY,GRID,Ago Are Police Post,3.41605578494659,8.48858601882978
+705,49798ce9-aa6b-4e16-834a-9ba7b0d3ef65,2739,2/2/2018 12:00:00 AM,racheal.olarewaju, ,Ajegunle,OYSSWT03,Saki West,31032,Oyo,OY,GRID,Tede Police Station,3.4459713209198,8.55352335861613
+706,916d3c08-eb2d-45e5-a227-81345b33d265,2738,2/2/2018 12:00:00 AM,racheal.olarewaju, ,Onipe,OYSOYE09,Oluyole,31025,Oyo,OY,GRID,The Nigeria Police Division Headquarter Challenge,3.87006897540294,7.33784833333397
+707,cc2cb97c-56d0-4413-aba4-fb16686b0b57,2737,2/2/2018 12:00:00 AM,racheal.olarewaju, ,Gwaria,KWSKMA05,Kaiama,24011,Kwara,KW,GRID,Moshe Gada Police Station,3.86444833312413,9.2142816672652
+708,410eb965-f861-4823-b67c-89fe14efb7e4,2736,2/2/2018 12:00:00 AM,racheal.olarewaju, ,Gwaria,KWSKMA05,Kaiama,24011,Kwara,KW,GRID,Gwaria Police Station Gwaria,3.85674000015092,9.39288000011197
+709,4e39854e-a47a-4013-a5ae-c34c457c45da,2735,2/2/2018 12:00:00 AM,racheal.olarewaju, ,Yashikira 1,KWSKSB10,Baruten,24002,Kwara,KW,GRID,The Nigeria Police out post Chikanda,3.36615500005325,9.82298333261474
+710,f5a47476-f148-4e25-8211-f690f6895840,2734,2/2/2018 12:00:00 AM,racheal.olarewaju, ,Yashikira 1,KWSKSB10,Baruten,24002,Kwara,KW,GRID,Yashikira police station HQ,3.3947033326927,9.76969333298098
+711,0ec50a4b-cbe8-4a74-b426-130cf6966fd1,2732,2/2/2018 12:00:00 AM,racheal.olarewaju, ,Obantoto,OGSODA05,Odeda,28016,Ogun,OG,GRID,Police Barracks Eleweran,3.41217800001476,7.18415770031766
+712,e7341844-3e9c-48b4-98a6-21241ee1b862,2730,2/2/2018 12:00:00 AM,racheal.olarewaju, ,Ososun,OGSIFO10,Ifo,28007,Ogun,OG,GRID,Police Post,3.27935280039145,6.77560149990933
+713,e28943b0-a730-4910-bc5f-8ea9de9414be,2728,2/2/2018 12:00:00 AM,racheal.olarewaju, ,Ofada,OGSOBE10,Obafemi Owode,28015,Ogun,OG,GRID,Ofada Police Post,3.42618340034369,6.86436200030613
+714,25f9442e-d384-4792-9fad-0943da05136b,2727,2/2/2018 12:00:00 AM,racheal.olarewaju, ,Idiiroko,OGSIKA04,Ipokia,28014,Ogun,OG,GRID,The Nigeria Police Divisional Headquarters,2.74249096488614,6.63252267458182
+715,11f3c33f-ec1d-4628-ac75-79dca8bf3b6b,2726,2/2/2018 12:00:00 AM,racheal.olarewaju, ,Itori,OGSEWO05,Ewekoro,28006,Ogun,OG,GRID,Itori Police Post,3.21929333302097,6.92736333265174
+716,e4469b31-67ea-4803-ad5e-9cde50140461,2725,2/2/2018 12:00:00 AM,racheal.olarewaju, ,Odo-Egbo / Oliworo,OGSIUE09,Ijebu Ode,28011,Ogun,OG,GRID,The Nigerian Police Station Etitale Ijebu Ode,3.92054066162228,6.81921285718767
+717,ec0dc135-6778-4670-a4d8-e17b85d639e3,2724,2/2/2018 12:00:00 AM,racheal.olarewaju, ,Eggua,OGSYEN04,Yewa North,28004,Ogun,OG,GRID,Police Station Igan Alade,2.90475999977423,7.05616666695818
+718,a7e5438d-00f8-4ea8-8d75-92e4ca08a6c5,2723,2/2/2018 12:00:00 AM,racheal.olarewaju, ,Itori,OGSEWO05,Ewekoro,28006,Ogun,OG,GRID,Itori Police Station,3.22042612536546,6.9340053808437
+719,b98db0e4-45b0-4798-893e-ccc90bdc8f6e,2722,2/2/2018 12:00:00 AM,racheal.olarewaju, ,Alajo / Surulere,EKSEFO01,Efon,13002,Ekiti,EK,GRID,Ita Odo Police Station,4.92468332637446,7.68061123362156
+720,c07bbacd-d5c6-45aa-a1c5-45e1c6bb65fb,2721,2/2/2018 12:00:00 AM,racheal.olarewaju, ,Awo,EKSIPN03,Irepodun/Ifelodun,13013,Ekiti,EK,GRID,Awo Police Station,5.15021333327877,7.71091999995809
+721,ebea34f7-b69e-4305-85f6-bbb9378db1ee,2720,2/2/2018 12:00:00 AM,racheal.olarewaju, ,Ekute,EKSADO03,Ado-Ekiti,13001,Ekiti,EK,GRID,Nigeria Police Station Elekute,5.21559960114075,7.60703273637171
+722,3f983cae-6b23-4430-b938-16cf0fdea778,2719,2/2/2018 12:00:00 AM,racheal.olarewaju, ,Ipoti A,EKSIJO10,Ijero,13009,Ekiti,EK,GRID,Division Headquarters Ipoti Ekiti,5.07371944169893,7.87281561744686
+723,9fc31a75-fa52-45bb-ad59-d4a3afe39504,2718,2/2/2018 12:00:00 AM,racheal.olarewaju, ,Iludun 1,EKSIME06,Ilejemeje,13012,Ekiti,EK,GRID,The Nigeria Police Iludun,5.24932930580286,7.9441116128607
+724,1689ffd9-300b-4a4f-bcc9-cfc7184b9e96,2717,2/2/2018 12:00:00 AM,racheal.olarewaju, ,Igbemo,EKSIPN04,Irepodun/Ifelodun,13013,Ekiti,EK,GRID,Nigeria Police Station Igbemo Ekiti,5.38564666735988,7.67953166675306
+725,57f0b1ae-d350-474c-899c-66d840e16ad5,2716,2/2/2018 12:00:00 AM,racheal.olarewaju, ,Afao,EKSIPN01,Irepodun/Ifelodun,13013,Ekiti,EK,GRID,Afao Police Station,5.30857833292379,7.69587166664417
+726,f3426673-56a7-4d7d-9b5a-a6c766cd49d6,2715,2/2/2018 12:00:00 AM,racheal.olarewaju, ,Are,EKSIPN02,Irepodun/Ifelodun,13013,Ekiti,EK,GRID,Are Police Station,5.30482318943871,7.70300613142786
+727,d936daca-c5e9-419f-be4a-c9ba51eba55a,2714,2/2/2018 12:00:00 AM,racheal.olarewaju, ,Ijan,EKSGBN05,Gbonyin,13007,Ekiti,EK,GRID,Ijan Police Post,5.3855713851114,7.61172054606641
+728,51a110a2-0ba4-4a89-a028-87964086cec1,2713,2/2/2018 12:00:00 AM,racheal.olarewaju, ,Ijan,EKSGBN05,Gbonyin,13007,Ekiti,EK,GRID,Nigeria Police Station,5.38644890938969,7.62430666332193
+729,53f8b6b0-9646-48a3-addf-9ea5080d3027,2712,2/2/2018 12:00:00 AM,racheal.olarewaju, ,Ugba Urban 4,ABSUMA15,Umuahia North,1016,Abia,AB,GRID,Bende Police Station,7.49283193784373,5.52876057973702
+730,2cba3123-758b-4d28-9ebd-e19e9ee6bcf3,2711,2/2/2018 12:00:00 AM,racheal.olarewaju, ,Umuanyi / Absu,ABSMBL17,Isuikwuato,1008,Abia,AB,GRID,Abia State University Uturu Police Station,7.39543166673809,5.82901500004226
+731,db93beb4-26e1-4b52-99a8-5bbd7506454a,2710,2/2/2018 12:00:00 AM,racheal.olarewaju, ,Itumbuzo 1,ABSBND11,Bende,1004,Abia,AB,GRID,Itumbauzo Police Station,7.68490833285335,5.50015666719651
+732,5416d352-a264-4b09-b5a5-249844b3cdc5,2709,2/2/2018 12:00:00 AM,racheal.olarewaju, ,Urban 5,ABSUMA20,Umuahia North,1016,Abia,AB,GRID,The Nigerian Police World Bank Housing Estate,7.49929833315161,5.5148266674168
+733,0e922c40-0634-47c3-b239-3d05c389b9ac,2707,2/2/2018 12:00:00 AM,racheal.olarewaju, ,Ubakala A,ABSAPR12,Umuahia South,1017,Abia,AB,GRID,Ubakala Police Station,7.43641833283982,5.47436666678828
+734,0f92b436-282f-4911-9464-2c45e7ac9fc7,2706,2/2/2018 12:00:00 AM,racheal.olarewaju, ,Urban 1,ABSUMA17,Umuahia North,1016,Abia,AB,GRID,Zone 9 Police Station,7.52299833340641,5.52101666688571
+735,e6b933cd-82d8-4049-a9a6-02f4075fa598,2705,2/2/2018 12:00:00 AM,racheal.olarewaju, ,Urban 2,ABSUMA18,Umuahia North,1016,Abia,AB,GRID,Umuagu Police,7.48874999961282,5.55078666737086
+736,f235ec0d-50ff-4901-91f7-90d9cb991fb2,2704,2/2/2018 12:00:00 AM,racheal.olarewaju, ,Ogbor 2,ABSEZA07,Aba North,1001,Abia,AB,GRID,Divisional Police Headquarters Ogborhill Aba,7.39288666718596,5.11110833308317
+737,e7e55d54-368a-4c8e-98fd-ab78b6e20a2d,3049,2/2/2018 12:00:00 AM,racheal.olarewaju, ,Muri B,TRSKLD10,Karim Lamido,35008,Taraba,TA,GRID,Is A Police Station Outpost Old Muri,10.8831013807242,9.18802499965403
+738,65021053-8983-415c-84b1-6b6fa140387a,3006,2/2/2018 12:00:00 AM,racheal.olarewaju, ,Lekki 2,LASIUI07,Ibeju Lekki,25009,Lagos,LA,GRID,Akodo Police Station,3.94915084603474,6.43725178064523
+739,e19cc93b-ae82-4344-a2f8-0eef6638be6b,3229,2/2/2018 12:00:00 AM,racheal.olarewaju, ,Abagana 3,ANSABN03,Njikoka,4013,Anambra,AN,GRID,Abagana Police Station,6.98923080785556,6.18353684365047
+740,b9956318-1093-4fcd-a31c-8e08e287ca2d,3228,2/2/2018 12:00:00 AM,racheal.olarewaju, ,Olunloyo,OYSONA10,Ona Ara,31026,Oyo,OY,GRID,Divisional Headquarter Ogbere Ibadan,3.94094459082027,7.35470353773815
+741,0656ecdb-0d86-4ed6-a92d-827d7aa52619,3227,2/2/2018 12:00:00 AM,racheal.olarewaju, ,Agbabor / Agbabor-Isu,EBSNCA02,Onicha,11013,Ebonyi,EB,GRID,Nigerian Police Agba Police Station,7.85707666685477,6.21998333276463
+742,0bed4bc8-d403-4986-9d67-38e27ad2c89d,3226,2/2/2018 12:00:00 AM,adanna.alex, ,Akpakwume / Nze,ENSUDD04,Udi,14016,Enugu,EN,GRID,Ezi Nze Police Station,7.28549980157464,6.65179944928519
+743,bc4ca2f5-01c1-43d0-9e9d-d54e1bf0b018,3225,2/2/2018 12:00:00 AM,adanna.alex, ,Ihe,ENSAWG10,Awgu,14002,Enugu,EN,GRID,The Police Post,7.46180550891717,6.23674936129402
+744,ea37e0da-50dc-45eb-8369-75d137018f54,3224,2/2/2018 12:00:00 AM,adanna.alex, ,Oji River 2,ENSJRV05,Oji-River,14014,Enugu,EN,GRID,The Nigeria Police Divisional Headquarters Oji River,7.26917917397975,6.2554583139501
+745,42d5aff0-d2e2-4fff-a155-29e92b7f5fdf,3223,2/2/2018 12:00:00 AM,adanna.alex, ,Oduma 3 /,ENSDBR15,Aninri,14001,Enugu,EN,GRID,Police Post Oduma,7.64013693467183,6.0848079681133
+746,a853b59a-d048-44e9-a402-261c8e514eb6,3222,2/2/2018 12:00:00 AM,adanna.alex, ,Mbuluiyiukwu 2 / Emene,ENSNKW01,Enugu East,14003,Enugu,EN,GRID,Ogbeke Nike,7.53946972964434,6.57057954211223
+747,a3851c74-a176-40f7-8812-4197074f8d18,3220,2/2/2018 12:00:00 AM,adanna.alex, ,Amaigbo 2,IMSAMG07,Nwangele,17015,Imo,IM,GRID,The Nigeria Police Divisional Headquarter,7.06834666656545,5.69342166737607
+748,2866c028-f3ea-4db7-bbda-39a722ffac13,3219,2/2/2018 12:00:00 AM,adanna.alex, ,Onicha 3,IMSETU14,Ezinihitte,17004,Imo,IM,GRID,The Nigeria Police Onicha Divisional Police Station,7.33659496978208,5.54044843614645
+749,15e6f94d-5fe2-4c21-9d0e-b56f9a6eb13a,2772,2/2/2018 12:00:00 AM,racheal.olarewaju, ,Ibokun Road,OSSOSO10,Osogbo,30030,Osun,OS,GRID,Iludun Police Division Osogbo,4.58606999963081,7.78271333305395
+750,8ba3318e-8e9d-4b8a-b04f-dc6682d94b42,3221,2/2/2018 12:00:00 AM,adanna.alex, ,Ahiato,IMSABB01,Aboh-Mbaise,17001,Imo,IM,GRID,Enyiogugu Police Station,7.19947166728366,5.46954500020166
+751,65a45128-03f0-4095-9fb7-dab33351af11,2442,2/2/2018 12:00:00 AM,najib.adam, ,Oru / Awa,OGSIUN10,Ijebu North,28009,Ogun,OG,GRID,Awa Police Station,3.93302359066621,6.95561399868711
+752,69a9aabf-e7f0-443b-a287-eada0e5ebbc3,3264,2/2/2018 12:00:00 AM,racheal.olarewaju, ,Anaku,ANSNKK01,Ayamelum,4007,Anambra,AN,GRID,Divisional Police Headquarters Anaku,6.93706179696443,6.48128692994788
+753,add41ef3-9389-4691-8b1b-5ee32953aeb0,3266,2/2/2018 12:00:00 AM,racheal.olarewaju, ,Akarabata,OSSICL01,Ife Central,30011,Osun,OS,GRID,The Nigerian Police Post,4.49221166703484,7.49410500014568
+754,90666d2d-f5ee-49d9-9252-ab6e5f7ccc7b,3267,2/2/2018 12:00:00 AM,racheal.olarewaju, ,More,OSSIET06,Ife East,30012,Osun,OS,GRID,Ilode Police Post,4.57636666728791,7.48042166682649
+755,7e2314a4-6a5c-4653-8be8-d43833be6295,3268,2/2/2018 12:00:00 AM,racheal.olarewaju, ,Akogun,OSSOLA02,Olorunda,30027,Osun,OS,GRID,Police Command HQ Ring Road,4.55028166676556,7.79864666671034
+756,d8dc24d4-d82e-4e9d-bc4b-ad1c592f04b9,3269,2/2/2018 12:00:00 AM,racheal.olarewaju, ,Akogun,OSSOLA02,Olorunda,30027,Osun,OS,GRID,The Nigeria Police Housing Estate,4.55572166672158,7.80389999978519
+757,300102bb-786a-464c-981f-a2aeb4940fbb,3270,2/2/2018 12:00:00 AM,racheal.olarewaju, ,Akogun,OSSOLA02,Olorunda,30027,Osun,OS,GRID,Nigerian Police Mobile Force,4.57491999985814,7.79527666688472
+758,2afff230-e6c3-4219-927f-79dd7d21d6c5,3271,2/2/2018 12:00:00 AM,racheal.olarewaju, ,Big Qua / Four,CRSCAL10,Calabar Municipal,9008,Cross River,CR,GRID,Police Commissioners Resident,8.33004949958479,4.97537410003474
+759,dbe3b88e-04e9-4f6f-8101-f6cd3a008dd6,3272,2/2/2018 12:00:00 AM,racheal.olarewaju, ,Edim Otop / Two,CRSCAL02,Calabar Municipal,9008,Cross River,CR,GRID,Otop Abasi Police Station,8.33133166662316,4.96419166711178
+760,ea84caa5-5381-4f67-8bc9-e522aa0653eb,3273,2/2/2018 12:00:00 AM,racheal.olarewaju, ,Akim / One,CRSCAL01,Calabar Municipal,9008,Cross River,CR,GRID,Atakpa Police Station,8.32146140032341,4.95919279990784
+761,f7aba12f-bf0e-4076-8674-654dd2d85157,3274,2/2/2018 12:00:00 AM,racheal.olarewaju, ,Akim / One,CRSCAL01,Calabar Municipal,9008,Cross River,CR,GRID,Nsidung Marina Police Station,8.31140000020991,4.95609329996586
+762,bfcf77ed-1480-4e86-bc1e-991cacb84c79,3275,2/2/2018 12:00:00 AM,racheal.olarewaju, ,Olumbanasa 1,ANSNZM05,Anambra West,4003,Anambra,AN,GRID,Community Police Owelle Inoma,6.70555650912564,6.53347151260027
+763,60fec4c9-4257-49dd-93a9-0a42750c2605,3276,2/2/2018 12:00:00 AM,racheal.olarewaju, ,Atani 1,ANSATN03,Ogbaru,4016,Anambra,AN,GRID,Nigerian Police Division Atani,6.74741591781043,6.02277307331872
+764,861e59b1-a922-4f98-982c-a758e53f059b,3277,2/2/2018 12:00:00 AM,racheal.olarewaju, ,Fegge 5,ANSFGG08,Onitsha South,4018,Anambra,AN,GRID,The Police Force Fegge Divisional Headquarters,6.77169831632426,6.13550962986557
+765,1f1dfac5-d32b-4f52-bb3b-cf18f922602a,3278,2/2/2018 12:00:00 AM,racheal.olarewaju, ,Bridge Head 1,ANSFGG01,Onitsha South,4018,Anambra,AN,GRID,The Nigeria Police Force Divisional Police Headquarters,6.76714295788128,6.13212892361099
+766,8771d1d2-b5ae-464d-9a7a-6a7b52c07bc9,3279,2/2/2018 12:00:00 AM,racheal.olarewaju, ,Ikija 1,OSSISH03,Ife South,30014,Osun,OS,GRID,Faforiji Police Post,4.70501333339865,7.28988333284957
+767,197267f7-f2b3-4699-b636-d57405f2deff,3280,2/2/2018 12:00:00 AM,racheal.olarewaju, ,Ukpo 2,ANSKPP07,Dunukofia,4008,Anambra,AN,GRID,Base 15 Special Protection Unit,6.98304530679553,6.19127641637357
+768,17145b48-3e10-40e2-9fe3-cba3e3f00d8a,3281,2/2/2018 12:00:00 AM,racheal.olarewaju, ,Ikot Omin / Ten,CRSCAL08,Calabar Municipal,9008,Cross River,CR,GRID,Police Mobile Force 11Th Squadron Calabar,8.33353169972821,5.02074499978198
+769,20e5525b-65fb-48b2-ae9c-acde2b2e1e11,3282,2/2/2018 12:00:00 AM,racheal.olarewaju, ,Kasuk / Seven,CRSCAL09,Calabar Municipal,9008,Cross River,CR,GRID,The Nigeria Police Force Zone 6 Headquarters,8.33362669961252,5.01678000039675
+770,19346f0d-7862-4fb1-9037-e4ca56f7cb97,3283,2/2/2018 12:00:00 AM,racheal.olarewaju, ,Kasuk / Seven,CRSCAL09,Calabar Municipal,9008,Cross River,CR,GRID,The Nigeria Police Post Esuk Utan,8.32461209956881,5.01690909987514
+771,df66e12e-8480-4735-9732-adfa1f70a857,3284,2/2/2018 12:00:00 AM,racheal.olarewaju, ,Kasuk / Seven,CRSCAL09,Calabar Municipal,9008,Cross River,CR,GRID,Federal Housing Police Station,8.33673833320756,5.02130333308241
+772,0364e68f-9c02-42ed-9477-03c17dfe67f6,3285,5/13/2020 12:00:00 AM,tosin.williams, ,Ibara 2,OGSABS06,Abeokuta South,28002,Ogun,OG,GRID,Office Of The Area Commander Nigeria Police,3.34414494913017,7.13502251637607
+773,f5e9fcfd-5e2e-49e4-b0f2-be858887f6e2,3286,5/13/2020 12:00:00 AM,tosin.williams, ,Ijeun Titun / Ago-Egun / Ijesa,OGSABS10,Abeokuta South,28002,Ogun,OG,GRID,Kemta Police Station Oke Ola Street Kemta Idi Aba,3.38427333284807,7.14272500015869
+774,967e386f-9d3a-4fc4-a2bd-274422b3187a,3287,5/13/2020 12:00:00 AM,tosin.williams, ,Soyindo / Oko / Epe / Itula 1,OGSSAU15,Shagamu,28020,Ogun,OG,GRID,The Nigeria Police Area Command Shagamu,3.65794921458462,6.86852586677537
+775,7691b964-4574-40d4-b209-8b6e1b7aae1b,3288,5/13/2020 12:00:00 AM,tosin.williams, ,Iporo / Sodeke / Sale-Ijeun 1,OGSABS11,Abeokuta South,28002,Ogun,OG,GRID,The Nigerian Police Ibara Divisional Headquarters,3.33928111333279,7.14211154291343
+776,221319ec-1cf1-4db6-acbb-3cb00f049f4f,3290,5/13/2020 12:00:00 AM,tosin.williams, ,Oke-Iroko / Eesa Ikirun,OSSIDN11,Ifelodun,30016,Osun,OS,GRID,Olonde Police Station,4.67383333264223,7.91486333337616
+777,32e92ab3-b448-4ba4-bb69-32617f399bac,3291,5/13/2020 12:00:00 AM,tosin.williams, ,Molete 3,OSSIWO10,Iwo,30023,Osun,OS,GRID,Police Post Odo Ori,4.18923333335169,7.65585333296497
+778,e81f6b92-030a-429f-9543-cb4e1c8b664a,3292,5/13/2020 12:00:00 AM,tosin.williams, ,Akepe / Eketa,OSSOSO01,Osogbo,30030,Osun,OS,GRID,Oke Baale Police Station,4.57810500014568,7.76736833318211
+779,971ff363-7009-46da-a577-239b027cf7ed,3293,5/13/2020 12:00:00 AM,tosin.williams, ,Ikpakapit,CRSGEP01,Yakurr,9017,Cross River,CR,GRID,The Nigeria Police Force Ugep,8.07651669958608,5.81378169956582
+780,a54b0dae-5b92-43e6-b266-8376533f9d34,3294,5/13/2020 12:00:00 AM,tosin.williams, ,Ikpakapit,CRSGEP01,Yakurr,9017,Cross River,CR,GRID,Ugep Police Station,8.07661833286983,5.81368499996285
+781,a838fc7f-50d6-4970-96d9-526636a161e6,3295,5/13/2020 12:00:00 AM,tosin.williams, ,Urban 2 / ObudunUrnan 2,CRSUDU10,Obudu,9014,Cross River,CR,GRID,Regional Police Headquarters Obudu,9.16972329959066,6.66594669968049
+782,e6d95932-1b34-45e7-a97f-a8f7dbd9cbf1,3296,5/13/2020 12:00:00 AM,tosin.williams, ,Imabana 2 / 2,CRSTGD01,Abi,9001,Cross River,CR,GRID,Ibalebo Police Post,8.10295499967356,5.93240499969102
+783,6dadb704-6062-417a-86d2-83fe4501277a,3297,5/13/2020 12:00:00 AM,tosin.williams, ,Oke Amola / Amola Ikirun,OSSIDN09,Ifelodun,30016,Osun,OS,GRID,Nigeria Police Force Obaagun,4.67511499965758,7.9296383330427
+784,58513e3b-a08a-4cac-a361-b9efc0c9e037,3298,5/13/2020 12:00:00 AM,tosin.williams, ,Begiaba,CRSUDU06,Obudu,9014,Cross River,CR,GRID,Igwo Police Outstation,9.12079829980172,6.63081999984314
+785,f2305f73-74f6-4a4c-b776-930c30234fae,3299,5/13/2020 12:00:00 AM,tosin.williams, ,Eporo / Ogbontioro 2,EKSEME02,Emure,13006,Ekiti,EK,GRID,Divisional Police Headquarter Ariyasi,5.46077412542559,7.42682863433407
+786,3179bbc9-7153-4242-9723-2bb60469a34e,3300,5/13/2020 12:00:00 AM,tosin.williams, ,Ekpa Omaka / Inyimagu 1,EBSCHR06,Ikwo,11007,Ebonyi,EB,GRID,Agubia urban Police Station,8.11387166674405,6.06976500015469
+787,c8bdfd11-66f3-4491-b6bd-aae7eaad7c1a,3301,5/13/2020 12:00:00 AM,tosin.williams, ,Orba 1,ENSBLF08,Udenu,14015,Enugu,EN,GRID,Orba Police Station Udenu Division,7.46121434586541,6.85817289116602
+788,d7159a3e-fe32-47c9-a3be-0d54e034e353,3302,5/13/2020 12:00:00 AM,tosin.williams, ,Orba 1,ENSBLF08,Udenu,14015,Enugu,EN,GRID,Ohom Orba Police Station,7.46823092301872,6.86229122406081
+789,71984588-a96c-4678-aec5-0e8e9cea7bb8,3303,5/13/2020 12:00:00 AM,tosin.williams, ,Udi Siding / Iva Valley,ENSENU12,Enugu North,14004,Enugu,EN,GRID,Hillcrest Police Post,7.42834500012168,6.44979333289604
+790,24ca83be-b29a-452f-8596-3418287cc3ce,3304,5/13/2020 12:00:00 AM,tosin.williams, ,Ikem 2,ENSKEM06,Isi-Uzo,14010,Enugu,EN,GRID,Fight Crime,7.71843224565168,6.77625398143613
+791,a82ce040-10f1-44c6-a72c-d3ea98c3330f,3305,5/13/2020 12:00:00 AM,tosin.williams, ,Zanwa,NASLFA13,Lafia,26008,Nasarawa,NA,GRID,Police CID Office Lafia,8.52918166690046,8.4859200002079
+792,2532f05e-55e0-44b4-b024-17b86c3db269,3306,5/13/2020 12:00:00 AM,tosin.williams, ,Ndufu Echara,EBSCHR21,Ikwo,11007,Ebonyi,EB,GRID,Ndufu Ameagu Village Police Station,8.15693499965056,6.11326166689247
+793,6e7ac9ea-d752-4705-989d-d2d1989dc479,3307,5/13/2020 12:00:00 AM,tosin.williams, ,Ameke,EBSEDA04,Afikpo South,11003,Ebonyi,EB,GRID,Ekoli Police Station Ezi Ekenta,7.84415666729643,5.75229166712677
+794,4405494e-3887-4532-b51f-e01444cc0cd7,3308,5/13/2020 12:00:00 AM,tosin.williams, ,Jagun 1,OSSOSO11,Osogbo,30030,Osun,OS,GRID,Nigerian Police Post Owode,4.5886933328311,7.73963500035501
+795,c421dee6-88c4-4367-b870-ca2508f09db6,3309,5/13/2020 12:00:00 AM,tosin.williams, ,Amobi,OSSAYE01,Ayedire,30002,Osun,OS,GRID,Police Station Kuta,4.28767999983216,7.64601499979244
+796,c5155dca-4be4-46a3-a406-6315154a5568,3310,5/13/2020 12:00:00 AM,tosin.williams, ,Ovonum,CRSBRA02,Obubra,9013,Cross River,CR,GRID,Ofukpa Police Station Apiapum,8.30892333294548,6.00063333296197
+797,44874e41-041d-47e8-aec9-b35cb799f62c,3311,5/13/2020 12:00:00 AM,tosin.williams, ,Ebo,CRSCKK14,Yala,9018,Cross River,CR,GRID,Yahe Police Station,8.50313330026165,6.47196500008471
+798,0723a8ef-a300-4ded-af63-904fb0e5a9b5,3312,5/13/2020 12:00:00 AM,tosin.williams, ,Sahonrami / Saho-Rami,NISMSG10,Mashegu,27016,Niger,NI,GRID,The Nigeria Police Force,5.41040029174013,9.88868856122815
+799,4ebd4a8d-7dda-4122-a12a-0b593cc627e6,3313,5/13/2020 12:00:00 AM,tosin.williams, ,Ibagwa-Nike / Edem,ENSNKW11,Enugu East,14003,Enugu,EN,GRID,Divisional Police Head Quarters Abakpa Nike,7.51532139396721,6.50828578016467
+800,60498f56-6229-473e-9284-fe77573480ac,3314,5/13/2020 12:00:00 AM,tosin.williams, ,Achara 2,ENSUWN08,Enugu South,14005,Enugu,EN,GRID,Isuofia Police Post,7.50322333339017,6.41194000013093
+801,233e6c2d-8079-4968-ae27-56fa82d953b9,3315,5/13/2020 12:00:00 AM,tosin.williams, ,Umuitodi 1,ENSENZ10,Igbo-Eze North,14008,Enugu,EN,GRID,The Nigeria Police Igbo Eze North Division Ogrute Enugu Ezike,7.44973962968021,6.97329788878659
+802,ea4db570-301b-4257-9201-ebac1c33353a,3316,5/13/2020 12:00:00 AM,tosin.williams, ,Popo / Otun Jagun 'A',OSSOSO15,Osogbo,30030,Osun,OS,GRID,Dugbe Police Station,4.55062833293124,7.78205666698165

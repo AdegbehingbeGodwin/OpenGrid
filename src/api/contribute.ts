@@ -1,0 +1,319 @@
+import { Hono } from 'hono';
+import type { Bindings } from '../../types';
+import { FACILITY_TYPES, FACILITY_TYPE_LABELS } from '../../types';
+import type { FacilityType } from '../../types';
+
+const app = new Hono<{ Bindings: Bindings }>();
+
+const REPO = 'your-github-username/opengrid'; // UPDATE this before deploying
+const GH_API = 'https://api.github.com';
+
+function normalizeText(value: string) {
+  return value.trim().toLowerCase().replace(/\s+/g, ' ');
+}
+
+function titleCase(value: string) {
+  return value
+    .trim()
+    .replace(/\s+/g, ' ')
+    .split(' ')
+    .map((w) => w.charAt(0).toUpperCase() + w.slice(1).toLowerCase())
+    .join(' ');
+}
+
+function slugify(value: string) {
+  return value
+    .trim()
+    .toLowerCase()
+    .replace(/[^a-z0-9]+/g, '-')
+    .replace(/^-+|-+$/g, '');
+}
+
+interface FacilityEntry {
+  type: FacilityType;
+  name: string;
+  slug: string;
+  coordinates?: { lat: number; lng: number };
+  source: 'community';
+  verified: boolean;
+  added_by?: string;
+}
+
+interface LGAEntry {
+  name: string;
+  slug: string;
+  facilities: FacilityEntry[];
+}
+
+interface StateFile {
+  name: string;
+  slug: string;
+  lgas: LGAEntry[];
+}
+
+function base64UrlEncode(data: Uint8Array): string {
+  let binary = '';
+  for (const byte of data) binary += String.fromCharCode(byte);
+  return btoa(binary).replace(/\+/g, '-').replace(/\//g, '_').replace(/=+$/, '');
+}
+
+async function createGitHubAppJwt(appId: string, privateKeyPem: string): Promise<string> {
+  const now = Math.floor(Date.now() / 1000);
+  const header = { alg: 'RS256', typ: 'JWT' };
+  const payload = { iat: now - 60, exp: now + 600, iss: appId };
+
+  const enc = new TextEncoder();
+  const headerB64 = base64UrlEncode(enc.encode(JSON.stringify(header)));
+  const payloadB64 = base64UrlEncode(enc.encode(JSON.stringify(payload)));
+  const signingInput = `${headerB64}.${payloadB64}`;
+
+  const pemBody = privateKeyPem
+    .replace(/-----BEGIN RSA PRIVATE KEY-----|-----END RSA PRIVATE KEY-----|\n|\r/g, '');
+  const keyData = Uint8Array.from(atob(pemBody), (c) => c.charCodeAt(0));
+
+  const key = await crypto.subtle.importKey(
+    'pkcs8',
+    keyData,
+    { name: 'RSASSA-PKCS1-v1_5', hash: 'SHA-256' },
+    false,
+    ['sign']
+  );
+
+  const signature = await crypto.subtle.sign('RSASSA-PKCS1-v1_5', key, enc.encode(signingInput));
+  const sigB64 = base64UrlEncode(new Uint8Array(signature));
+  return `${signingInput}.${sigB64}`;
+}
+
+async function getInstallationToken(appId: string, privateKey: string, installationId: string): Promise<string> {
+  const jwt = await createGitHubAppJwt(appId, privateKey);
+  const res = await fetch(`${GH_API}/app/installations/${installationId}/access_tokens`, {
+    method: 'POST',
+    headers: {
+      Authorization: `Bearer ${jwt}`,
+      Accept: 'application/vnd.github.v3+json',
+      'User-Agent': 'opengrid',
+    },
+  });
+  if (!res.ok) throw new Error(`Failed to get installation token: ${res.status}`);
+  const data = (await res.json()) as { token: string };
+  return data.token;
+}
+
+async function ghFetch(path: string, token: string, options: RequestInit = {}) {
+  const res = await fetch(`${GH_API}${path}`, {
+    ...options,
+    headers: {
+      Authorization: `Bearer ${token}`,
+      'Content-Type': 'application/json',
+      'User-Agent': 'opengrid',
+      Accept: 'application/vnd.github.v3+json',
+      ...(options.headers || {}),
+    },
+  });
+  return res;
+}
+
+app.post('/', async (c) => {
+  const body = await c.req.json<{
+    facility_name: string;
+    facility_type: string;
+    state: string;
+    lga: string;
+    lat: number;
+    lng: number;
+    description?: string;
+    contributor_name?: string;
+  }>();
+
+  const facilityName = body.facility_name?.trim();
+  const facilityType = body.facility_type?.trim() as FacilityType;
+  const stateInput = body.state?.trim();
+  const lgaInput = body.lga?.trim();
+
+  if (!facilityName || !facilityType || !stateInput || !lgaInput) {
+    return c.json(
+      { success: false, error: { message: 'facility_name, facility_type, state, and lga are required', code: 'BAD_REQUEST' } },
+      400
+    );
+  }
+
+  if (!(FACILITY_TYPES as readonly string[]).includes(facilityType)) {
+    return c.json(
+      { success: false, error: { message: `Invalid facility_type. Valid: ${FACILITY_TYPES.join(', ')}`, code: 'INVALID_TYPE' } },
+      400
+    );
+  }
+
+  const db = c.env.DB;
+
+  const state = await db
+    .prepare('SELECT id, name, slug FROM states WHERE LOWER(name) = LOWER(?) OR slug = ?')
+    .bind(stateInput, slugify(stateInput))
+    .first<{ id: number; name: string; slug: string }>();
+
+  if (!state) {
+    return c.json({ success: false, error: { message: `State "${stateInput}" not found`, code: 'INVALID_STATE' } }, 400);
+  }
+
+  const lga = await db
+    .prepare('SELECT id, name, slug FROM lgas WHERE state_id = ? AND (LOWER(name) = LOWER(?) OR slug = ?)')
+    .bind(state.id, lgaInput, slugify(lgaInput))
+    .first<{ id: number; name: string; slug: string }>();
+
+  if (!lga) {
+    return c.json({ success: false, error: { message: `LGA "${lgaInput}" not found in ${state.name}`, code: 'INVALID_LGA' } }, 400);
+  }
+
+  const titleCased = titleCase(facilityName);
+  const facilitySlug = slugify(`${titleCased}-${lga.name}`);
+
+  if (!/^[a-z0-9]+(-[a-z0-9]+)*$/.test(facilitySlug)) {
+    return c.json({ success: false, error: { message: 'Facility name cannot be converted into a valid slug', code: 'INVALID_SLUG' } }, 400);
+  }
+
+  const duplicateSlug = await db.prepare('SELECT id FROM facilities WHERE slug = ?').bind(facilitySlug).first();
+  if (duplicateSlug) {
+    return c.json({ success: false, error: { message: `A facility with slug "${facilitySlug}" already exists`, code: 'DUPLICATE_SLUG' } }, 409);
+  }
+
+  const existing = await db
+    .prepare('SELECT id FROM facilities WHERE lga_id = ? AND LOWER(name) = LOWER(?) AND type = ?')
+    .bind(lga.id, titleCased, facilityType)
+    .first();
+  if (existing) {
+    return c.json({ success: false, error: { message: `A ${FACILITY_TYPE_LABELS[facilityType]} named "${titleCased}" already exists in ${lga.name}, ${state.name}`, code: 'DUPLICATE_FACILITY' } }, 409);
+  }
+
+  if (typeof body.lat !== 'number' || Number.isNaN(body.lat) || typeof body.lng !== 'number' || Number.isNaN(body.lng)) {
+    return c.json({ success: false, error: { message: 'Coordinates (lat and lng) are required and must be valid numbers', code: 'INVALID_COORDINATES' } }, 400);
+  }
+
+  if (body.lat < 3 || body.lat > 15 || body.lng < 1 || body.lng > 16) {
+    return c.json({ success: false, error: { message: 'Coordinates are outside Nigeria (lat: 3-15, lng: 1-16)', code: 'INVALID_COORDINATES' } }, 400);
+  }
+
+  const { GITHUB_APP_ID, GITHUB_APP_PRIVATE_KEY, GITHUB_APP_INSTALLATION_ID } = c.env;
+  if (!GITHUB_APP_ID || !GITHUB_APP_PRIVATE_KEY || !GITHUB_APP_INSTALLATION_ID) {
+    return c.json({ success: false, error: { message: 'Contribution service unavailable', code: 'SERVICE_UNAVAILABLE' } }, 503);
+  }
+
+  let token: string;
+  try {
+    token = await getInstallationToken(GITHUB_APP_ID, GITHUB_APP_PRIVATE_KEY, GITHUB_APP_INSTALLATION_ID);
+  } catch {
+    return c.json({ success: false, error: { message: 'Failed to authenticate with GitHub', code: 'AUTH_ERROR' } }, 502);
+  }
+
+  const mainRef = await ghFetch(`/repos/${REPO}/git/ref/heads/main`, token);
+  if (!mainRef.ok) {
+    return c.json({ success: false, error: { message: 'Failed to read repository', code: 'UPSTREAM_ERROR' } }, 502);
+  }
+  const mainData = (await mainRef.json()) as { object: { sha: string } };
+  const baseSha = mainData.object.sha;
+
+  const filePath = `data/states/${state.slug}.json`;
+  const fileRes = await ghFetch(`/repos/${REPO}/contents/${filePath}?ref=main`, token);
+  if (!fileRes.ok) {
+    return c.json({ success: false, error: { message: 'Failed to read state data file', code: 'UPSTREAM_ERROR' } }, 502);
+  }
+  const fileData = (await fileRes.json()) as { content: string; sha: string };
+  const fileContent = atob(fileData.content.replace(/\n/g, ''));
+  const stateFile: StateFile = JSON.parse(fileContent);
+
+  const lgaEntry = stateFile.lgas.find(
+    (l) => l.slug === lga.slug || normalizeText(l.name) === normalizeText(lga.name)
+  );
+
+  if (!lgaEntry) {
+    return c.json({ success: false, error: { message: `LGA "${lga.name}" not found in state data file`, code: 'DATA_MISMATCH' } }, 500);
+  }
+
+  const contributor = body.contributor_name?.trim();
+  const newFacility: FacilityEntry = {
+    type: facilityType,
+    name: titleCased,
+    slug: facilitySlug,
+    coordinates: { lat: body.lat, lng: body.lng },
+    source: 'community',
+    verified: false,
+    ...(contributor ? { added_by: contributor } : {}),
+  };
+
+  lgaEntry.facilities.push(newFacility);
+  const updatedContent = JSON.stringify(stateFile, null, 2) + '\n';
+
+  const branchName = `facility/${facilitySlug}-${Date.now()}`;
+  const createBranch = await ghFetch(`/repos/${REPO}/git/refs`, token, {
+    method: 'POST',
+    body: JSON.stringify({ ref: `refs/heads/${branchName}`, sha: baseSha }),
+  });
+  if (!createBranch.ok) {
+    return c.json({ success: false, error: { message: 'Failed to create branch', code: 'UPSTREAM_ERROR' } }, 502);
+  }
+
+  const commitMessage = `feat: add ${titleCased} (${FACILITY_TYPE_LABELS[facilityType]}) in ${lga.name}, ${state.name}`;
+  const updateFile = await ghFetch(`/repos/${REPO}/contents/${filePath}`, token, {
+    method: 'PUT',
+    body: JSON.stringify({
+      message: commitMessage,
+      content: btoa(updatedContent),
+      sha: fileData.sha,
+      branch: branchName,
+    }),
+  });
+  if (!updateFile.ok) {
+    return c.json({ success: false, error: { message: 'Failed to commit changes', code: 'UPSTREAM_ERROR' } }, 502);
+  }
+
+  const coords = `${body.lat}, ${body.lng}`;
+  const prBody = [
+    `## New Facility Submission`,
+    ``,
+    `| Field | Value |`,
+    `|-------|-------|`,
+    `| **Facility** | ${titleCased} |`,
+    `| **Type** | ${FACILITY_TYPE_LABELS[facilityType]} |`,
+    `| **State** | ${state.name} |`,
+    `| **LGA** | ${lga.name} |`,
+    `| **Slug** | \`${facilitySlug}\` |`,
+    `| **Coordinates** | ${coords} |`,
+    `| **Submitted by** | ${contributor || 'Anonymous'} |`,
+    ``,
+    body.description ? `### Notes\n${body.description}\n` : '',
+    `---`,
+    `*Submitted via the [OpenGrid](https://opengrid.pages.dev) contribution form.*`,
+  ].filter(Boolean).join('\n');
+
+  const createPr = await ghFetch(`/repos/${REPO}/pulls`, token, {
+    method: 'POST',
+    body: JSON.stringify({
+      title: `feat: add ${titleCased} (${FACILITY_TYPE_LABELS[facilityType]}) — ${state.name}`,
+      body: prBody,
+      head: branchName,
+      base: 'main',
+    }),
+  });
+  if (!createPr.ok) {
+    return c.json({ success: false, error: { message: 'Failed to create pull request', code: 'UPSTREAM_ERROR' } }, 502);
+  }
+
+  const pr = (await createPr.json()) as { html_url: string; number: number };
+
+  await ghFetch(`/repos/${REPO}/issues/${pr.number}/labels`, token, {
+    method: 'POST',
+    body: JSON.stringify({ labels: ['facility-submission'] }),
+  });
+
+  return c.json(
+    {
+      success: true,
+      data: {
+        pr_url: pr.html_url,
+        message: `Pull request created! It will be reviewed and merged shortly.`,
+      },
+    },
+    201
+  );
+});
+
+export default app;
