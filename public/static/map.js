@@ -1,10 +1,9 @@
 (function() {
-  // Dark matter style
   const style = {
     version: 8,
-    name: 'Dark Matter',
+    name: 'OpenGrid Night Atlas',
     sources: {
-      'basemap': {
+      basemap: {
         type: 'raster',
         tiles: [
           'https://a.basemaps.cartocdn.com/dark_all/{z}/{x}/{y}.png',
@@ -25,106 +24,279 @@
     ]
   };
 
+  const defaultView = {
+    center: [8.6753, 9.082],
+    zoom: 5.5
+  };
+
   const map = new maplibregl.Map({
     container: 'map',
     style: style,
-    center: [8.6753, 9.0820], // Center of Nigeria
-    zoom: 5.5,
+    center: defaultView.center,
+    zoom: defaultView.zoom,
     minZoom: 4,
     maxZoom: 18,
     pitch: 0,
     antialias: true
   });
 
-  map.addControl(new maplibregl.NavigationControl(), 'top-right');
+  map.addControl(new maplibregl.NavigationControl({ visualizePitch: true }), 'top-right');
 
-  // Palette for different facility types
   const typeColors = {
-    'health_facility': '#34d399', // green
-    'school': '#60a5fa',          // blue
-    'market': '#f0be7a',          // orange
-    'water_point': '#38bdf8',     // light blue
-    'government_building': '#9ca3af', // gray
-    'police_station': '#1d4ed8',  // dark blue
-    'fire_station': '#ef4444',    // red
-    'post_office': '#f97316',     // orange-red
-    'idp_site': '#c084fc',        // purple
-    'church': '#fbbf24',          // amber
-    'mosque': '#34d399',          // green
-    'farm': '#a3e635',            // lime
-    'factory': '#a8a29e',         // stone
-    'energy_substation': '#fb923c', // orange
-    'filling_station': '#f43f5e'  // rose
+    health_facility: '#41d39f',
+    school: '#68a5ff',
+    market: '#e6ae67',
+    water_point: '#53c4ff',
+    government_building: '#a7b0bb',
+    police_station: '#3569ff',
+    fire_station: '#ef5a5a',
+    post_office: '#ff8d4d',
+    idp_site: '#b788ff',
+    church: '#e4c04e',
+    mosque: '#58cf8d',
+    farm: '#9adf58',
+    factory: '#b3a79f',
+    energy_substation: '#f29a4a',
+    filling_station: '#f25273'
   };
 
-  // Convert the color map to a Mapbox match expression
   const colorMatchExp = ['match', ['get', 't']];
-  for (const [key, color] of Object.entries(typeColors)) {
-    colorMatchExp.push(key, color);
-  }
-  colorMatchExp.push('#cbd5e1'); // default color
+  Object.entries(typeColors).forEach(function(entry) {
+    colorMatchExp.push(entry[0], entry[1]);
+  });
+  colorMatchExp.push('#d9e3e8');
 
   const state = {
     features: [],
-    activeTypes: new Set()
+    activeTypes: new Set(),
+    query: ''
   };
 
-  // Setup UI checkboxes
-  const checkboxes = document.querySelectorAll('.type-filter');
-  checkboxes.forEach(cb => {
-    state.activeTypes.add(cb.value);
-    cb.addEventListener('change', () => {
-      if (cb.checked) {
-        state.activeTypes.add(cb.value);
+  const checkboxes = Array.from(document.querySelectorAll('.type-filter'));
+  const loadingEl = document.getElementById('map-loading');
+  const totalVisibleEl = document.getElementById('total-visible');
+  const activeTypeCountEl = document.getElementById('active-type-count');
+  const searchStateEl = document.getElementById('search-state');
+  const filterStatusEl = document.getElementById('map-filter-status');
+  const searchInput = document.getElementById('map-search');
+  const selectAllBtn = document.getElementById('map-select-all');
+  const clearAllBtn = document.getElementById('map-clear-all');
+  const resetViewBtn = document.getElementById('map-reset-view');
+  const viewportVisibleCountEl = document.getElementById('viewport-visible-count');
+  const viewportLeadingTypeEl = document.getElementById('viewport-leading-type');
+  const viewportBreakdownEl = document.getElementById('viewport-breakdown');
+  const zoomLevelEl = document.getElementById('map-zoom-level');
+  const sidebarToggleBtn = document.getElementById('map-sidebar-toggle');
+  const sidebarEl = document.querySelector('.map-sidebar-premium');
+
+  checkboxes.forEach(function(checkbox) {
+    state.activeTypes.add(checkbox.value);
+  });
+
+  function updateStatus(total) {
+    const activeCount = state.activeTypes.size;
+    const queryText = state.query ? '"' + state.query + '"' : 'All';
+    activeTypeCountEl.textContent = String(activeCount);
+    searchStateEl.textContent = queryText;
+
+    if (activeCount === 0) {
+      filterStatusEl.textContent = 'No types selected. Choose at least one category to show facilities.';
+      return;
+    }
+
+    const typeLabel =
+      activeCount === checkboxes.length
+        ? 'all facility types'
+        : activeCount === 1
+          ? '1 active type'
+          : activeCount + ' active types';
+
+    filterStatusEl.textContent =
+      'Showing ' + total.toLocaleString() + ' facilities across ' + typeLabel + '.';
+  }
+
+  function titleizeType(value) {
+    return String(value || '')
+      .replace(/_/g, ' ')
+      .replace(/\b\w/g, function(char) {
+        return char.toUpperCase();
+      });
+  }
+
+  function buildFilteredFeatures() {
+    const query = state.query.trim().toLowerCase();
+    return state.features.filter(function(feature) {
+      const matchesType = state.activeTypes.has(feature.properties.t);
+      if (!matchesType) return false;
+      if (!query) return true;
+      return String(feature.properties.n || '').toLowerCase().includes(query);
+    });
+  }
+
+  function updateMapSource() {
+    const source = map.getSource('facilities');
+    if (!source) return;
+
+    const filtered = buildFilteredFeatures();
+    totalVisibleEl.textContent = filtered.length.toLocaleString();
+    updateStatus(filtered.length);
+
+    source.setData({
+      type: 'FeatureCollection',
+      features: filtered
+    });
+
+    updateViewportInsights(filtered);
+  }
+
+  function updateViewportInsights(features) {
+    if (!viewportVisibleCountEl || !viewportLeadingTypeEl || !viewportBreakdownEl || !zoomLevelEl) {
+      return;
+    }
+
+    zoomLevelEl.textContent = 'Zoom ' + map.getZoom().toFixed(1);
+
+    if (!features.length) {
+      viewportVisibleCountEl.textContent = '0';
+      viewportLeadingTypeEl.textContent = '-';
+      viewportBreakdownEl.innerHTML =
+        '<div class="viewport-breakdown-empty">No facilities match the current filters.</div>';
+      return;
+    }
+
+    const bounds = map.getBounds();
+    const inView = features.filter(function(feature) {
+      const coords = feature.geometry && feature.geometry.coordinates;
+      return coords && bounds.contains([coords[0], coords[1]]);
+    });
+
+    viewportVisibleCountEl.textContent = inView.length.toLocaleString();
+
+    if (!inView.length) {
+      viewportLeadingTypeEl.textContent = '-';
+      viewportBreakdownEl.innerHTML =
+        '<div class="viewport-breakdown-empty">Pan or zoom to bring facilities into the current frame.</div>';
+      return;
+    }
+
+    const counts = {};
+    inView.forEach(function(feature) {
+      const type = feature.properties.t;
+      counts[type] = (counts[type] || 0) + 1;
+    });
+
+    const ranked = Object.entries(counts)
+      .sort(function(a, b) {
+        return b[1] - a[1];
+      })
+      .slice(0, 4);
+
+    viewportLeadingTypeEl.textContent = titleizeType(ranked[0][0]);
+    viewportBreakdownEl.innerHTML = ranked
+      .map(function(entry) {
+        return (
+          '<div class="viewport-row">' +
+          '<span>' + titleizeType(entry[0]) + '</span>' +
+          '<strong>' + Number(entry[1]).toLocaleString() + '</strong>' +
+          '</div>'
+        );
+      })
+      .join('');
+  }
+
+  function setAllTypes(checked) {
+    checkboxes.forEach(function(checkbox) {
+      checkbox.checked = checked;
+      if (checked) {
+        state.activeTypes.add(checkbox.value);
       } else {
-        state.activeTypes.delete(cb.value);
+        state.activeTypes.delete(checkbox.value);
       }
+    });
+    updateMapSource();
+  }
+
+  function resetView() {
+    map.easeTo({
+      center: defaultView.center,
+      zoom: defaultView.zoom,
+      bearing: 0,
+      pitch: 0,
+      duration: 1100
+    });
+  }
+
+  checkboxes.forEach(function(checkbox) {
+    checkbox.addEventListener('change', function() {
+      if (checkbox.checked) state.activeTypes.add(checkbox.value);
+      else state.activeTypes.delete(checkbox.value);
       updateMapSource();
     });
   });
 
-  const loadingEl = document.getElementById('map-loading');
-  const totalVisibleEl = document.getElementById('total-visible');
-
-  function updateMapSource() {
-    if (!map.getSource('facilities')) return;
-    
-    const filtered = state.features.filter(f => state.activeTypes.has(f.properties.t));
-    totalVisibleEl.textContent = filtered.length.toLocaleString();
-    
-    map.getSource('facilities').setData({
-      type: 'FeatureCollection',
-      features: filtered
+  if (searchInput) {
+    searchInput.addEventListener('input', function() {
+      state.query = searchInput.value || '';
+      updateMapSource();
     });
   }
 
-  map.on('load', () => {
-    // Inject custom CSS styles for the sidebar filter dots
+  if (selectAllBtn) {
+    selectAllBtn.addEventListener('click', function() {
+      setAllTypes(true);
+    });
+  }
+
+  if (clearAllBtn) {
+    clearAllBtn.addEventListener('click', function() {
+      setAllTypes(false);
+    });
+  }
+
+  if (resetViewBtn) {
+    resetViewBtn.addEventListener('click', function() {
+      resetView();
+    });
+  }
+
+  if (sidebarToggleBtn && sidebarEl) {
+    sidebarToggleBtn.addEventListener('click', function() {
+      const collapsed = sidebarEl.classList.toggle('is-collapsed');
+      sidebarToggleBtn.setAttribute('aria-expanded', collapsed ? 'false' : 'true');
+    });
+  }
+
+  map.on('load', function() {
     let dynamicCSS = '';
-    for (const [key, color] of Object.entries(typeColors)) {
-      dynamicCSS += `.type-${key} { background-color: ${color}; box-shadow: 0 0 8px ${color}40; }\n`;
-    }
+    Object.entries(typeColors).forEach(function(entry) {
+      dynamicCSS += '.type-' + entry[0] + ' { background-color: ' + entry[1] + '; box-shadow: 0 0 10px ' + entry[1] + '40; }\n';
+    });
     const styleEl = document.createElement('style');
     styleEl.textContent = dynamicCSS;
     document.head.appendChild(styleEl);
 
-    // Fetch GeoJSON from the API so Pages does not need to ship a 46 MB static asset.
     fetch('/api/map-data')
-      .then(r => r.json())
-      .then(data => {
-        state.features = data.features;
-        loadingEl.style.opacity = '0';
-        setTimeout(() => loadingEl.remove(), 300);
+      .then(function(response) {
+        return response.json();
+      })
+      .then(function(data) {
+        state.features = data.features || [];
+
+        if (loadingEl) {
+          loadingEl.style.opacity = '0';
+          setTimeout(function() {
+            loadingEl.remove();
+          }, 350);
+        }
 
         map.addSource('facilities', {
           type: 'geojson',
           data: data,
           cluster: true,
-          clusterMaxZoom: 14, // Max zoom to cluster points on
-          clusterRadius: 50 // Radius of each cluster when clustering points
+          clusterMaxZoom: 14,
+          clusterRadius: 50
         });
 
-        // 1. Cluster glow rings (blur)
         map.addLayer({
           id: 'clusters-glow',
           type: 'circle',
@@ -134,26 +306,25 @@
             'circle-color': [
               'step',
               ['get', 'point_count'],
-              'rgba(52, 211, 153, 0.2)', // < 100
+              'rgba(65, 211, 159, 0.24)',
               100,
-              'rgba(240, 190, 122, 0.2)', // >= 100
+              'rgba(230, 174, 103, 0.22)',
               1000,
-              'rgba(248, 113, 113, 0.2)' // >= 1000
+              'rgba(239, 90, 90, 0.22)'
             ],
             'circle-radius': [
               'step',
               ['get', 'point_count'],
-              30,
+              34,
               100,
-              45,
+              48,
               1000,
-              60
+              64
             ],
             'circle-blur': 1
           }
         });
 
-        // 2. Cluster sharp circles
         map.addLayer({
           id: 'clusters',
           type: 'circle',
@@ -163,27 +334,26 @@
             'circle-color': [
               'step',
               ['get', 'point_count'],
-              'rgba(52, 211, 153, 0.6)', 
+              'rgba(65, 211, 159, 0.76)',
               100,
-              'rgba(240, 190, 122, 0.6)', 
+              'rgba(230, 174, 103, 0.76)',
               1000,
-              'rgba(248, 113, 113, 0.6)'
+              'rgba(239, 90, 90, 0.76)'
             ],
             'circle-radius': [
               'step',
               ['get', 'point_count'],
-               18,
-               100,
-               24,
-               1000,
-               32
+              18,
+              100,
+              26,
+              1000,
+              34
             ],
-            'circle-stroke-width': 1,
-            'circle-stroke-color': 'rgba(255, 255, 255, 0.5)'
+            'circle-stroke-width': 1.25,
+            'circle-stroke-color': 'rgba(255, 255, 255, 0.55)'
           }
         });
 
-        // 3. Cluster count text
         map.addLayer({
           id: 'cluster-count',
           type: 'symbol',
@@ -200,20 +370,6 @@
           }
         });
 
-        // 4. Unclustered individual points
-        map.addLayer({
-          id: 'unclustered-point',
-          type: 'circle',
-          source: 'facilities',
-          filter: ['!', ['has', 'point_count']],
-          paint: {
-            'circle-color': colorMatchExp,
-            'circle-radius': 4,
-            'circle-stroke-width': 0
-          }
-        });
-
-        // 5. Unclustered point glow
         map.addLayer({
           id: 'unclustered-point-glow',
           type: 'circle',
@@ -227,56 +383,82 @@
           }
         });
 
-        // Set initial total
+        map.addLayer({
+          id: 'unclustered-point',
+          type: 'circle',
+          source: 'facilities',
+          filter: ['!', ['has', 'point_count']],
+          paint: {
+            'circle-color': colorMatchExp,
+            'circle-radius': 4.2,
+            'circle-stroke-width': 0.6,
+            'circle-stroke-color': 'rgba(8, 12, 10, 0.36)'
+          }
+        });
+
         updateMapSource();
 
-        // ── Interaction ──
-        
-        // Inspect a cluster on click
-        map.on('click', 'clusters', (e) => {
-          const features = map.queryRenderedFeatures(e.point, { layers: ['clusters'] });
+        map.on('moveend', function() {
+          updateViewportInsights(buildFilteredFeatures());
+        });
+
+        map.on('zoomend', function() {
+          updateViewportInsights(buildFilteredFeatures());
+        });
+
+        map.on('click', 'clusters', function(event) {
+          const features = map.queryRenderedFeatures(event.point, { layers: ['clusters'] });
           const clusterId = features[0].properties.cluster_id;
-          map.getSource('facilities').getClusterExpansionZoom(clusterId).then((zoom) => {
+          map.getSource('facilities').getClusterExpansionZoom(clusterId).then(function(zoom) {
             map.easeTo({
               center: features[0].geometry.coordinates,
-              zoom: zoom + 1
+              zoom: zoom + 1,
+              duration: 1000
             });
           });
         });
 
-        // Hover states
-        map.on('mouseenter', 'clusters', () => { map.getCanvas().style.cursor = 'pointer'; });
-        map.on('mouseleave', 'clusters', () => { map.getCanvas().style.cursor = ''; });
-        map.on('mouseenter', 'unclustered-point', () => { map.getCanvas().style.cursor = 'pointer'; });
-        map.on('mouseleave', 'unclustered-point', () => { map.getCanvas().style.cursor = ''; });
+        map.on('mouseenter', 'clusters', function() {
+          map.getCanvas().style.cursor = 'pointer';
+        });
+        map.on('mouseleave', 'clusters', function() {
+          map.getCanvas().style.cursor = '';
+        });
+        map.on('mouseenter', 'unclustered-point', function() {
+          map.getCanvas().style.cursor = 'pointer';
+        });
+        map.on('mouseleave', 'unclustered-point', function() {
+          map.getCanvas().style.cursor = '';
+        });
 
-        // Popup for individual points
-        map.on('click', 'unclustered-point', (e) => {
-          const coords = e.features[0].geometry.coordinates.slice();
-          const props = e.features[0].properties;
-          
-          while (Math.abs(e.lngLat.lng - coords[0]) > 180) {
-            coords[0] += e.lngLat.lng > coords[0] ? 360 : -360;
+        map.on('click', 'unclustered-point', function(event) {
+          const coords = event.features[0].geometry.coordinates.slice();
+          const props = event.features[0].properties;
+
+          while (Math.abs(event.lngLat.lng - coords[0]) > 180) {
+            coords[0] += event.lngLat.lng > coords[0] ? 360 : -360;
           }
 
-          const html = `<div class="map-popup">
-            <span class="popup-kicker">${props.t.replace(/_/g, ' ')}</span>
-            <h3>${props.n}</h3>
-            <div class="popup-meta">
-              <span class="meta-tag">${props.s === 'grid3' ? 'Verified (Grid3)' : 'Community'}</span>
-            </div>
-          </div>`;
+          const html =
+            '<div class="map-popup">' +
+            '<span class="popup-kicker">' + props.t.replace(/_/g, ' ') + '</span>' +
+            '<h3>' + props.n + '</h3>' +
+            '<div class="popup-meta">' +
+            '<span class="meta-tag">' + (props.s === 'grid3' ? 'Verified (Grid3)' : 'Community') + '</span>' +
+            '</div>' +
+            '</div>';
 
-          new maplibregl.Popup({ closeButton: false, className: 'glass-popup' })
+          new maplibregl.Popup({ closeButton: false, className: 'glass-popup', offset: 18 })
             .setLngLat(coords)
             .setHTML(html)
             .addTo(map);
         });
-
       })
-      .catch(err => {
-        console.error('Failed to load map data:', err);
-        loadingEl.textContent = 'Failed to load data. Please refresh.';
+      .catch(function(error) {
+        console.error('Failed to load map data:', error);
+        if (loadingEl) {
+          loadingEl.textContent = 'Failed to load data. Please refresh.';
+        }
       });
   });
 })();

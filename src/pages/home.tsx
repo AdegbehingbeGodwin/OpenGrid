@@ -49,91 +49,93 @@ export const HomePage: FC<HomeProps> = ({
   const hotStates = stateStats.filter((s) => s.facility_count > 0).slice(0, 5);
   const needsData = stateStats.filter((s) => s.facility_count === 0).slice(0, 5);
   const topTypes = typeBreakdown.slice(0, 6);
+  const coverageRatio = totalStates === 0 ? 0 : Math.round((statesWithData / totalStates) * 100);
 
   const tradeRoutes: Array<{ x1: number; y1: number; x2: number; y2: number }> = [];
   const hotSlugs = hotStates.map((s) => s.slug);
   for (let i = 0; i < hotSlugs.length - 1; i++) {
     const a = STATE_COORDS[hotSlugs[i]];
     const b = STATE_COORDS[hotSlugs[i + 1]];
-    if (a && b) {
-      tradeRoutes.push({ x1: a.x, y1: a.y, x2: b.x, y2: b.y });
-    }
+    if (a && b) tradeRoutes.push({ x1: a.x, y1: a.y, x2: b.x, y2: b.y });
   }
 
   return (
-    <div class="home-page">
+    <div class="home-page home-cinematic">
       <div class="ambient-grid" aria-hidden="true"></div>
+      <div class="hero-orbit hero-orbit-a" aria-hidden="true"></div>
+      <div class="hero-orbit hero-orbit-b" aria-hidden="true"></div>
 
-      <section class="hero hero-modern">
-        <div class="hero-copy">
+      <section class="hero-canvas">
+        <div class="hero-narrative">
           <div class="eyebrow">
             <span class="eyebrow-dot"></span>
-            Open infrastructure data for Nigeria
+            World-class civic infrastructure visibility
           </div>
-          <h1>Every school, clinic, and market. In one API.</h1>
-          <p class="subtitle">
-            OpenGrid is a community-powered directory of public facilities across all 36 states and the FCT.
-            Seeded from Grid3 data. Kept alive by contributors.
-          </p>
+          <div class="hero-manifesto">
+            <p class="hero-prelude">For developers, researchers, contributors, and the public.</p>
+            <h1>See Nigeria's public infrastructure as a living system, not a spreadsheet.</h1>
+            <p class="subtitle hero-subtitle">
+              OpenGrid turns scattered facility records into a civic data surface that feels
+              legible, modern, and consequential. Explore what exists, spot what is missing, and
+              contribute what your community knows.
+            </p>
+          </div>
 
           <div class="hero-actions">
             <a href="/docs" class="btn btn-glow" id="hero-docs-btn">
-              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M13 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V9z"/><polyline points="13 2 13 9 20 9"/></svg>
               Explore the API
             </a>
-            <a href="/contribute" class="btn btn-outline" id="hero-contribute-btn">
-              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>
-              Add a Facility
+            <a href="/map" class="btn btn-outline" id="hero-map-btn">
+              Enter the map
+            </a>
+            <a href="/contribute" class="hero-text-link" id="hero-contribute-btn">
+              Contribute missing facilities
             </a>
           </div>
 
-          <div class="stats-strip">
-            <div class="stat-item">
-              <span class="stat-number">{formatCount(totalFacilities)}</span>
-              <span class="stat-label">Facilities indexed</span>
+          <div class="hero-proofline">
+            <div class="proof-chip">
+              <span class="proof-label">Coverage</span>
+              <strong>{coverageRatio}% of states represented</strong>
             </div>
-            <div class="stat-divider"></div>
-            <div class="stat-item">
-              <span class="stat-number">{statesWithData}/{totalStates}</span>
-              <span class="stat-label">States with data</span>
-            </div>
-            <div class="stat-divider"></div>
-            <div class="stat-item">
-              <span class="stat-number">{formatCount(lgasWithData)}</span>
-              <span class="stat-label">LGAs covered</span>
+            <div class="proof-chip">
+              <span class="proof-label">Open access</span>
+              <strong>No auth. JSON API. Community-powered.</strong>
             </div>
           </div>
         </div>
 
-        <div class="hero-visual">
-          <div class="map-card">
-            <div class="map-card-header">
+        <div class="hero-stage">
+          <div class="hero-stage-header">
+            <div>
+              <span class="map-kicker">National signal view</span>
+              <h2>Nigeria facility pulse</h2>
+            </div>
+            <div class="hero-stage-stats">
               <div>
-                <span class="map-kicker">Live coverage</span>
-                <h2>Nigeria facility pulse</h2>
+                <span>Facilities indexed</span>
+                <strong>{formatCount(totalFacilities)}</strong>
               </div>
-              <div class="map-header-tools">
-                <button type="button" class="map-reset" id="map-reset" hidden>
-                  Reset view
-                </button>
-                <div class="map-legend">
-                  <span><i class="legend-dot legend-dot-hot"></i> Has data</span>
-                  <span><i class="legend-dot legend-dot-watch"></i> Needs data</span>
-                </div>
+              <div>
+                <span>LGAs covered</span>
+                <strong>{formatCount(lgasWithData)}</strong>
               </div>
             </div>
+          </div>
 
-            <div class="market-map" id="market-map">
-              <svg class="nigeria-svg" viewBox="0 0 800 700" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <div class="hero-stage-map" id="market-map">
+            <svg class="nigeria-svg" viewBox="0 0 800 700" fill="none" xmlns="http://www.w3.org/2000/svg">
               <g class="map-viewport" id="map-viewport">
                 <path class="nigeria-outline" d={NIGERIA_OUTLINE_PATH} />
 
-                {tradeRoutes.map((r, i) => (
+                {tradeRoutes.map((route, index) => (
                   <line
-                    key={`route-${i}`}
+                    key={`route-${index}`}
                     class="trade-route"
-                    x1={String(r.x1)} y1={String(r.y1)}
-                    x2={String(r.x2)} y2={String(r.y2)}
+                    x1={String(route.x1)}
+                    y1={String(route.y1)}
+                    x2={String(route.x2)}
+                    y2={String(route.y2)}
                   />
                 ))}
 
@@ -141,12 +143,18 @@ export const HomePage: FC<HomeProps> = ({
                   const coords = STATE_COORDS[state.slug];
                   if (!coords) return null;
 
-                  const r = dotRadius(state.facility_count);
+                  const radius = dotRadius(state.facility_count);
                   const isHot = state.facility_count > 0;
                   const dotClass = isHot ? 'market-dot market-dot-hot' : 'market-dot market-dot-watch';
-                  const showLabel = state.facility_count > 50 || hotStates.slice(0, 8).includes(state) || needsData.slice(0, 3).includes(state);
-                  const pulseSpeed = isHot ? `${2.5 + Math.random() * 1.5}s` : `${3.5 + Math.random() * 1}s`;
-                  const labelDx = coords.labelOffset?.[0] ?? (coords.labelDir === 'left' ? -r - 6 : r + 6);
+                  const showLabel =
+                    state.facility_count > 50 ||
+                    hotStates.slice(0, 8).includes(state) ||
+                    needsData.slice(0, 3).includes(state);
+                  const pulseSpeed = isHot
+                    ? `${2.5 + Math.random() * 1.5}s`
+                    : `${3.5 + Math.random() * 1}s`;
+                  const labelDx =
+                    coords.labelOffset?.[0] ?? (coords.labelDir === 'left' ? -radius - 6 : radius + 6);
                   const labelDy = coords.labelOffset?.[1] ?? 4;
 
                   return (
@@ -161,23 +169,30 @@ export const HomePage: FC<HomeProps> = ({
                       data-y={String(coords.y)}
                       data-label={coords.label}
                     >
-                      {isHot && r >= 5 && (
-                        <circle
-                          class="market-dot-ring"
-                          cx={String(coords.x)} cy={String(coords.y)}
-                          r={String(r * 2)}
-                        >
-                          <animate attributeName="r" values={`${r * 2};${r * 3.5};${r * 2}`} dur={pulseSpeed} repeatCount="indefinite" />
-                          <animate attributeName="opacity" values="0.4;0;0.4" dur={pulseSpeed} repeatCount="indefinite" />
+                      {isHot && radius >= 5 && (
+                        <circle class="market-dot-ring" cx={String(coords.x)} cy={String(coords.y)} r={String(radius * 2)}>
+                          <animate
+                            attributeName="r"
+                            values={`${radius * 2};${radius * 3.5};${radius * 2}`}
+                            dur={pulseSpeed}
+                            repeatCount="indefinite"
+                          />
+                          <animate
+                            attributeName="opacity"
+                            values="0.4;0;0.4"
+                            dur={pulseSpeed}
+                            repeatCount="indefinite"
+                          />
                         </circle>
                       )}
 
-                      <circle
-                        class={dotClass}
-                        cx={String(coords.x)} cy={String(coords.y)}
-                        r={String(r)}
-                      >
-                        <animate attributeName="r" values={`${r};${r + 2};${r}`} dur={pulseSpeed} repeatCount="indefinite" />
+                      <circle class={dotClass} cx={String(coords.x)} cy={String(coords.y)} r={String(radius)}>
+                        <animate
+                          attributeName="r"
+                          values={`${radius};${radius + 2};${radius}`}
+                          dur={pulseSpeed}
+                          repeatCount="indefinite"
+                        />
                       </circle>
 
                       {showLabel && (
@@ -202,93 +217,93 @@ export const HomePage: FC<HomeProps> = ({
               </span>
             </div>
 
-              <div class="map-focus-card" id="map-focus-card" hidden>
-                <span class="focus-kicker">Focused state</span>
-                <strong id="focus-title">Nigeria overview</strong>
-                <p id="focus-meta">Click a node to zoom in and inspect coverage.</p>
-                <a href="/api" id="focus-link">Open API index</a>
-              </div>
+            <div class="map-focus-card" id="map-focus-card" hidden>
+              <span class="focus-kicker">Focused state</span>
+              <strong id="focus-title">Nigeria overview</strong>
+              <p id="focus-meta">Click a node to zoom in and inspect coverage.</p>
+              <a href="/api" id="focus-link">
+                Open API index
+              </a>
             </div>
 
-            <div class="activity-ribbon">
-              <div class="activity-column">
-                <span class="activity-label">Top coverage</span>
-                <p>
-                  {hotStates.map((s, i) => (
-                    <span key={s.slug}>
-                      {i > 0 && ', '}
-                      <strong>{s.name}</strong> ({formatCount(s.facility_count)})
-                    </span>
-                  ))}
-                </p>
-              </div>
-              <div class="activity-column">
-                <span class="activity-label">Needs contributors</span>
-                <p>
-                  {needsData.map((s, i) => (
-                    <span key={s.slug}>
-                      {i > 0 && ', '}
-                      {s.name}
-                    </span>
-                  ))}
-                </p>
-              </div>
-            </div>
+            <button type="button" class="map-reset hero-map-reset" id="map-reset" hidden>
+              Reset view
+            </button>
           </div>
         </div>
       </section>
 
-      {/* Facility types strip */}
-      {topTypes.length > 0 && (
-        <section class="type-strip">
-          <span class="type-strip-label">Facility types</span>
+      <section class="signal-ribbon">
+        <div class="signal-lead">
+          <span class="section-kicker">What OpenGrid makes possible</span>
+          <h2>Built to impress technical users without alienating everyone else.</h2>
+        </div>
+        <div class="signal-columns">
+          <article>
+            <span class="signal-tag">For technical teams</span>
+            <p>Fast API access, consistent schemas, open contribution flows, and coverage snapshots that are usable immediately.</p>
+          </article>
+          <article>
+            <span class="signal-tag">For public users</span>
+            <p>A clear, navigable picture of schools, clinics, markets, and the places that still need visibility.</p>
+          </article>
+          <article>
+            <span class="signal-tag">For contributors</span>
+            <p>Open pathways to add local knowledge and make the national dataset more complete with every submission.</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="editorial-grid">
+        <article class="editorial-panel editorial-panel-copy">
+          <span class="section-kicker">National coverage</span>
+          <h2>One open index for public infrastructure across all 36 states and the FCT.</h2>
+          <p>
+            OpenGrid is designed to feel less like a directory dump and more like a civic lens:
+            coverage where it exists, gaps where they remain, and a contribution path when the data
+            falls short of reality.
+          </p>
+        </article>
+
+        <article class="editorial-panel editorial-panel-stats">
+          <div class="editorial-stat">
+            <span>Facilities indexed</span>
+            <strong>{formatCount(totalFacilities)}</strong>
+          </div>
+          <div class="editorial-stat">
+            <span>States with data</span>
+            <strong>
+              {statesWithData}/{totalStates}
+            </strong>
+          </div>
+          <div class="editorial-stat">
+            <span>LGAs with data</span>
+            <strong>{formatCount(lgasWithData)}</strong>
+          </div>
+        </article>
+
+        <article class="editorial-panel editorial-panel-types">
+          <span class="section-kicker">Most represented categories</span>
           <div class="type-pills">
-            {topTypes.map((t) => (
+            {topTypes.map((type) => (
               <a
-                key={t.type}
-                href={`/api/facilities?type=${t.type}&limit=10`}
+                key={type.type}
+                href={`/api/facilities?type=${type.type}&limit=10`}
                 class="type-pill"
-                id={`type-pill-${t.type}`}
+                id={`type-pill-${type.type}`}
               >
-                {FACILITY_TYPE_LABELS[t.type as FacilityType] ?? t.type}
-                <span class="pill-count">{formatCount(t.count)}</span>
+                {FACILITY_TYPE_LABELS[type.type as FacilityType] ?? type.type}
+                <span class="pill-count">{formatCount(type.count)}</span>
               </a>
             ))}
           </div>
-        </section>
-      )}
+        </article>
+      </section>
 
-      <section class="surface-grid">
-        <div class="surface-card surface-card-glass">
-          <div class="surface-icon">
-            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>
-          </div>
-          <span class="surface-kicker">Coverage</span>
-          <h3>15 facility types. All 36 states + FCT.</h3>
-          <p>
-            Schools, hospitals, markets, police stations, fire stations, post offices, IDP sites, and more —
-            all in one unified API with consistent endpoints.
-          </p>
-        </div>
-
-        <div class="surface-card surface-card-glass">
-          <div class="surface-icon">
-            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
-          </div>
-          <span class="surface-kicker">Community</span>
-          <h3>Grid3 data + your local knowledge</h3>
-          <p>
-            We seed from Grid3's verified dataset. You fill the gaps. Every submission is validated by CI
-            and merged as a pull request — fully open.
-          </p>
-        </div>
-
-        <div class="surface-card surface-card-glass">
-          <div class="surface-icon">
-            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg>
-          </div>
-          <span class="surface-kicker">Developer-first</span>
-          <h3>JSON API. No auth. Free forever.</h3>
+      <section class="surface-grid surface-grid-reframed">
+        <div class="surface-card surface-card-code">
+          <span class="surface-kicker">API confidence</span>
+          <h3>No onboarding maze. No paywall. Just structured access.</h3>
           <div class="terminal terminal-hero">
             <div class="terminal-header">
               <span class="terminal-dot"></span>
@@ -296,145 +311,245 @@ export const HomePage: FC<HomeProps> = ({
               <span class="terminal-dot"></span>
             </div>
             <div class="terminal-body">
-              <div class="terminal-line"><span class="terminal-prompt">$</span> curl /api/facilities?type=school&state=kano</div>
-              <div class="terminal-line"><span class="terminal-prompt">$</span> curl /api/facilities?type=health_facility&lga=ikeja</div>
-              <div class="terminal-line"><span class="terminal-prompt">$</span> curl /api/types</div>
+              <div class="terminal-line">
+                <span class="terminal-prompt">$</span> curl /api/facilities?type=school&state=kano
+              </div>
+              <div class="terminal-line">
+                <span class="terminal-prompt">$</span> curl /api/coverage
+              </div>
+              <div class="terminal-line">
+                <span class="terminal-prompt">$</span> curl /api/types
+              </div>
             </div>
+          </div>
+        </div>
+
+        <div class="surface-card surface-card-glass">
+          <span class="surface-kicker">Open contribution loop</span>
+          <h3>Seeded from Grid3. Strengthened by local knowledge.</h3>
+          <p>
+            The dataset begins with established public records and gets better when contributors
+            add what only communities can see on the ground.
+          </p>
+          <a href="/contribute" class="hero-text-link">
+            Submit a facility
+          </a>
+        </div>
+
+        <div class="surface-card surface-card-glass">
+          <span class="surface-kicker">Civic storytelling</span>
+          <h3>Coverage should feel visible, not buried in tables.</h3>
+          <p>
+            Maps, summaries, and state-by-state focus views make it easier to understand where the
+            data is strong and where the country still needs better visibility.
+          </p>
+          <a href="/map" class="hero-text-link">
+            Explore the live map
+          </a>
+        </div>
+      </section>
+
+      <section class="coverage-ledger">
+        <div class="ledger-header">
+          <span class="section-kicker">Coverage ledger</span>
+          <h2>Where the data is strongest, and where contributors are still needed.</h2>
+        </div>
+        <div class="ledger-columns">
+          <div class="ledger-column">
+            <span class="ledger-label">Highest activity</span>
+            {hotStates.map((state) => (
+              <a key={state.slug} href={`/api/facilities?state=${state.slug}`} class="ledger-row">
+                <strong>{state.name}</strong>
+                <span>{formatCount(state.facility_count)} records</span>
+              </a>
+            ))}
+          </div>
+          <div class="ledger-column">
+            <span class="ledger-label">Needs coverage</span>
+            {needsData.map((state) => (
+              <a key={state.slug} href="/contribute" class="ledger-row ledger-row-muted">
+                <strong>{state.name}</strong>
+                <span>No published records yet</span>
+              </a>
+            ))}
           </div>
         </div>
       </section>
 
-      <script dangerouslySetInnerHTML={{ __html: `
-        (function() {
-          var tooltip = document.getElementById('map-tooltip');
-          var tooltipText = document.getElementById('tooltip-text');
-          var defaultText = tooltipText.textContent;
-          var groups = document.querySelectorAll('.state-dot-group');
-          var map = document.getElementById('market-map');
-          var viewport = document.getElementById('map-viewport');
-          var reset = document.getElementById('map-reset');
-          var focusCard = document.getElementById('map-focus-card');
-          var focusTitle = document.getElementById('focus-title');
-          var focusMeta = document.getElementById('focus-meta');
-          var focusLink = document.getElementById('focus-link');
-          var focusedSlug = null;
-          var currentTransform = { tx: 0, ty: 0, scale: 1 };
-          var activeGroup = null;
-          var dragState = null;
+      <script
+        dangerouslySetInnerHTML={{
+          __html: `
+            (function() {
+              var tooltip = document.getElementById('map-tooltip');
+              var tooltipText = document.getElementById('tooltip-text');
+              var defaultText = tooltipText.textContent;
+              var groups = document.querySelectorAll('.state-dot-group');
+              var map = document.getElementById('market-map');
+              var viewport = document.getElementById('map-viewport');
+              var reset = document.getElementById('map-reset');
+              var focusCard = document.getElementById('map-focus-card');
+              var focusTitle = document.getElementById('focus-title');
+              var focusMeta = document.getElementById('focus-meta');
+              var focusLink = document.getElementById('focus-link');
+              var focusedSlug = null;
+              var currentTransform = { tx: 0, ty: 0, scale: 1 };
+              var activeGroup = null;
+              var dragState = null;
 
-          function renderTransform() {
-            if (!viewport) return;
-            viewport.setAttribute('transform', 'translate(' + currentTransform.tx + ' ' + currentTransform.ty + ') scale(' + currentTransform.scale + ')');
-          }
+              function renderTransform() {
+                if (!viewport) return;
+                viewport.setAttribute(
+                  'transform',
+                  'translate(' + currentTransform.tx + ' ' + currentTransform.ty + ') scale(' + currentTransform.scale + ')'
+                );
+              }
 
-          function setActiveGroup(nextGroup) {
-            if (activeGroup) activeGroup.classList.remove('is-active');
-            activeGroup = nextGroup;
-            if (activeGroup) activeGroup.classList.add('is-active');
-          }
+              function setActiveGroup(nextGroup) {
+                if (activeGroup) activeGroup.classList.remove('is-active');
+                activeGroup = nextGroup;
+                if (activeGroup) activeGroup.classList.add('is-active');
+              }
 
-          function fmtCount(n) {
-            return n >= 1000 ? (n / 1000).toFixed(1) + 'k' : String(n);
-          }
+              function fmtCount(n) {
+                return n >= 1000 ? (n / 1000).toFixed(1) + 'k' : String(n);
+              }
 
-          function applyFocus(slug, name, count, lgas, x, y) {
-            if (!viewport) return;
-            var scale = 1.95;
-            var tx = 400 - (scale * x);
-            var ty = 330 - (scale * y);
-            currentTransform = { tx: tx, ty: ty, scale: scale };
-            renderTransform();
-            map.classList.add('map-focused');
-            focusedSlug = slug;
-            if (reset) reset.hidden = false;
-            if (focusCard) focusCard.hidden = false;
-            if (focusTitle) focusTitle.textContent = name;
-            if (focusMeta) {
-              var c = parseInt(count, 10);
-              focusMeta.textContent = c > 0
-                ? fmtCount(c) + ' facilit' + (c !== 1 ? 'ies' : 'y') + ' across ' + lgas + ' LGA' + (lgas !== '1' ? 's' : '')
-                : 'No data yet. Help add facilities for this state.';
-            }
-            if (focusLink) focusLink.setAttribute('href', '/api/facilities?state=' + slug);
-          }
+              function applyFocus(slug, name, count, lgas, x, y) {
+                if (!viewport) return;
+                var scale = 1.95;
+                var tx = 400 - scale * x;
+                var ty = 330 - scale * y;
+                currentTransform = { tx: tx, ty: ty, scale: scale };
+                renderTransform();
+                map.classList.add('map-focused');
+                focusedSlug = slug;
+                if (reset) reset.hidden = false;
+                if (focusCard) focusCard.hidden = false;
+                if (focusTitle) focusTitle.textContent = name;
+                if (focusMeta) {
+                  var c = parseInt(count, 10);
+                  focusMeta.textContent =
+                    c > 0
+                      ? fmtCount(c) +
+                        ' facilit' +
+                        (c !== 1 ? 'ies' : 'y') +
+                        ' across ' +
+                        lgas +
+                        ' LGA' +
+                        (lgas !== '1' ? 's' : '')
+                      : 'No data yet. Help add facilities for this state.';
+                }
+                if (focusLink) focusLink.setAttribute('href', '/api/facilities?state=' + slug);
+              }
 
-          function resetFocus() {
-            if (!viewport) return;
-            currentTransform = { tx: 0, ty: 0, scale: 1 };
-            renderTransform();
-            map.classList.remove('map-focused');
-            focusedSlug = null;
-            dragState = null;
-            setActiveGroup(null);
-            if (reset) reset.hidden = true;
-            if (focusCard) focusCard.hidden = true;
-          }
+              function resetFocus() {
+                if (!viewport) return;
+                currentTransform = { tx: 0, ty: 0, scale: 1 };
+                renderTransform();
+                map.classList.remove('map-focused');
+                focusedSlug = null;
+                dragState = null;
+                setActiveGroup(null);
+                if (reset) reset.hidden = true;
+                if (focusCard) focusCard.hidden = true;
+              }
 
-          if (reset) reset.addEventListener('click', resetFocus);
+              if (reset) reset.addEventListener('click', resetFocus);
 
-          if (map) {
-            map.addEventListener('pointerdown', function(event) {
-              if (!focusedSlug) return;
-              if (event.target.closest('.state-dot-group') || event.target.closest('.map-focus-card') || event.target.closest('.map-reset')) return;
-              dragState = { pointerId: event.pointerId, startX: event.clientX, startY: event.clientY, originTx: currentTransform.tx, originTy: currentTransform.ty, moved: false };
-              map.classList.add('is-dragging');
-              if (map.setPointerCapture) map.setPointerCapture(event.pointerId);
-            });
+              if (map) {
+                map.addEventListener('pointerdown', function(event) {
+                  if (!focusedSlug) return;
+                  if (
+                    event.target.closest('.state-dot-group') ||
+                    event.target.closest('.map-focus-card') ||
+                    event.target.closest('.map-reset')
+                  ) {
+                    return;
+                  }
 
-            map.addEventListener('pointermove', function(event) {
-              if (!dragState || dragState.pointerId !== event.pointerId || !focusedSlug) return;
-              var dx = event.clientX - dragState.startX;
-              var dy = event.clientY - dragState.startY;
-              if (Math.abs(dx) > 3 || Math.abs(dy) > 3) dragState.moved = true;
-              currentTransform.tx = dragState.originTx + dx;
-              currentTransform.ty = dragState.originTy + dy;
-              renderTransform();
-            });
+                  dragState = {
+                    pointerId: event.pointerId,
+                    startX: event.clientX,
+                    startY: event.clientY,
+                    originTx: currentTransform.tx,
+                    originTy: currentTransform.ty,
+                    moved: false,
+                  };
+                  map.classList.add('is-dragging');
+                  if (map.setPointerCapture) map.setPointerCapture(event.pointerId);
+                });
 
-            function endDrag(event) {
-              if (!dragState || dragState.pointerId !== event.pointerId) return;
-              var moved = dragState.moved;
-              dragState = null;
-              map.classList.remove('is-dragging');
-              try { if (map.releasePointerCapture) map.releasePointerCapture(event.pointerId); } catch(e) {}
-              if (!moved && focusedSlug && !event.target.closest('.state-dot-group')) resetFocus();
-            }
-            map.addEventListener('pointerup', endDrag);
-            map.addEventListener('pointercancel', endDrag);
-          }
+                map.addEventListener('pointermove', function(event) {
+                  if (!dragState || dragState.pointerId !== event.pointerId || !focusedSlug) return;
+                  var dx = event.clientX - dragState.startX;
+                  var dy = event.clientY - dragState.startY;
+                  if (Math.abs(dx) > 3 || Math.abs(dy) > 3) dragState.moved = true;
+                  currentTransform.tx = dragState.originTx + dx;
+                  currentTransform.ty = dragState.originTy + dy;
+                  renderTransform();
+                });
 
-          groups.forEach(function(g) {
-            g.addEventListener('mouseenter', function() {
-              var name = g.getAttribute('data-name');
-              var count = g.getAttribute('data-count');
-              var lgas = g.getAttribute('data-lgas');
-              var c = parseInt(count);
-              tooltipText.textContent = c > 0
-                ? name + ' — ' + fmtCount(c) + ' facilit' + (c !== 1 ? 'ies' : 'y') + ' across ' + lgas + ' LGA' + (lgas !== '1' ? 's' : '')
-                : name + ' — no data yet. Help add some!';
-              tooltip.classList.add('tooltip-active');
-            });
+                function endDrag(event) {
+                  if (!dragState || dragState.pointerId !== event.pointerId) return;
+                  var moved = dragState.moved;
+                  dragState = null;
+                  map.classList.remove('is-dragging');
+                  try {
+                    if (map.releasePointerCapture) map.releasePointerCapture(event.pointerId);
+                  } catch (error) {}
+                  if (!moved && focusedSlug && !event.target.closest('.state-dot-group')) resetFocus();
+                }
 
-            g.addEventListener('mouseleave', function() {
-              tooltipText.textContent = defaultText;
-              tooltip.classList.remove('tooltip-active');
-            });
+                map.addEventListener('pointerup', endDrag);
+                map.addEventListener('pointercancel', endDrag);
+              }
 
-            g.addEventListener('click', function(event) {
-              event.stopPropagation();
-              var slug = g.getAttribute('data-slug');
-              var name = g.getAttribute('data-name');
-              var count = g.getAttribute('data-count');
-              var lgas = g.getAttribute('data-lgas');
-              var x = parseFloat(g.getAttribute('data-x'));
-              var y = parseFloat(g.getAttribute('data-y'));
-              if (focusedSlug === slug) { resetFocus(); return; }
-              setActiveGroup(g);
-              applyFocus(slug, name, count, lgas, x, y);
-            });
-          });
-        })();
-      `}} />
+              groups.forEach(function(group) {
+                group.addEventListener('mouseenter', function() {
+                  var name = group.getAttribute('data-name');
+                  var count = group.getAttribute('data-count');
+                  var lgas = group.getAttribute('data-lgas');
+                  var c = parseInt(count, 10);
+                  tooltipText.textContent =
+                    c > 0
+                      ? name +
+                        ' - ' +
+                        fmtCount(c) +
+                        ' facilit' +
+                        (c !== 1 ? 'ies' : 'y') +
+                        ' across ' +
+                        lgas +
+                        ' LGA' +
+                        (lgas !== '1' ? 's' : '')
+                      : name + ' - no data yet. Help add some.';
+                  tooltip.classList.add('tooltip-active');
+                });
+
+                group.addEventListener('mouseleave', function() {
+                  tooltipText.textContent = defaultText;
+                  tooltip.classList.remove('tooltip-active');
+                });
+
+                group.addEventListener('click', function(event) {
+                  event.stopPropagation();
+                  var slug = group.getAttribute('data-slug');
+                  var name = group.getAttribute('data-name');
+                  var count = group.getAttribute('data-count');
+                  var lgas = group.getAttribute('data-lgas');
+                  var x = parseFloat(group.getAttribute('data-x'));
+                  var y = parseFloat(group.getAttribute('data-y'));
+                  if (focusedSlug === slug) {
+                    resetFocus();
+                    return;
+                  }
+                  setActiveGroup(group);
+                  applyFocus(slug, name, count, lgas, x, y);
+                });
+              });
+            })();
+          `,
+        }}
+      />
     </div>
   );
 };

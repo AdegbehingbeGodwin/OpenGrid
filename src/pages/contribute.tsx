@@ -169,7 +169,7 @@ export const ContributePage: FC = () => {
           <h2>Option 2: Open a Pull Request</h2>
           <p>For contributors comfortable with Git:</p>
           <ol>
-            <li>Fork the <a href="https://github.com/your-github-username/opengrid" target="_blank" rel="noopener">repository</a></li>
+            <li>Fork the <a href="https://github.com/AdegbehingbeGodwin/OpenGrid" target="_blank" rel="noopener">repository</a></li>
             <li>Open the state file at <code>data/states/&lt;state-slug&gt;.json</code></li>
             <li>Add your facility to the correct LGA's <code>facilities</code> array</li>
             <li>Submit a pull request — CI will validate your data automatically</li>

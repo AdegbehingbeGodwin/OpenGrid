@@ -5,7 +5,7 @@ import type { FacilityType } from '../../types';
 
 const app = new Hono<{ Bindings: Bindings }>();
 
-const REPO = 'your-github-username/opengrid'; // UPDATE this before deploying
+const REPO = 'AdegbehingbeGodwin/OpenGrid';
 const GH_API = 'https://api.github.com';
 
 function normalizeText(value: string) {

@@ -44,7 +44,7 @@ app.get('/api', (c) => {
       contribute: 'POST /api/contribute',
     },
     docs: '/docs',
-    github: 'https://github.com/your-github-username/opengrid',
+    github: 'https://github.com/AdegbehingbeGodwin/OpenGrid',
   });
 });
 
