@@ -102,7 +102,6 @@ export interface ApiError {
 // Hono bindings
 export type Bindings = {
   DB: D1Database;
-  ASSETS: Fetcher;
   GITHUB_APP_ID: string;
   GITHUB_APP_PRIVATE_KEY: string;
   GITHUB_APP_INSTALLATION_ID: string;

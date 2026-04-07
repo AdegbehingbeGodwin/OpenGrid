@@ -108,8 +108,8 @@
     styleEl.textContent = dynamicCSS;
     document.head.appendChild(styleEl);
 
-    // Fetch the mega-payload statically
-    fetch('/static/map-data.json')
+    // Fetch GeoJSON from the API so Pages does not need to ship a 46 MB static asset.
+    fetch('/api/map-data')
       .then(r => r.json())
       .then(data => {
         state.features = data.features;

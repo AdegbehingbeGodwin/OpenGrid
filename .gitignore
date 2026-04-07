@@ -18,3 +18,4 @@ ajo.png
 .env
 *.pem
 *.private-key.*
+public/static/map-data.json
