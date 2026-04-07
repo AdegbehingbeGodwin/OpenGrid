@@ -6,7 +6,7 @@ export async function mapDataHandler(c: Context<{ Bindings: Bindings }>) {
     headers: c.req.raw.headers,
   });
 
-  const response = await c.env.STATIC_ASSETS.fetch(assetRequest);
+  const response = await c.env.ASSETS.fetch(assetRequest);
 
   if (!response.ok) {
     return c.json(
