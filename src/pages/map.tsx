@@ -7,38 +7,41 @@ export const MapPage: FC = () => {
       <div id="map" class="map-container"></div>
 
       <div class="map-shell">
-        <aside class="map-sidebar map-sidebar-premium">
-          <div class="sidebar-header sidebar-header-premium">
+        <aside class="map-sidebar map-sidebar-premium map-analysis-rail">
+          <div class="sidebar-header sidebar-header-premium map-rail-header">
             <div>
-              <span class="sidebar-kicker">Live civic atlas</span>
-              <h1>OpenGrid Map</h1>
+              <span class="sidebar-kicker">Spatial workspace</span>
+              <h1>OpenGrid Atlas</h1>
               <p>
-                Explore facility coverage across Nigeria with live filtering, clustered density, and
-                instant type breakdowns.
+                Explore civic infrastructure with a calmer, analysis-first map surface built for fast
+                scanning and sharper comparisons.
               </p>
             </div>
             <a href="/docs" class="map-inline-link">
-              API explorer
+              Data docs
             </a>
           </div>
 
           <button type="button" class="map-sidebar-toggle" id="map-sidebar-toggle" aria-expanded="true">
-            <span>Map controls</span>
+            <span>Analysis rail</span>
           </button>
 
-          <div class="sidebar-stats sidebar-stats-premium">
-            <div class="stats-box">
+          <div class="sidebar-stats sidebar-stats-premium map-signal-grid">
+            <div class="stats-box map-signal-card">
               <span class="stats-lbl">Visible facilities</span>
-              <span class="stats-val" id="total-visible">
+              <span class="stats-val tabular-nums" id="total-visible">
                 0
               </span>
+              <p>Current result set after filters and search.</p>
             </div>
             <div class="stats-mini-grid">
-              <div class="stats-mini-card">
-                <span>Active types</span>
-                <strong id="active-type-count">{FACILITY_TYPES.length}</strong>
+              <div class="stats-mini-card map-metric-card">
+                <span>Active lenses</span>
+                <strong class="tabular-nums" id="active-type-count">
+                  {FACILITY_TYPES.length}
+                </strong>
               </div>
-              <div class="stats-mini-card">
+              <div class="stats-mini-card map-metric-card">
                 <span>Search</span>
                 <strong id="search-state">All</strong>
               </div>
@@ -47,14 +50,14 @@ export const MapPage: FC = () => {
 
           <div class="map-search-panel">
             <label class="map-panel-label" for="map-search">
-              Search by facility name
+              Search facilities
             </label>
             <div class="map-search-wrap">
               <input
                 id="map-search"
                 class="map-search-input"
                 type="search"
-                placeholder="Hospital, market, school..."
+                placeholder="Hospital, market, school"
                 autocomplete="off"
               />
             </div>
@@ -65,28 +68,33 @@ export const MapPage: FC = () => {
 
           <div class="map-actions-panel">
             <button type="button" class="map-chip-button" id="map-select-all">
-              Select all
+              Select all types
             </button>
             <button type="button" class="map-chip-button" id="map-clear-all">
-              Clear all
+              Clear filters
             </button>
             <button type="button" class="map-chip-button" id="map-reset-view">
-              Reset view
+              Reset map
             </button>
           </div>
 
-          <div class="map-viewport-panel">
+          <div class="map-viewport-panel map-brief-panel">
             <div class="map-panel-head">
-              <h3>Current viewport</h3>
-              <span class="map-panel-meta" id="map-zoom-level">Zoom 5.5</span>
+              <h3>Location brief</h3>
+              <span class="map-panel-meta tabular-nums" id="map-zoom-level">Zoom 5.5</span>
             </div>
-            <div class="viewport-metrics">
-              <div class="viewport-metric">
-                <span>In frame</span>
-                <strong id="viewport-visible-count">0</strong>
+            <p class="map-brief-summary" id="viewport-summary">
+              Move across the map to generate a quick reading of what this area contains.
+            </p>
+            <div class="viewport-metrics viewport-metrics-brief">
+              <div class="viewport-metric map-metric-card">
+                <span>In view</span>
+                <strong class="tabular-nums" id="viewport-visible-count">
+                  0
+                </strong>
               </div>
-              <div class="viewport-metric">
-                <span>Leading type</span>
+              <div class="viewport-metric map-metric-card">
+                <span>Dominant type</span>
                 <strong id="viewport-leading-type">-</strong>
               </div>
             </div>
@@ -97,8 +105,8 @@ export const MapPage: FC = () => {
 
           <div class="sidebar-filters">
             <div class="map-panel-head">
-              <h3>Filter by type</h3>
-              <span class="map-panel-meta">15 categories</span>
+              <h3>Infrastructure layers</h3>
+              <span class="map-panel-meta">{FACILITY_TYPES.length} categories</span>
             </div>
             <div class="filter-list filter-list-premium">
               {FACILITY_TYPES.map((type) => (
@@ -112,28 +120,28 @@ export const MapPage: FC = () => {
           </div>
         </aside>
 
-        <div class="map-topbar">
+        <div class="map-topbar map-scene-head">
           <div class="map-topbar-copy">
-            <span class="map-topbar-kicker">Sleek by default. Legible at a glance.</span>
-            <strong>Zoom into clusters, inspect individual facilities, and shape the view in seconds.</strong>
+            <span class="map-topbar-kicker">National facility view</span>
+            <strong>Browse Nigeria’s civic footprint with a quieter map and stronger analytical cues.</strong>
           </div>
           <div class="map-topbar-legend">
             <span>
               <i class="legend-dot legend-dot-hot"></i>
-              Dense clusters
+              Higher concentration
             </span>
             <span>
               <i class="legend-dot legend-dot-watch"></i>
-              Lower density
+              Lower concentration
             </span>
           </div>
         </div>
 
-        <div class="map-floating-card map-floating-card-bottom">
-          <span class="floating-card-kicker">How to explore</span>
+        <div class="map-floating-card map-floating-card-bottom map-method-card">
+          <span class="floating-card-kicker">How this reads</span>
           <p>
-            Use filters to isolate categories, search to narrow by name, and click any cluster to
-            step deeper into that area.
+            Filters narrow the layer set, search reduces the visible inventory, and the location
+            brief translates the current viewport into an immediate takeaway.
           </p>
         </div>
       </div>

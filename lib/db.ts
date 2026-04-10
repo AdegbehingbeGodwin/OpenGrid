@@ -58,7 +58,11 @@ export async function getLGAs(db: D1Database, opts: { stateSlug?: string } = {})
 
   const { results } = await db
     .prepare(
-      `SELECT l.id, l.state_id, l.name, l.slug, COUNT(f.id) as facility_count
+      `SELECT l.id, l.state_id, l.name, l.slug, l.population, COUNT(f.id) as facility_count,
+              CASE
+                WHEN l.population > 0 THEN ROUND(COUNT(f.id) * 10000.0 / l.population, 2)
+                ELSE NULL
+              END as facilities_per_10000
        FROM lgas l
        JOIN states s ON l.state_id = s.id
        LEFT JOIN facilities f ON f.lga_id = l.id
@@ -87,10 +91,21 @@ export async function getLGABySlug(
     .bind(lga.id)
     .first<{ total: number }>();
 
-  const data: LGA & { state: State | null; facility_count: number; facilities?: Facility[] } = {
+  const facilitiesPer10000 =
+    lga.population && lga.population > 0
+      ? Number(((facilityCount?.total ?? 0) * 10000 / lga.population).toFixed(2))
+      : null;
+
+  const data: LGA & {
+    state: State | null;
+    facility_count: number;
+    facilities_per_10000: number | null;
+    facilities?: Facility[];
+  } = {
     ...lga,
     state: state ?? null,
     facility_count: facilityCount?.total ?? 0,
+    facilities_per_10000: facilitiesPer10000,
   };
 
   if (opts.includeFacilities) {
@@ -220,18 +235,35 @@ export async function getFacilityTypeCounts(db: D1Database) {
 export async function getCoverageSummary(db: D1Database) {
   const { results: stateStats } = await db
     .prepare(
-      `SELECT s.slug, s.name, COUNT(f.id) as facility_count,
-              COUNT(DISTINCT CASE WHEN f.id IS NOT NULL THEN l.id END) as lgas_with_data
+      `SELECT s.slug, s.name,
+              COALESCE(fa.facility_count, 0) as facility_count,
+              COALESCE(lp.population, 0) as population,
+              CASE
+                WHEN lp.population > 0 THEN ROUND(COALESCE(fa.facility_count, 0) * 10000.0 / lp.population, 2)
+                ELSE NULL
+              END as facilities_per_10000,
+              COALESCE(fa.lgas_with_data, 0) as lgas_with_data
        FROM states s
-       LEFT JOIN lgas l ON l.state_id = s.id
-       LEFT JOIN facilities f ON f.lga_id = l.id
-       GROUP BY s.id
+       LEFT JOIN (
+         SELECT l.state_id,
+                COUNT(f.id) as facility_count,
+                COUNT(DISTINCT CASE WHEN f.id IS NOT NULL THEN l.id END) as lgas_with_data
+         FROM lgas l
+         LEFT JOIN facilities f ON f.lga_id = l.id
+         GROUP BY l.state_id
+       ) fa ON fa.state_id = s.id
+       LEFT JOIN (
+         SELECT state_id, ROUND(SUM(population), 0) as population
+         FROM lgas
+         GROUP BY state_id
+       ) lp ON lp.state_id = s.id
        ORDER BY facility_count DESC, s.name ASC`
     )
     .all();
 
   const totalFacilities = await db.prepare('SELECT COUNT(*) as total FROM facilities').first<{ total: number }>();
   const totalStates = await db.prepare('SELECT COUNT(*) as total FROM states').first<{ total: number }>();
+  const totalPopulation = await db.prepare('SELECT ROUND(SUM(population), 0) as total FROM lgas').first<{ total: number }>();
   const typeBreakdown = await getFacilityTypeCounts(db);
   const statesWithData = await db
     .prepare(
@@ -252,6 +284,7 @@ export async function getCoverageSummary(db: D1Database) {
   return {
     total_facilities: totalFacilities?.total ?? 0,
     total_states: totalStates?.total ?? 0,
+    total_population: totalPopulation?.total ?? 0,
     states_with_data: statesWithData?.total ?? 0,
     lgas_with_data: lgasWithData?.total ?? 0,
     type_breakdown: typeBreakdown,

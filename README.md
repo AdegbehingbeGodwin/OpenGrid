@@ -35,8 +35,8 @@ curl "https://opengrid.pages.dev/api/facilities?q=general+hospital&state=lagos"
 | GET | `/api/types` | List all facility types with counts |
 | GET | `/api/states` | List all states |
 | GET | `/api/states/:slug` | Get state with LGA list |
-| GET | `/api/lgas` | List LGAs (filter by `state`) |
-| GET | `/api/lgas/:slug` | Get LGA |
+| GET | `/api/lgas` | List LGAs (filter by `state`) with population and facilities-per-10k where available |
+| GET | `/api/lgas/:slug` | Get LGA, optionally `?include=facilities` |
 | GET | `/api/coverage` | Coverage summary by state and type |
 | POST | `/api/contribute` | Submit a new facility |
 
@@ -102,6 +102,7 @@ Visit the [contribute page](https://opengrid.pages.dev/contribute) to submit via
 ## Data Structure
 
 All facility data lives in `data/states/` as JSON files (one per state). This is the source of truth.
+LGA population data lives in [`data/lga_pop_total_scaled.csv`](./data/lga_pop_total_scaled.csv) and is synced into the `lgas.population` field.
 
 ```
 data/states/
@@ -176,6 +177,7 @@ wrangler d1 create opengrid
 # Run migrations
 wrangler d1 execute opengrid --local --file=migrations/0001_create_tables.sql
 wrangler d1 execute opengrid --local --file=migrations/0002_add_facilities.sql
+wrangler d1 execute opengrid --local --file=migrations/0003_add_lga_population.sql
 
 # Ingest Grid3 data
 npm run ingest

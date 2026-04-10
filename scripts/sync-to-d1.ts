@@ -25,6 +25,97 @@ if (!API_TOKEN || !ACCOUNT_ID || !DATABASE_ID) {
 
 const BASE_URL = `https://api.cloudflare.com/client/v4/accounts/${ACCOUNT_ID}/d1/database/${DATABASE_ID}`;
 
+type PopulationRow = {
+  lganame: string;
+  statename: string;
+  population: string;
+};
+
+function normalizeName(value: string): string {
+  return value
+    .toLowerCase()
+    .replace(/&/g, 'and')
+    .replace(/[()']/g, '')
+    .replace(/[/,]/g, ' ')
+    .replace(/\bmunicipal area council\b/g, 'municipal')
+    .replace(/\blocal government area\b/g, '')
+    .replace(/\s+/g, ' ')
+    .trim();
+}
+
+function buildPopulationKey(stateName: string, lgaName: string): string {
+  return `${normalizeName(stateName)}::${normalizeName(lgaName)}`;
+}
+
+function parseCsvLine(line: string): string[] {
+  const values: string[] = [];
+  let current = '';
+  let inQuotes = false;
+
+  for (let i = 0; i < line.length; i++) {
+    const char = line[i];
+    const next = line[i + 1];
+
+    if (char === '"') {
+      if (inQuotes && next === '"') {
+        current += '"';
+        i++;
+      } else {
+        inQuotes = !inQuotes;
+      }
+    } else if (char === ',' && !inQuotes) {
+      values.push(current.trim());
+      current = '';
+    } else {
+      current += char;
+    }
+  }
+
+  values.push(current.trim());
+  return values;
+}
+
+function loadPopulationLookup() {
+  const csvPath = join(process.cwd(), 'data', 'lga_pop_total_scaled.csv');
+  const lines = readFileSync(csvPath, 'utf-8')
+    .split(/\r?\n/)
+    .map((line) => line.trim())
+    .filter(Boolean);
+
+  const [headerLine, ...dataLines] = lines;
+  const headers = parseCsvLine(headerLine);
+  const lgaIndex = headers.indexOf('lganame');
+  const stateIndex = headers.indexOf('statename');
+  const populationIndex = headers.indexOf('population');
+
+  if (lgaIndex === -1 || stateIndex === -1 || populationIndex === -1) {
+    throw new Error('Population CSV must contain lganame, statename, and population columns');
+  }
+
+  const aliasMap = new Map<string, string>([['abia::obi nwga', 'abia::obi ngwa']]);
+  const lookup = new Map<string, number>();
+
+  for (const line of dataLines) {
+    const cols = parseCsvLine(line);
+    const row: PopulationRow = {
+      lganame: cols[lgaIndex] ?? '',
+      statename: cols[stateIndex] ?? '',
+      population: cols[populationIndex] ?? '',
+    };
+
+    const parsedPopulation = Number(row.population);
+    if (!row.lganame || !row.statename || !Number.isFinite(parsedPopulation)) {
+      continue;
+    }
+
+    const rawKey = buildPopulationKey(row.statename, row.lganame);
+    const finalKey = aliasMap.get(rawKey) ?? rawKey;
+    lookup.set(finalKey, parsedPopulation);
+  }
+
+  return lookup;
+}
+
 async function execSQL(sql: string, params: unknown[] = []) {
   const res = await fetch(`${BASE_URL}/query`, {
     method: 'POST',
@@ -111,6 +202,7 @@ async function deleteStale(table: string, validSlugs: string[]) {
 async function main() {
   const dataDir = join(process.cwd(), 'data', 'states');
   const files = readdirSync(dataDir).filter((f) => f.endsWith('.json'));
+  const populationLookup = loadPopulationLookup();
 
   const allStates: StateData[] = files.map((f) =>
     JSON.parse(readFileSync(join(dataDir, f), 'utf-8'))
@@ -131,7 +223,10 @@ async function main() {
   }
 
   console.log(`Syncing ${allStates.length} states to D1...`);
-  console.log(`  States: ${stateSlugs.length}, LGAs: ${lgaSlugs.length}, Facilities: ${facilitySlugs.length.toLocaleString()}`);
+  console.log(
+    `  States: ${stateSlugs.length}, LGAs: ${lgaSlugs.length}, Facilities: ${facilitySlugs.length.toLocaleString()}`
+  );
+  console.log(`  Population rows: ${populationLookup.size}`);
 
   // Upsert states
   console.log('\nUpserting states...');
@@ -148,10 +243,15 @@ async function main() {
   const lgaStmts: { sql: string; params: unknown[] }[] = [];
   for (const state of allStates) {
     for (const lga of state.lgas) {
+      const populationKey = buildPopulationKey(state.name, lga.name);
+      const population = populationLookup.get(populationKey) ?? null;
       lgaStmts.push({
-        sql: `INSERT INTO lgas (state_id, name, slug) VALUES ((SELECT id FROM states WHERE slug = ?), ?, ?)
-              ON CONFLICT(slug) DO UPDATE SET name = excluded.name, state_id = excluded.state_id`,
-        params: [state.slug, lga.name, lga.slug],
+        sql: `INSERT INTO lgas (state_id, name, slug, population) VALUES ((SELECT id FROM states WHERE slug = ?), ?, ?, ?)
+              ON CONFLICT(slug) DO UPDATE SET
+                name = excluded.name,
+                state_id = excluded.state_id,
+                population = excluded.population`,
+        params: [state.slug, lga.name, lga.slug, population],
       });
     }
   }

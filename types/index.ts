@@ -9,6 +9,7 @@ export interface LGA {
   state_id: number;
   name: string;
   slug: string;
+  population: number | null;
 }
 
 export const FACILITY_TYPES = [

@@ -1,15 +1,15 @@
 (function() {
   const style = {
     version: 8,
-    name: 'OpenGrid Night Atlas',
+    name: 'OpenGrid Editorial Atlas',
     sources: {
       basemap: {
         type: 'raster',
         tiles: [
-          'https://a.basemaps.cartocdn.com/dark_all/{z}/{x}/{y}.png',
-          'https://b.basemaps.cartocdn.com/dark_all/{z}/{x}/{y}.png',
-          'https://c.basemaps.cartocdn.com/dark_all/{z}/{x}/{y}.png',
-          'https://d.basemaps.cartocdn.com/dark_all/{z}/{x}/{y}.png'
+          'https://a.basemaps.cartocdn.com/light_all/{z}/{x}/{y}.png',
+          'https://b.basemaps.cartocdn.com/light_all/{z}/{x}/{y}.png',
+          'https://c.basemaps.cartocdn.com/light_all/{z}/{x}/{y}.png',
+          'https://d.basemaps.cartocdn.com/light_all/{z}/{x}/{y}.png'
         ],
         tileSize: 256,
         attribution: '&copy; OpenStreetMap contributors &copy; CARTO'
@@ -85,6 +85,7 @@
   const viewportVisibleCountEl = document.getElementById('viewport-visible-count');
   const viewportLeadingTypeEl = document.getElementById('viewport-leading-type');
   const viewportBreakdownEl = document.getElementById('viewport-breakdown');
+  const viewportSummaryEl = document.getElementById('viewport-summary');
   const zoomLevelEl = document.getElementById('map-zoom-level');
   const sidebarToggleBtn = document.getElementById('map-sidebar-toggle');
   const sidebarEl = document.querySelector('.map-sidebar-premium');
@@ -123,6 +124,25 @@
       });
   }
 
+  function describeQueryState() {
+    if (!state.query && state.activeTypes.size === checkboxes.length) {
+      return 'all facilities';
+    }
+
+    if (state.query && state.activeTypes.size === 0) {
+      return 'no active layers';
+    }
+
+    const typeScope =
+      state.activeTypes.size === checkboxes.length
+        ? 'all layers'
+        : state.activeTypes.size === 1
+          ? '1 layer'
+          : state.activeTypes.size + ' layers';
+
+    return state.query ? '"' + state.query + '" across ' + typeScope : typeScope;
+  }
+
   function buildFilteredFeatures() {
     const query = state.query.trim().toLowerCase();
     return state.features.filter(function(feature) {
@@ -150,7 +170,13 @@
   }
 
   function updateViewportInsights(features) {
-    if (!viewportVisibleCountEl || !viewportLeadingTypeEl || !viewportBreakdownEl || !zoomLevelEl) {
+    if (
+      !viewportVisibleCountEl ||
+      !viewportLeadingTypeEl ||
+      !viewportBreakdownEl ||
+      !zoomLevelEl ||
+      !viewportSummaryEl
+    ) {
       return;
     }
 
@@ -159,6 +185,8 @@
     if (!features.length) {
       viewportVisibleCountEl.textContent = '0';
       viewportLeadingTypeEl.textContent = '-';
+      viewportSummaryEl.textContent =
+        'No facilities match the current query. Expand the active layers or clear the search to restore coverage.';
       viewportBreakdownEl.innerHTML =
         '<div class="viewport-breakdown-empty">No facilities match the current filters.</div>';
       return;
@@ -174,6 +202,8 @@
 
     if (!inView.length) {
       viewportLeadingTypeEl.textContent = '-';
+      viewportSummaryEl.textContent =
+        'The current frame does not contain matching facilities yet. Pan or zoom into a denser part of the country.';
       viewportBreakdownEl.innerHTML =
         '<div class="viewport-breakdown-empty">Pan or zoom to bring facilities into the current frame.</div>';
       return;
@@ -192,12 +222,23 @@
       .slice(0, 4);
 
     viewportLeadingTypeEl.textContent = titleizeType(ranked[0][0]);
+    viewportSummaryEl.textContent =
+      'This frame contains ' +
+      inView.length.toLocaleString() +
+      ' facilities, led by ' +
+      titleizeType(ranked[0][0]) +
+      '. You are viewing ' +
+      describeQueryState() +
+      ' at zoom ' +
+      map.getZoom().toFixed(1) +
+      '.';
     viewportBreakdownEl.innerHTML = ranked
       .map(function(entry) {
+        const percentage = Math.round((entry[1] / inView.length) * 100);
         return (
           '<div class="viewport-row">' +
           '<span>' + titleizeType(entry[0]) + '</span>' +
-          '<strong>' + Number(entry[1]).toLocaleString() + '</strong>' +
+          '<strong>' + Number(entry[1]).toLocaleString() + ' <em>' + percentage + '%</em></strong>' +
           '</div>'
         );
       })
@@ -269,7 +310,7 @@
   map.on('load', function() {
     let dynamicCSS = '';
     Object.entries(typeColors).forEach(function(entry) {
-      dynamicCSS += '.type-' + entry[0] + ' { background-color: ' + entry[1] + '; box-shadow: 0 0 10px ' + entry[1] + '40; }\n';
+      dynamicCSS += '.type-' + entry[0] + ' { background-color: ' + entry[1] + '; }\n';
     });
     const styleEl = document.createElement('style');
     styleEl.textContent = dynamicCSS;
@@ -298,7 +339,7 @@
         });
 
         map.addLayer({
-          id: 'clusters-glow',
+          id: 'clusters-halo',
           type: 'circle',
           source: 'facilities',
           filter: ['has', 'point_count'],
@@ -306,22 +347,22 @@
             'circle-color': [
               'step',
               ['get', 'point_count'],
-              'rgba(65, 211, 159, 0.24)',
+              'rgba(95, 140, 120, 0.12)',
               100,
-              'rgba(230, 174, 103, 0.22)',
+              'rgba(183, 149, 96, 0.14)',
               1000,
-              'rgba(239, 90, 90, 0.22)'
+              'rgba(186, 98, 83, 0.16)'
             ],
             'circle-radius': [
               'step',
               ['get', 'point_count'],
-              34,
+              28,
               100,
-              48,
+              40,
               1000,
-              64
+              54
             ],
-            'circle-blur': 1
+            'circle-blur': 0.8
           }
         });
 
@@ -334,23 +375,23 @@
             'circle-color': [
               'step',
               ['get', 'point_count'],
-              'rgba(65, 211, 159, 0.76)',
+              'rgba(94, 134, 116, 0.9)',
               100,
-              'rgba(230, 174, 103, 0.76)',
+              'rgba(185, 146, 88, 0.9)',
               1000,
-              'rgba(239, 90, 90, 0.76)'
+              'rgba(181, 92, 78, 0.92)'
             ],
             'circle-radius': [
               'step',
               ['get', 'point_count'],
-              18,
+              16,
               100,
-              26,
+              22,
               1000,
-              34
+              30
             ],
-            'circle-stroke-width': 1.25,
-            'circle-stroke-color': 'rgba(255, 255, 255, 0.55)'
+            'circle-stroke-width': 1,
+            'circle-stroke-color': 'rgba(255, 255, 255, 0.72)'
           }
         });
 
@@ -371,15 +412,15 @@
         });
 
         map.addLayer({
-          id: 'unclustered-point-glow',
+          id: 'unclustered-point-halo',
           type: 'circle',
           source: 'facilities',
           filter: ['!', ['has', 'point_count']],
           paint: {
             'circle-color': colorMatchExp,
-            'circle-radius': 12,
-            'circle-blur': 1,
-            'circle-opacity': 0.5
+            'circle-radius': 8,
+            'circle-blur': 0.7,
+            'circle-opacity': 0.18
           }
         });
 
@@ -390,9 +431,9 @@
           filter: ['!', ['has', 'point_count']],
           paint: {
             'circle-color': colorMatchExp,
-            'circle-radius': 4.2,
-            'circle-stroke-width': 0.6,
-            'circle-stroke-color': 'rgba(8, 12, 10, 0.36)'
+            'circle-radius': 3.5,
+            'circle-stroke-width': 1,
+            'circle-stroke-color': 'rgba(255, 255, 255, 0.88)'
           }
         });
 

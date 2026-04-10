@@ -4,11 +4,26 @@ import type { Bindings } from '../../types';
 export async function mapDataHandler(c: Context<{ Bindings: Bindings }>) {
   const { results } = await c.env.DB
     .prepare(
-      `SELECT lng, lat, type, name, source
-       FROM facilities
-       WHERE lat IS NOT NULL AND lng IS NOT NULL`
+      `SELECT f.lng, f.lat, f.type, f.name, f.source,
+              l.slug as lga_slug, l.name as lga_name, l.population as lga_population,
+              s.slug as state_slug, s.name as state_name
+       FROM facilities f
+       JOIN lgas l ON f.lga_id = l.id
+       JOIN states s ON l.state_id = s.id
+       WHERE f.lat IS NOT NULL AND f.lng IS NOT NULL`
     )
-    .all<{ lng: number; lat: number; type: string; name: string; source: 'grid3' | 'community' }>();
+    .all<{
+      lng: number;
+      lat: number;
+      type: string;
+      name: string;
+      source: 'grid3' | 'community';
+      lga_slug: string;
+      lga_name: string;
+      lga_population: number | null;
+      state_slug: string;
+      state_name: string;
+    }>();
 
   const body = JSON.stringify({
     type: 'FeatureCollection',
@@ -22,6 +37,11 @@ export async function mapDataHandler(c: Context<{ Bindings: Bindings }>) {
         t: facility.type,
         n: facility.name,
         s: facility.source,
+        ls: facility.lga_slug,
+        ln: facility.lga_name,
+        lp: facility.lga_population,
+        ss: facility.state_slug,
+        sn: facility.state_name,
       },
     })),
   });

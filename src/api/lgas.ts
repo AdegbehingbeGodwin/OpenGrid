@@ -12,8 +12,8 @@ app.get('/', async (c) => {
 
 app.get('/:lga', async (c) => {
   const slug = c.req.param('lga');
-  const includeMarkets = c.req.query('include') === 'markets';
-  const lga = await getLGABySlug(c.env.DB, slug, { includeMarkets });
+  const includeFacilities = c.req.query('include') === 'facilities';
+  const lga = await getLGABySlug(c.env.DB, slug, { includeFacilities });
 
   if (!lga) {
     return c.json({ success: false, error: { message: 'LGA not found', code: 'NOT_FOUND' } }, 404);
