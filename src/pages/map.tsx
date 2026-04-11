@@ -81,7 +81,9 @@ export const MapPage: FC = () => {
           <div class="map-viewport-panel map-brief-panel">
             <div class="map-panel-head">
               <h3>Location brief</h3>
-              <span class="map-panel-meta tabular-nums" id="map-zoom-level">Zoom 5.5</span>
+              <span class="map-panel-meta tabular-nums" id="map-zoom-level">
+                Zoom 5.5
+              </span>
             </div>
             <p class="map-brief-summary" id="viewport-summary">
               Move across the map to generate a quick reading of what this area contains.
@@ -120,29 +122,22 @@ export const MapPage: FC = () => {
           </div>
         </aside>
 
-        <div class="map-topbar map-scene-head">
-          <div class="map-topbar-copy">
-            <span class="map-topbar-kicker">National facility view</span>
-            <strong>Browse Nigeria’s civic footprint with a quieter map and stronger analytical cues.</strong>
-          </div>
-          <div class="map-topbar-legend">
-            <span>
-              <i class="legend-dot legend-dot-hot"></i>
-              Higher concentration
-            </span>
-            <span>
-              <i class="legend-dot legend-dot-watch"></i>
-              Lower concentration
-            </span>
-          </div>
-        </div>
-
         <div class="map-floating-card map-floating-card-bottom map-method-card">
           <span class="floating-card-kicker">How this reads</span>
           <p>
             Filters narrow the layer set, search reduces the visible inventory, and the location
             brief translates the current viewport into an immediate takeaway.
           </p>
+          <div class="map-topbar-legend" style="margin-top: 0.85rem;">
+            <span>
+              <i class="legend-dot legend-dot-hot"></i>
+              Higher cluster density
+            </span>
+            <span>
+              <i class="legend-dot legend-dot-watch"></i>
+              Lower cluster density
+            </span>
+          </div>
         </div>
       </div>
 

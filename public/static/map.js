@@ -2,14 +2,26 @@
   const style = {
     version: 8,
     name: 'OpenGrid Editorial Atlas',
+    glyphs: 'https://demotiles.maplibre.org/font/{fontstack}/{range}.pbf',
     sources: {
-      basemap: {
+      basemapBase: {
         type: 'raster',
         tiles: [
-          'https://a.basemaps.cartocdn.com/light_all/{z}/{x}/{y}.png',
-          'https://b.basemaps.cartocdn.com/light_all/{z}/{x}/{y}.png',
-          'https://c.basemaps.cartocdn.com/light_all/{z}/{x}/{y}.png',
-          'https://d.basemaps.cartocdn.com/light_all/{z}/{x}/{y}.png'
+          'https://a.basemaps.cartocdn.com/light_nolabels/{z}/{x}/{y}.png',
+          'https://b.basemaps.cartocdn.com/light_nolabels/{z}/{x}/{y}.png',
+          'https://c.basemaps.cartocdn.com/light_nolabels/{z}/{x}/{y}.png',
+          'https://d.basemaps.cartocdn.com/light_nolabels/{z}/{x}/{y}.png'
+        ],
+        tileSize: 256,
+        attribution: '&copy; OpenStreetMap contributors &copy; CARTO'
+      },
+      basemapLabels: {
+        type: 'raster',
+        tiles: [
+          'https://a.basemaps.cartocdn.com/light_only_labels/{z}/{x}/{y}.png',
+          'https://b.basemaps.cartocdn.com/light_only_labels/{z}/{x}/{y}.png',
+          'https://c.basemaps.cartocdn.com/light_only_labels/{z}/{x}/{y}.png',
+          'https://d.basemaps.cartocdn.com/light_only_labels/{z}/{x}/{y}.png'
         ],
         tileSize: 256,
         attribution: '&copy; OpenStreetMap contributors &copy; CARTO'
@@ -17,9 +29,26 @@
     },
     layers: [
       {
-        id: 'basemap-tiles',
+        id: 'basemap-base',
         type: 'raster',
-        source: 'basemap'
+        source: 'basemapBase',
+        paint: {
+          'raster-opacity': 0.92,
+          'raster-saturation': -0.42,
+          'raster-contrast': -0.08,
+          'raster-brightness-min': 0.18,
+          'raster-brightness-max': 0.96
+        }
+      },
+      {
+        id: 'basemap-labels',
+        type: 'raster',
+        source: 'basemapLabels',
+        paint: {
+          'raster-opacity': 0.84,
+          'raster-saturation': -0.15,
+          'raster-contrast': 0.18
+        }
       }
     ]
   };
@@ -347,11 +376,11 @@
             'circle-color': [
               'step',
               ['get', 'point_count'],
-              'rgba(95, 140, 120, 0.12)',
+              'rgba(80, 117, 103, 0.12)',
               100,
-              'rgba(183, 149, 96, 0.14)',
+              'rgba(170, 136, 84, 0.14)',
               1000,
-              'rgba(186, 98, 83, 0.16)'
+              'rgba(173, 88, 73, 0.17)'
             ],
             'circle-radius': [
               'step',
@@ -375,11 +404,11 @@
             'circle-color': [
               'step',
               ['get', 'point_count'],
-              'rgba(94, 134, 116, 0.9)',
+              'rgba(87, 124, 110, 0.92)',
               100,
-              'rgba(185, 146, 88, 0.9)',
+              'rgba(177, 138, 84, 0.92)',
               1000,
-              'rgba(181, 92, 78, 0.92)'
+              'rgba(176, 86, 70, 0.94)'
             ],
             'circle-radius': [
               'step',
@@ -390,8 +419,8 @@
               1000,
               30
             ],
-            'circle-stroke-width': 1,
-            'circle-stroke-color': 'rgba(255, 255, 255, 0.72)'
+            'circle-stroke-width': 1.5,
+            'circle-stroke-color': 'rgba(255, 248, 239, 0.9)'
           }
         });
 
@@ -402,7 +431,7 @@
           filter: ['has', 'point_count'],
           layout: {
             'text-field': '{point_count_abbreviated}',
-            'text-font': ['Space Grotesk', 'sans-serif'],
+            'text-font': ['Open Sans Bold', 'Arial Unicode MS Bold'],
             'text-size': 13,
             'text-allow-overlap': true
           },
@@ -418,9 +447,9 @@
           filter: ['!', ['has', 'point_count']],
           paint: {
             'circle-color': colorMatchExp,
-            'circle-radius': 8,
-            'circle-blur': 0.7,
-            'circle-opacity': 0.18
+            'circle-radius': ['interpolate', ['linear'], ['zoom'], 5, 6, 9, 8, 13, 11],
+            'circle-blur': 0.9,
+            'circle-opacity': ['interpolate', ['linear'], ['zoom'], 5, 0.12, 9, 0.18, 13, 0.22]
           }
         });
 
@@ -431,9 +460,10 @@
           filter: ['!', ['has', 'point_count']],
           paint: {
             'circle-color': colorMatchExp,
-            'circle-radius': 3.5,
-            'circle-stroke-width': 1,
-            'circle-stroke-color': 'rgba(255, 255, 255, 0.88)'
+            'circle-radius': ['interpolate', ['linear'], ['zoom'], 5, 2.8, 9, 3.8, 13, 5.2],
+            'circle-opacity': ['interpolate', ['linear'], ['zoom'], 5, 0.84, 9, 0.92, 13, 0.98],
+            'circle-stroke-width': ['interpolate', ['linear'], ['zoom'], 5, 0.9, 13, 1.4],
+            'circle-stroke-color': 'rgba(255, 248, 239, 0.92)'
           }
         });
 
@@ -482,7 +512,7 @@
 
           const html =
             '<div class="map-popup">' +
-            '<span class="popup-kicker">' + props.t.replace(/_/g, ' ') + '</span>' +
+            '<span class="popup-kicker">' + titleizeType(props.t) + '</span>' +
             '<h3>' + props.n + '</h3>' +
             '<div class="popup-meta">' +
             '<span class="meta-tag">' + (props.s === 'grid3' ? 'Verified (Grid3)' : 'Community') + '</span>' +
