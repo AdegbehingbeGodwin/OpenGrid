@@ -349,32 +349,7 @@ export const HomePage: FC<HomeProps> = ({
         </div>
       </section>
 
-      <section class="coverage-ledger">
-        <div class="ledger-header">
-          <span class="section-kicker">Coverage ledger</span>
-          <h2>Where the data is strongest, and where contributors are still needed.</h2>
-        </div>
-        <div class="ledger-columns">
-          <div class="ledger-column">
-            <span class="ledger-label">Highest activity</span>
-            {hotStates.map((state) => (
-              <a key={state.slug} href={`/api/facilities?state=${state.slug}`} class="ledger-row">
-                <strong>{state.name}</strong>
-                <span>{formatCount(state.facility_count)} records</span>
-              </a>
-            ))}
-          </div>
-          <div class="ledger-column">
-            <span class="ledger-label">Needs coverage</span>
-            {needsData.map((state) => (
-              <a key={state.slug} href="/contribute" class="ledger-row ledger-row-muted">
-                <strong>{state.name}</strong>
-                <span>No published records yet</span>
-              </a>
-            ))}
-          </div>
-        </div>
-      </section>
+
 
       <script
         dangerouslySetInnerHTML={{
