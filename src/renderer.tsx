@@ -80,7 +80,14 @@ export const renderer = jsxRenderer(({ children, title }) => {
         <nav class="nav">
           <div class="container nav-inner">
             <a href="/" class="nav-brand" aria-label="OpenGrid home">
-              <span class="nav-brand-mark" aria-hidden="true"></span>
+              <span class="nav-brand-mark" aria-hidden="true">
+                <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none">
+                  <rect x="2" y="2" width="8" height="8" rx="2" fill="currentColor" opacity="0.9"/>
+                  <rect x="14" y="2" width="8" height="8" rx="2" fill="currentColor" opacity="0.55"/>
+                  <rect x="2" y="14" width="8" height="8" rx="2" fill="currentColor" opacity="0.55"/>
+                  <rect x="14" y="14" width="8" height="8" rx="2" fill="currentColor" opacity="0.28"/>
+                </svg>
+              </span>
               <span class="nav-brand-copy">
                 <strong>OpenGrid</strong>
                 <span>Public infrastructure index</span>

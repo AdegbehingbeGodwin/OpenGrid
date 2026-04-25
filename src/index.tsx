@@ -9,6 +9,7 @@ import facilitiesApi from './api/facilities';
 import facilityTypesApi from './api/facility-types';
 import contributeApi from './api/contribute';
 import coverageApi from './api/coverage';
+import stateStatsApi from './api/state-stats';
 import { HomePage } from './pages/home';
 import { DocsPage } from './pages/docs';
 import { ContributePage } from './pages/contribute';
@@ -25,6 +26,7 @@ app.use('/api/lgas/*', cache({ cacheName: 'opengrid', cacheControl: 'public, max
 app.use('/api/facilities', cache({ cacheName: 'opengrid', cacheControl: 'public, max-age=300' }));
 app.use('/api/types', cache({ cacheName: 'opengrid', cacheControl: 'public, max-age=3600' }));
 app.use('/api/coverage', cache({ cacheName: 'opengrid', cacheControl: 'public, max-age=300' }));
+app.use('/api/state-stats', cache({ cacheName: 'opengrid', cacheControl: 'public, max-age=3600' }));
 
 // API index
 app.get('/api', (c) => {
@@ -41,6 +43,7 @@ app.get('/api', (c) => {
       facility: '/api/facilities/:slug',
       types: '/api/types',
       coverage: '/api/coverage',
+      state_stats: '/api/state-stats',
       contribute: 'POST /api/contribute',
     },
     docs: '/docs',
@@ -54,6 +57,7 @@ app.route('/api/lgas', lgasApi);
 app.route('/api/facilities', facilitiesApi);
 app.route('/api/types', facilityTypesApi);
 app.route('/api/coverage', coverageApi);
+app.route('/api/state-stats', stateStatsApi);
 app.route('/api/contribute', contributeApi);
 app.get('/api/map-data', mapDataHandler);
 
