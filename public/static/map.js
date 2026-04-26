@@ -139,7 +139,22 @@
   const stateBackBtn       = document.getElementById('state-back-btn');
   const mainPanelEl        = document.getElementById('main-panel');
 
-  checkboxes.forEach(function(cb) { state.activeTypes.add(cb.value); });
+  /* Initialise all types as active; guard against empty NodeList */
+  if (checkboxes.length === 0) {
+    /* Fallback: seed from known types if DOM not ready */
+    var knownTypes = ['health_facility','school','market','water_point','government_building',
+      'police_station','fire_station','post_office','idp_site','church','mosque',
+      'farm','factory','energy_substation','filling_station'];
+    knownTypes.forEach(function(t) { state.activeTypes.add(t); });
+  } else {
+    checkboxes.forEach(function(cb) {
+      state.activeTypes.add(cb.value);
+      cb.checked = true; /* ensure DOM reflects state */
+    });
+  }
+
+  /* Sync count display immediately so it never shows stale "0" or "1" */
+  if (activeTypeCountEl) activeTypeCountEl.textContent = String(state.activeTypes.size);
 
   /* ── Utilities ─────────────────────────────────────────── */
   function titleize(v) {

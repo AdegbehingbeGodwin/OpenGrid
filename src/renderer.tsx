@@ -67,6 +67,11 @@ export const renderer = jsxRenderer(({ children, title }) => {
           dangerouslySetInnerHTML={{
             __html: `
               (function() {
+                /* Map page is always dark — no localStorage check needed */
+                if (window.location.pathname === '/map') {
+                  document.documentElement.setAttribute('data-theme', 'dark');
+                  return;
+                }
                 var t = localStorage.getItem('theme');
                 if (t === 'dark' || (!t && matchMedia('(prefers-color-scheme: dark)').matches)) {
                   document.documentElement.setAttribute('data-theme', 'dark');
@@ -76,8 +81,9 @@ export const renderer = jsxRenderer(({ children, title }) => {
           }}
         />
       </head>
-      <body>
+      <body class={isMap ? 'is-map' : ''}>
         <nav class="nav">
+          <div class="nav-map-indicator" aria-hidden="true"></div>
           <div class="container nav-inner">
             <a href="/" class="nav-brand" aria-label="OpenGrid home">
               <span class="nav-brand-mark" aria-hidden="true">
@@ -100,7 +106,13 @@ export const renderer = jsxRenderer(({ children, title }) => {
               <a href={GITHUB_URL} target="_blank" rel="noopener">
                 GitHub
               </a>
-              <button class="theme-toggle" aria-label="Toggle theme" type="button">
+              {isMap && (
+                <a href="/map" class="nav-map-badge">
+                  <i class="nav-map-ping"></i>
+                  Live map
+                </a>
+              )}
+              <button class={isMap ? 'theme-toggle theme-toggle-hidden' : 'theme-toggle'} aria-label="Toggle theme" type="button">
                 <svg
                   class="icon-sun"
                   xmlns="http://www.w3.org/2000/svg"
@@ -141,7 +153,7 @@ export const renderer = jsxRenderer(({ children, title }) => {
             </div>
           </div>
         </nav>
-        <main class={isMap ? '' : 'container'}>{children}</main>
+        <main class={isMap ? 'main-map' : 'container'}>{children}</main>
         {!isMap && (
           <footer class="footer">
             <div class="container">
