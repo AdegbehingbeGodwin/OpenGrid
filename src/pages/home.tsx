@@ -1,6 +1,4 @@
 import type { FC } from 'hono/jsx';
-import { STATE_COORDS } from '../data/state-coordinates';
-import { NIGERIA_OUTLINE_PATH } from '../data/nigeria-outline';
 import { FACILITY_TYPE_LABELS } from '../../types';
 import type { FacilityType } from '../../types';
 
@@ -25,14 +23,6 @@ interface HomeProps {
   typeBreakdown: TypeCount[];
 }
 
-function dotRadius(count: number): number {
-  if (count === 0) return 3;
-  if (count <= 100) return 5;
-  if (count <= 500) return 7;
-  if (count <= 2000) return 9;
-  return 11;
-}
-
 function formatCount(n: number): string {
   if (n >= 1000) return `${(n / 1000).toFixed(1)}k`;
   return String(n);
@@ -46,18 +36,10 @@ export const HomePage: FC<HomeProps> = ({
   lgasWithData,
   typeBreakdown,
 }) => {
-  const hotStates = stateStats.filter((s) => s.facility_count > 0).slice(0, 5);
-  const needsData = stateStats.filter((s) => s.facility_count === 0).slice(0, 5);
   const topTypes = typeBreakdown.slice(0, 6);
   const coverageRatio = totalStates === 0 ? 0 : Math.round((statesWithData / totalStates) * 100);
-
-  const tradeRoutes: Array<{ x1: number; y1: number; x2: number; y2: number }> = [];
-  const hotSlugs = hotStates.map((s) => s.slug);
-  for (let i = 0; i < hotSlugs.length - 1; i++) {
-    const a = STATE_COORDS[hotSlugs[i]];
-    const b = STATE_COORDS[hotSlugs[i + 1]];
-    if (a && b) tradeRoutes.push({ x1: a.x, y1: a.y, x2: b.x, y2: b.y });
-  }
+  const rankedStates = [...stateStats].sort((a, b) => b.facility_count - a.facility_count).slice(0, 12);
+  const maxCount = rankedStates[0]?.facility_count ?? 1;
 
   return (
     <div class="home-page home-cinematic">
@@ -108,8 +90,8 @@ export const HomePage: FC<HomeProps> = ({
         <div class="hero-stage">
           <div class="hero-stage-header">
             <div>
-              <span class="map-kicker">National signal view</span>
-              <h2>Nigeria facility pulse</h2>
+              <span class="map-kicker">Coverage signal</span>
+              <h2>National facility index</h2>
             </div>
             <div class="hero-stage-stats">
               <div>
@@ -123,112 +105,67 @@ export const HomePage: FC<HomeProps> = ({
             </div>
           </div>
 
-          <div class="hero-stage-map" id="market-map">
-            <svg class="nigeria-svg" viewBox="0 0 800 700" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <g class="map-viewport" id="map-viewport">
-                <path class="nigeria-outline" d={NIGERIA_OUTLINE_PATH} />
-
-                {tradeRoutes.map((route, index) => (
-                  <line
-                    key={`route-${index}`}
-                    class="trade-route"
-                    x1={String(route.x1)}
-                    y1={String(route.y1)}
-                    x2={String(route.x2)}
-                    y2={String(route.y2)}
-                  />
-                ))}
-
-                {stateStats.map((state) => {
-                  const coords = STATE_COORDS[state.slug];
-                  if (!coords) return null;
-
-                  const radius = dotRadius(state.facility_count);
-                  const isHot = state.facility_count > 0;
-                  const dotClass = isHot ? 'market-dot market-dot-hot' : 'market-dot market-dot-watch';
-                  const showLabel =
-                    state.facility_count > 50 ||
-                    hotStates.slice(0, 8).includes(state) ||
-                    needsData.slice(0, 3).includes(state);
-                  const pulseSpeed = isHot
-                    ? `${2.5 + Math.random() * 1.5}s`
-                    : `${3.5 + Math.random() * 1}s`;
-                  const labelDx =
-                    coords.labelOffset?.[0] ?? (coords.labelDir === 'left' ? -radius - 6 : radius + 6);
-                  const labelDy = coords.labelOffset?.[1] ?? 4;
-
-                  return (
-                    <g
-                      key={state.slug}
-                      class="state-dot-group"
-                      data-slug={state.slug}
-                      data-name={state.name}
-                      data-count={String(state.facility_count)}
-                      data-lgas={String(state.lgas_with_data)}
-                      data-x={String(coords.x)}
-                      data-y={String(coords.y)}
-                      data-label={coords.label}
-                    >
-                      {isHot && radius >= 5 && (
-                        <circle class="market-dot-ring" cx={String(coords.x)} cy={String(coords.y)} r={String(radius * 2)}>
-                          <animate
-                            attributeName="r"
-                            values={`${radius * 2};${radius * 3.5};${radius * 2}`}
-                            dur={pulseSpeed}
-                            repeatCount="indefinite"
-                          />
-                          <animate
-                            attributeName="opacity"
-                            values="0.4;0;0.4"
-                            dur={pulseSpeed}
-                            repeatCount="indefinite"
-                          />
-                        </circle>
-                      )}
-
-                      <circle class={dotClass} cx={String(coords.x)} cy={String(coords.y)} r={String(radius)}>
-                        <animate
-                          attributeName="r"
-                          values={`${radius};${radius + 2};${radius}`}
-                          dur={pulseSpeed}
-                          repeatCount="indefinite"
-                        />
-                      </circle>
-
-                      {showLabel && (
-                        <text
-                          class={`map-label${coords.labelDir === 'left' ? ' map-label-left' : ''}`}
-                          x={String(coords.x + labelDx)}
-                          y={String(coords.y + labelDy)}
-                        >
-                          {coords.label}
-                        </text>
-                      )}
-                    </g>
-                  );
-                })}
-              </g>
-            </svg>
-
-            <div class="map-tooltip" id="map-tooltip">
-              <span class="tooltip-ping"></span>
-              <span class="tooltip-text" id="tooltip-text">
-                {formatCount(totalFacilities)} facilities across {statesWithData} states
-              </span>
+          <div class="hero-signal-body">
+            <div class="hero-signal-matrix">
+              <div class="signal-section-label">State ranking</div>
+              {rankedStates.map((state, i) => {
+                const pct = (state.facility_count / maxCount * 100).toFixed(1);
+                const isGap = state.facility_count === 0;
+                const tier = isGap ? 'gap' : i < 3 ? 'top' : i < 7 ? 'mid' : 'base';
+                return (
+                  <a
+                    key={state.slug}
+                    href={`/api/facilities?state=${state.slug}`}
+                    class={`signal-row signal-row-${tier}`}
+                    style={`--i:${i};--pct:${isGap ? '4' : pct}%`}
+                  >
+                    <span class="signal-rank tabular-nums">{String(i + 1).padStart(2, '0')}</span>
+                    <span class="signal-name">{state.name}</span>
+                    <div class="signal-bar-track">
+                      <div class="signal-bar"></div>
+                    </div>
+                    <span class="signal-value tabular-nums">{isGap ? '—' : formatCount(state.facility_count)}</span>
+                  </a>
+                );
+              })}
             </div>
 
-            <div class="map-focus-card" id="map-focus-card" hidden>
-              <span class="focus-kicker">Focused state</span>
-              <strong id="focus-title">Nigeria overview</strong>
-              <p id="focus-meta">Click a node to zoom in and inspect coverage.</p>
-              <a href="/api" id="focus-link">
-                Open API index
-              </a>
-            </div>
+            <div class="hero-signal-types">
+              <div class="signal-section-label">Category split</div>
+              {topTypes.map((type, i) => {
+                const maxTypeCount = topTypes[0]?.count ?? 1;
+                const typePct = (type.count / maxTypeCount * 100).toFixed(1);
+                return (
+                  <a
+                    key={type.type}
+                    href={`/api/facilities?type=${type.type}&limit=10`}
+                    class="signal-type-row"
+                    style={`--i:${i + 14};--pct:${typePct}%`}
+                  >
+                    <span class={`signal-type-dot signal-dot-${type.type}`}></span>
+                    <span class="signal-type-name">{FACILITY_TYPE_LABELS[type.type as FacilityType] ?? type.type}</span>
+                    <div class="signal-type-track">
+                      <div class={`signal-type-bar signal-type-bar-${type.type}`}></div>
+                    </div>
+                    <span class="signal-value tabular-nums">{formatCount(type.count)}</span>
+                  </a>
+                );
+              })}
 
-            <button type="button" class="map-reset hero-map-reset" id="map-reset" hidden>
-              Reset view
-            </button>
+              <div class="signal-coverage-badge">
+                <div class="coverage-badge-row">
+                  <span class="coverage-badge-num tabular-nums">{coverageRatio}%</span>
+                  <span class="coverage-badge-label">national coverage</span>
+                </div>
+                <div class="coverage-track">
+                  <div class="coverage-fill" style={`--target-w:${coverageRatio}%`}></div>
+                </div>
+              </div>
+
+              <div class="signal-types-footer">
+                <a href="/docs" class="map-inline-link">Full API index →</a>
+              </div>
+            </div>
           </div>
         </div>
       </section>
@@ -351,180 +288,6 @@ export const HomePage: FC<HomeProps> = ({
 
 
 
-      <script
-        dangerouslySetInnerHTML={{
-          __html: `
-            (function() {
-              var tooltip = document.getElementById('map-tooltip');
-              var tooltipText = document.getElementById('tooltip-text');
-              var defaultText = tooltipText.textContent;
-              var groups = document.querySelectorAll('.state-dot-group');
-              var map = document.getElementById('market-map');
-              var viewport = document.getElementById('map-viewport');
-              var reset = document.getElementById('map-reset');
-              var focusCard = document.getElementById('map-focus-card');
-              var focusTitle = document.getElementById('focus-title');
-              var focusMeta = document.getElementById('focus-meta');
-              var focusLink = document.getElementById('focus-link');
-              var focusedSlug = null;
-              var currentTransform = { tx: 0, ty: 0, scale: 1 };
-              var activeGroup = null;
-              var dragState = null;
-
-              function renderTransform() {
-                if (!viewport) return;
-                viewport.setAttribute(
-                  'transform',
-                  'translate(' + currentTransform.tx + ' ' + currentTransform.ty + ') scale(' + currentTransform.scale + ')'
-                );
-              }
-
-              function setActiveGroup(nextGroup) {
-                if (activeGroup) activeGroup.classList.remove('is-active');
-                activeGroup = nextGroup;
-                if (activeGroup) activeGroup.classList.add('is-active');
-              }
-
-              function fmtCount(n) {
-                return n >= 1000 ? (n / 1000).toFixed(1) + 'k' : String(n);
-              }
-
-              function applyFocus(slug, name, count, lgas, x, y) {
-                if (!viewport) return;
-                var scale = 1.95;
-                var tx = 400 - scale * x;
-                var ty = 330 - scale * y;
-                currentTransform = { tx: tx, ty: ty, scale: scale };
-                renderTransform();
-                map.classList.add('map-focused');
-                focusedSlug = slug;
-                if (reset) reset.hidden = false;
-                if (focusCard) focusCard.hidden = false;
-                if (focusTitle) focusTitle.textContent = name;
-                if (focusMeta) {
-                  var c = parseInt(count, 10);
-                  focusMeta.textContent =
-                    c > 0
-                      ? fmtCount(c) +
-                        ' facilit' +
-                        (c !== 1 ? 'ies' : 'y') +
-                        ' across ' +
-                        lgas +
-                        ' LGA' +
-                        (lgas !== '1' ? 's' : '')
-                      : 'No data yet. Help add facilities for this state.';
-                }
-                if (focusLink) focusLink.setAttribute('href', '/api/facilities?state=' + slug);
-              }
-
-              function resetFocus() {
-                if (!viewport) return;
-                currentTransform = { tx: 0, ty: 0, scale: 1 };
-                renderTransform();
-                map.classList.remove('map-focused');
-                focusedSlug = null;
-                dragState = null;
-                setActiveGroup(null);
-                if (reset) reset.hidden = true;
-                if (focusCard) focusCard.hidden = true;
-              }
-
-              if (reset) reset.addEventListener('click', resetFocus);
-
-              if (map) {
-                map.addEventListener('pointerdown', function(event) {
-                  if (!focusedSlug) return;
-                  if (
-                    event.target.closest('.state-dot-group') ||
-                    event.target.closest('.map-focus-card') ||
-                    event.target.closest('.map-reset')
-                  ) {
-                    return;
-                  }
-
-                  dragState = {
-                    pointerId: event.pointerId,
-                    startX: event.clientX,
-                    startY: event.clientY,
-                    originTx: currentTransform.tx,
-                    originTy: currentTransform.ty,
-                    moved: false,
-                  };
-                  map.classList.add('is-dragging');
-                  if (map.setPointerCapture) map.setPointerCapture(event.pointerId);
-                });
-
-                map.addEventListener('pointermove', function(event) {
-                  if (!dragState || dragState.pointerId !== event.pointerId || !focusedSlug) return;
-                  var dx = event.clientX - dragState.startX;
-                  var dy = event.clientY - dragState.startY;
-                  if (Math.abs(dx) > 3 || Math.abs(dy) > 3) dragState.moved = true;
-                  currentTransform.tx = dragState.originTx + dx;
-                  currentTransform.ty = dragState.originTy + dy;
-                  renderTransform();
-                });
-
-                function endDrag(event) {
-                  if (!dragState || dragState.pointerId !== event.pointerId) return;
-                  var moved = dragState.moved;
-                  dragState = null;
-                  map.classList.remove('is-dragging');
-                  try {
-                    if (map.releasePointerCapture) map.releasePointerCapture(event.pointerId);
-                  } catch (error) {}
-                  if (!moved && focusedSlug && !event.target.closest('.state-dot-group')) resetFocus();
-                }
-
-                map.addEventListener('pointerup', endDrag);
-                map.addEventListener('pointercancel', endDrag);
-              }
-
-              groups.forEach(function(group) {
-                group.addEventListener('mouseenter', function() {
-                  var name = group.getAttribute('data-name');
-                  var count = group.getAttribute('data-count');
-                  var lgas = group.getAttribute('data-lgas');
-                  var c = parseInt(count, 10);
-                  tooltipText.textContent =
-                    c > 0
-                      ? name +
-                        ' - ' +
-                        fmtCount(c) +
-                        ' facilit' +
-                        (c !== 1 ? 'ies' : 'y') +
-                        ' across ' +
-                        lgas +
-                        ' LGA' +
-                        (lgas !== '1' ? 's' : '')
-                      : name + ' - no data yet. Help add some.';
-                  tooltip.classList.add('tooltip-active');
-                });
-
-                group.addEventListener('mouseleave', function() {
-                  tooltipText.textContent = defaultText;
-                  tooltip.classList.remove('tooltip-active');
-                });
-
-                group.addEventListener('click', function(event) {
-                  event.stopPropagation();
-                  var slug = group.getAttribute('data-slug');
-                  var name = group.getAttribute('data-name');
-                  var count = group.getAttribute('data-count');
-                  var lgas = group.getAttribute('data-lgas');
-                  var x = parseFloat(group.getAttribute('data-x'));
-                  var y = parseFloat(group.getAttribute('data-y'));
-                  if (focusedSlug === slug) {
-                    resetFocus();
-                    return;
-                  }
-                  setActiveGroup(group);
-                  applyFocus(slug, name, count, lgas, x, y);
-                });
-              });
-            })();
-          `,
-        }}
-      />
     </div>
   );
 };
