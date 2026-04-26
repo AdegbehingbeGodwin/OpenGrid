@@ -38,8 +38,6 @@ export const HomePage: FC<HomeProps> = ({
 }) => {
   const topTypes = typeBreakdown.slice(0, 6);
   const coverageRatio = totalStates === 0 ? 0 : Math.round((statesWithData / totalStates) * 100);
-  const rankedStates = [...stateStats].sort((a, b) => b.facility_count - a.facility_count).slice(0, 12);
-  const maxCount = rankedStates[0]?.facility_count ?? 1;
 
   return (
     <div class="home-page home-cinematic">
@@ -87,87 +85,6 @@ export const HomePage: FC<HomeProps> = ({
           </div>
         </div>
 
-        <div class="hero-stage">
-          <div class="hero-stage-header">
-            <div>
-              <span class="map-kicker">Coverage signal</span>
-              <h2>National facility index</h2>
-            </div>
-            <div class="hero-stage-stats">
-              <div>
-                <span>Facilities indexed</span>
-                <strong>{formatCount(totalFacilities)}</strong>
-              </div>
-              <div>
-                <span>LGAs covered</span>
-                <strong>{formatCount(lgasWithData)}</strong>
-              </div>
-            </div>
-          </div>
-
-          <div class="hero-signal-body">
-            <div class="hero-signal-matrix">
-              <div class="signal-section-label">State ranking</div>
-              {rankedStates.map((state, i) => {
-                const pct = (state.facility_count / maxCount * 100).toFixed(1);
-                const isGap = state.facility_count === 0;
-                const tier = isGap ? 'gap' : i < 3 ? 'top' : i < 7 ? 'mid' : 'base';
-                return (
-                  <a
-                    key={state.slug}
-                    href={`/api/facilities?state=${state.slug}`}
-                    class={`signal-row signal-row-${tier}`}
-                    style={`--i:${i};--pct:${isGap ? '4' : pct}%`}
-                  >
-                    <span class="signal-rank tabular-nums">{String(i + 1).padStart(2, '0')}</span>
-                    <span class="signal-name">{state.name}</span>
-                    <div class="signal-bar-track">
-                      <div class="signal-bar"></div>
-                    </div>
-                    <span class="signal-value tabular-nums">{isGap ? '—' : formatCount(state.facility_count)}</span>
-                  </a>
-                );
-              })}
-            </div>
-
-            <div class="hero-signal-types">
-              <div class="signal-section-label">Category split</div>
-              {topTypes.map((type, i) => {
-                const maxTypeCount = topTypes[0]?.count ?? 1;
-                const typePct = (type.count / maxTypeCount * 100).toFixed(1);
-                return (
-                  <a
-                    key={type.type}
-                    href={`/api/facilities?type=${type.type}&limit=10`}
-                    class="signal-type-row"
-                    style={`--i:${i + 14};--pct:${typePct}%`}
-                  >
-                    <span class={`signal-type-dot signal-dot-${type.type}`}></span>
-                    <span class="signal-type-name">{FACILITY_TYPE_LABELS[type.type as FacilityType] ?? type.type}</span>
-                    <div class="signal-type-track">
-                      <div class={`signal-type-bar signal-type-bar-${type.type}`}></div>
-                    </div>
-                    <span class="signal-value tabular-nums">{formatCount(type.count)}</span>
-                  </a>
-                );
-              })}
-
-              <div class="signal-coverage-badge">
-                <div class="coverage-badge-row">
-                  <span class="coverage-badge-num tabular-nums">{coverageRatio}%</span>
-                  <span class="coverage-badge-label">national coverage</span>
-                </div>
-                <div class="coverage-track">
-                  <div class="coverage-fill" style={`--target-w:${coverageRatio}%`}></div>
-                </div>
-              </div>
-
-              <div class="signal-types-footer">
-                <a href="/docs" class="map-inline-link">Full API index →</a>
-              </div>
-            </div>
-          </div>
-        </div>
       </section>
 
       <section class="signal-ribbon">
